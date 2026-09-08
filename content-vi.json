@@ -1,0 +1,1664 @@
+{
+  "ui": {
+    "home": "Trang chủ",
+    "nav": [
+      "Trang chủ",
+      "So sánh thẻ",
+      "Các loại phí",
+      "Tính năng & hạn mức",
+      "Hoàn tiền: so sánh và lưu ý",
+      "Hướng dẫn chọn thẻ",
+      "Hỏi đáp"
+    ],
+    "footBrand": "Nền tảng thông tin so sánh chi phí, hạn mức, tính năng và điều kiện hoàn tiền của thẻ crypto trên cùng một tiêu chuẩn.",
+    "footNoticeLabel": "THÔNG BÁO VỀ THÔNG TIN",
+    "footNotice": "Thông tin về thẻ, phí, hạn mức, hoàn tiền và các nội dung liên quan do Crypto Cards Info cung cấp là thông tin chung được tổng hợp từ tài liệu công khai và tài liệu chính thức. Thông tin này không nhằm khuyến nghị, bảo đảm hay mời gọi việc sử dụng hoặc đăng ký bất kỳ thẻ hay dịch vụ nào, và không cấu thành tư vấn đầu tư, tài chính, pháp lý, thuế hay kế toán. Điều kiện dịch vụ, phí, hạn mức, quyền lợi và chính sách có thể thay đổi, vì vậy người dùng phải tự kiểm tra tài liệu chính thức và điều khoản mới nhất của nhà cung cấp trước khi sử dụng hoặc đăng ký. Quyết định cuối cùng và trách nhiệm phát sinh thuộc về người dùng; trong phạm vi pháp luật cho phép, trách nhiệm của đơn vị vận hành đối với các quyết định chỉ dựa trên thông tin của trang này được giới hạn.",
+    "copyright": "© 2026 Crypto Cards Info",
+    "groups": [
+      {
+        "t": "SO SÁNH",
+        "items": [
+          "card-comparison",
+          "fee-comparison",
+          "limit-comparison"
+        ]
+      },
+      {
+        "t": "THÔNG TIN",
+        "items": [
+          "cashback-fact-check",
+          "card-selection-guide",
+          "faq"
+        ]
+      },
+      {
+        "t": "CHÍNH SÁCH",
+        "items": [
+          "terms",
+          "privacy",
+          "disclaimer",
+          "principles"
+        ]
+      }
+    ],
+    "labels": {
+      "terms": "Điều khoản sử dụng",
+      "privacy": "Chính sách bảo mật",
+      "disclaimer": "Miễn trừ và giới hạn trách nhiệm",
+      "principles": "Nguyên tắc cung cấp thông tin"
+    },
+    "unverified": "Cần kiểm tra nguồn chính thức"
+  },
+  "pages": {
+    "home": {
+      "title": "So sánh thẻ crypto | Phí, hạn mức, hoàn tiền | Crypto Cards Info",
+      "desc": "Crypto Cards Info so sánh phí, tỷ giá, hạn mức, tính năng chuyển tiền và điều kiện hoàn tiền của thẻ crypto trên cùng một tiêu chuẩn.",
+      "h1": "Bạn sẽ chọn thẻ crypto chỉ dựa vào hoàn tiền?",
+      "sub": "Bạn muốn một thẻ hoàn tiền, hay một thẻ tính năng? Rất khó để có được cả hai cùng lúc.",
+      "lead": "Bạn có đang phó thác việc chọn thẻ cho những khoản hoàn tiền chưa nhận được và những chương trình có thể đổi điều kiện bất cứ lúc nào? Một con số trong quảng cáo không cho biết bạn thực sự phải trả bao nhiêu. Crypto Cards Info không bán hay quảng bá thẻ nào — chúng tôi sắp xếp phí, tỷ giá, hạn mức, tính năng chuyển tiền và điều kiện hoàn tiền theo cùng một tiêu chuẩn để bạn tự đánh giá.",
+      "sections": [
+        {
+          "k": "text",
+          "title": "Vì sao chúng tôi làm trang này",
+          "p": [
+            "Mọi quảng cáo thẻ crypto đều nghe rất thuyết phục. 'Hoàn tiền tới 4,5%', 'phí 0%', 'thấp nhất thị trường' — mỗi bên dùng một tiêu chuẩn khác nhau, nên người dùng thường chọn thẻ mà chưa kịp xác định mình cần so sánh điều gì.",
+            "Crypto Cards Info bắt đầu từ đó. Chúng tôi không nói thẻ nào tốt nhất. Chúng tôi giúp bạn tự trả lời hai câu hỏi: 'Tôi muốn thẻ hoàn tiền hay thẻ tính năng?' và 'Tôi cần thẻ crypto cho mục đích gì?'",
+            "Tiêu chí lựa chọn không phải là mức phần trăm, mà là mục đích sử dụng. Khi mục đích đã rõ, danh sách so sánh tự thu hẹp lại — và lúc đó bạn mới có thể lựa chọn một cách sáng suốt. Đó là mục đích duy nhất của trang này."
+          ]
+        },
+        {
+          "k": "compare2",
+          "title": "Việc chọn thẻ chia thành hai hướng",
+          "sub": "Thẻ crypto được thiết kế theo hai mục đích khác nhau. RedotPay, OKX Card và Ether.fi Cash là thẻ chuyên hoàn tiền, lấy phần thưởng thanh toán làm trung tâm. Anytap Card là thẻ chuyên tính năng, lấy hạn mức và khả năng luân chuyển tiền làm trung tâm. Hai loại này không thể đồng thời tối ưu.",
+          "cols": [
+            {
+              "tone": "amber",
+              "label": "Thẻ chuyên hoàn tiền · RedotPay · OKX · Ether.fi",
+              "t": "Thẻ ưu tiên cấu trúc hoàn lại mỗi lần thanh toán",
+              "items": [
+                "Tỷ lệ gắn với hạng thành viên, staking hoặc phương thức thanh toán cụ thể.",
+                "Có hạn mức tích lũy hàng tháng, nên chi tiêu nhiều hơn cũng không nhận thêm.",
+                "Phần thưởng thường được trả bằng token riêng của nhà phát hành.",
+                "Có thể yêu cầu duy trì tài khoản sàn hoặc tài sản thế chấp."
+              ],
+              "note": "Đây là điểm cần đặc biệt lưu ý. Hoàn tiền và hoa hồng giới thiệu phần lớn là chương trình khuyến mại mà nhà cung cấp có quyền thay đổi hoặc dừng theo điều khoản, và đã có trường hợp giảm tỷ lệ hay dừng chi trả mà không báo trước."
+            },
+            {
+              "tone": "teal",
+              "label": "Thẻ chuyên tính năng · Anytap",
+              "t": "Thẻ ưu tiên hạn mức và khả năng luân chuyển tiền",
+              "items": [
+                "Điều quan trọng là hạn mức tháng, hạn mức ngày và hạn mức mỗi giao dịch có được công bố rõ ràng.",
+                "Kiểm tra chuyển tiền giữa các thẻ, phát hành ví cá nhân và rút ra ví ngoài.",
+                "Không có hoàn tiền, nhưng cấu trúc phí đơn giản nên dễ tính tổng chi phí trước.",
+                "Tiêu chí đánh giá là mức phí, không phải rủi ro thay đổi quyền lợi."
+              ],
+              "note": "Thẻ tính năng không có phần thưởng, nên phí nạp, thanh toán và quy đổi vẫn là chi phí thực. Hãy kiểm tra trước xem tỷ lệ có được công bố theo từng khoản và bạn có thể tự tính tổng chi phí hay không."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "XU HƯỚNG TOÀN CẦU",
+          "p": [
+            "Trên thị trường thẻ crypto toàn cầu, ngày càng nhiều người dùng đã mỏi mòn với cuộc đua hoàn tiền đang chuyển sang thẻ chuyên tính năng. Việc giảm tỷ lệ, thêm hạn mức tích lũy, siết yêu cầu staking và dừng hoa hồng giới thiệu diễn ra lặp lại đã cho thấy người chọn thẻ theo phần thưởng chính là người gánh rủi ro thay đổi điều kiện.",
+            "Vì vậy, tỷ lệ người dùng chọn thẻ theo tiêu chí 'hạn mức có đủ không, tiền có luân chuyển được như mong muốn không, tổng chi phí có tính trước được không' đang tăng lên. Đó cũng là lý do Crypto Cards Info phân định rõ hai loại thẻ."
+          ]
+        },
+        {
+          "k": "links",
+          "title": "Bạn có thể so sánh những gì",
+          "items": [
+            {
+              "p": "card-comparison",
+              "kicker": "SO SÁNH THẺ",
+              "t": "RedotPay · OKX · Ether.fi · Anytap",
+              "d": "Phí phát hành, phí thường niên, cách nạp tiền, thanh toán quốc tế, ATM, chuyển tiền giữa các thẻ, hạn mức và điều kiện hoàn tiền trên cùng một tiêu chuẩn."
+            },
+            {
+              "p": "fee-comparison",
+              "kicker": "CÁC LOẠI PHÍ",
+              "t": "'Phí 0%' có thật là không mất gì?",
+              "d": "Kiểm tra từng bước: phí phát hành, nạp tiền, quy đổi crypto, spread tỷ giá, thanh toán quốc tế và ATM."
+            },
+            {
+              "p": "limit-comparison",
+              "kicker": "TÍNH NĂNG & HẠN MỨC",
+              "t": "Hạn mức nạp, thanh toán, ATM và chuyển tiền",
+              "d": "Chi tiêu càng lớn, điều cản trở là hạn mức chứ không phải tỷ lệ hoàn tiền. So sánh cùng với cách giữ và di chuyển tiền."
+            },
+            {
+              "p": "cashback-fact-check",
+              "kicker": "HOÀN TIỀN",
+              "t": "Bạn đã kiểm tra điều kiện phía sau chữ 'tới X%'?",
+              "d": "Chi tiêu tối thiểu, hạn mức tháng, điều kiện hạng và staking, tài sản chi trả, giao dịch bị loại trừ."
+            },
+            {
+              "p": "card-selection-guide",
+              "kicker": "HƯỚNG DẪN CHỌN THẺ",
+              "t": "Tính năng → phí → tỷ giá → hạn mức → hoàn tiền",
+              "d": "Thẻ tốt không phải thẻ hoàn tiền cao nhất. Chúng tôi chỉ ra thứ tự cần kiểm tra."
+            },
+            {
+              "p": "faq",
+              "kicker": "HỎI ĐÁP",
+              "t": "Khái niệm và thuật ngữ cơ bản",
+              "d": "20 câu hỏi ngắn về stablecoin, nạp tiền, spread tỷ giá, KYC, phí ATM và nhiều nội dung khác."
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "title": "Hãy so sánh bằng tổng chi phí thực",
+          "p": [
+            "Con số trong quảng cáo thường chỉ thể hiện một khoản trong toàn bộ chi phí. Số tiền người dùng thực sự chịu chỉ xác định được khi cộng phí phát hành, phí nạp, phí quy đổi crypto, phí ngoại tệ và spread tỷ giá, phí thanh toán quốc tế và chi phí ATM, rồi trừ đi khoản hoàn tiền thực nhận.",
+            "Vì vậy Crypto Cards Info không đi tìm mức phí danh nghĩa thấp nhất, mà so sánh tổng chi phí cuối cùng trong quá trình sử dụng thực tế. Khoản hoàn tiền bạn tưởng được nhận lại có thể chỉ là một phần chi phí bạn đã trả trước đó."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "NGUYÊN TẮC CUNG CẤP THÔNG TIN",
+          "p": [
+            "Mọi thông tin đều nhằm giúp người dùng đưa ra phán đoán đúng. Việc chọn thẻ crypto phụ thuộc vào việc bạn ưu tiên hoàn tiền hay ưu tiên tính năng phù hợp với mục đích sử dụng, và câu trả lời khác nhau với từng người.",
+            "Nguyên tắc quan trọng nhất là toàn bộ phí phải được công bố minh bạch trên trang chính thức của đơn vị phát hành thẻ.",
+            "Chúng tôi cung cấp thông tin một cách khách quan, không khuyến nghị hay chỉ trích vô điều kiện bất kỳ thẻ hay công ty nào. Nguồn ưu tiên là trang chính thức, điều khoản, bảng phí và thông báo chính thức; hạng mục không xác minh được sẽ ghi 'Cần kiểm tra nguồn chính thức' hoặc 'Không công bố' mà không suy đoán."
+          ]
+        }
+      ]
+    },
+    "card-comparison": {
+      "title": "So sánh thẻ crypto | RedotPay · OKX · Ether.fi · Anytap | Crypto Cards Info",
+      "desc": "So sánh chi phí, tính năng thanh toán, ATM, chuyển tiền giữa các thẻ, hạn mức và điều kiện hoàn tiền của các thẻ crypto chính.",
+      "h1": "So sánh thẻ crypto",
+      "lead": "Crypto Cards Info so sánh chi phí, tính năng thanh toán, ATM, chuyển tiền giữa các thẻ, hạn mức và điều kiện hoàn tiền của các thẻ crypto chính. Đối tượng so sánh được chia thành thẻ chuyên hoàn tiền (RedotPay, OKX Card, Ether.fi Cash) và thẻ chuyên tính năng (Anytap Card).",
+      "stamp": "Kiểm tra lần cuối: 6/9/2026 · Thông tin dựa trên tài liệu công khai của từng dịch vụ và có thể thay đổi theo chính sách của nhà cung cấp. Hãy kiểm tra tài liệu chính thức mới nhất trước khi sử dụng.",
+      "sections": [
+        {
+          "k": "cards",
+          "title": "Các thẻ crypto chính",
+          "items": [
+            {
+              "key": "redotpay",
+              "name": "RedotPay",
+              "tag": "Thẻ chuyên hoàn tiền · thanh toán toàn cầu",
+              "rows": [
+                [
+                  "Phí phát hành thẻ ảo",
+                  "10 USD (phát hành ngay)"
+                ],
+                [
+                  "Phí phát hành thẻ vật lý",
+                  "100 USD (hiện dừng phát hành mới tại Hàn Quốc)"
+                ],
+                [
+                  "Phí thanh toán",
+                  "Cùng loại tiền 1% / ngoại tệ 2,2% (1% + 1,2% phí quy đổi)"
+                ],
+                [
+                  "Hoàn tiền",
+                  "Không có"
+                ]
+              ],
+              "sum": "Không có chương trình hoàn tiền riêng, nên không có quyền lợi nào bù lại phần phí phải trả."
+            },
+            {
+              "key": "okx",
+              "name": "OKX Card",
+              "tag": "Thẻ chuyên hoàn tiền · sàn phát hành",
+              "rows": [
+                [
+                  "Hoàn tiền",
+                  "Thường tối đa 2% (chỉ khi thanh toán bằng USDG) · trần tháng 5 USD / hạng VIP tối đa 1.000 USD"
+                ],
+                [
+                  "Phí phát hành",
+                  "Không có"
+                ],
+                [
+                  "Phí ATM",
+                  "2% (tối thiểu 1 USD)"
+                ],
+                [
+                  "Spread quy đổi stablecoin",
+                  "0,4%"
+                ]
+              ],
+              "sum": "Hoàn tiền chỉ áp dụng khi có tài khoản sàn OKX, đã bật OKX Pay và thanh toán bằng USDG."
+            },
+            {
+              "key": "etherfi",
+              "name": "Ether.fi Cash",
+              "tag": "Thẻ chuyên hoàn tiền · dựa trên protocol",
+              "rows": [
+                [
+                  "Hoàn tiền",
+                  "Core 3% cho 2.000 USD đầu → 1% cho 2–3 nghìn USD → 0,5% trên 3 nghìn USD"
+                ],
+                [
+                  "Hạng cao hơn",
+                  "Luxe 10.000 USD đầu / Pinnacle 50.000 USD đầu ở mức 3%"
+                ],
+                [
+                  "Phí FX",
+                  "1% cho mọi hạng"
+                ],
+                [
+                  "Nâng hạng",
+                  "Cần staking token ETHFI"
+                ]
+              ],
+              "sum": "Có hai cấu trúc thanh toán: Direct Mode (gửi tài sản) và Borrow Mode (vay có thế chấp); Borrow Mode có rủi ro thanh lý."
+            },
+            {
+              "key": "anytap",
+              "name": "Anytap Card",
+              "tag": "Thẻ chuyên tính năng · hạn mức và luân chuyển tiền",
+              "rows": [
+                [
+                  "Hoàn tiền",
+                  "Không có"
+                ],
+                [
+                  "Phí phát hành thẻ ảo / vật lý",
+                  "20 USDT / 100 USDT (nạp tối thiểu 50 USDT)"
+                ],
+                [
+                  "Phí nạp tiền",
+                  "2%"
+                ],
+                [
+                  "Phí thanh toán / quốc tế",
+                  "Cùng loại tiền 1% / 1% + 0,30 USD mỗi giao dịch"
+                ]
+              ],
+              "sum": "Thay cho hoàn tiền, thẻ tập trung vào hạn mức và các tính năng ví, chuyển tiền."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Bảng so sánh cơ bản",
+          "sub": "Hạng mục không xác minh được trong tài liệu chính thức được ghi 'Cần kiểm tra nguồn chính thức' hoặc 'Không công bố'. Điều này không có nghĩa tính năng không tồn tại.",
+          "head": [
+            "Hạng mục",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Thẻ chuyên hoàn tiền"
+            },
+            {
+              "tone": "teal",
+              "label": "Thẻ chuyên tính năng"
+            }
+          ],
+          "legend": "Màu nền của cột thể hiện loại thiết kế của thẻ, không phải đánh giá hơn kém hay chất lượng. RedotPay, OKX Card và Ether.fi Cash được nhóm cùng màu vì là thẻ chuyên hoàn tiền lấy phần thưởng thanh toán làm trung tâm; Anytap Card dùng màu riêng vì là thẻ chuyên tính năng lấy hạn mức và luân chuyển tiền làm trung tâm. Nếu xếp các thẻ khác mục đích cùng một màu, người đọc dễ hiểu sai rằng chúng được so sánh trên cùng một tiêu chuẩn — cách phân màu này nhằm tránh sự nhầm lẫn đó.",
+          "rows": [
+            [
+              "Phí phát hành thẻ ảo",
+              "10 USD",
+              "Không có (miễn phí)",
+              "Không công bố",
+              "20 USDT"
+            ],
+            [
+              "Phí phát hành thẻ vật lý",
+              "100 USD (dừng phát hành mới tại Hàn Quốc)",
+              "Chủ yếu thẻ ảo; thẻ vật lý khác nhau theo khu vực",
+              "Miễn phí (thẻ kim loại ở hạng cao)",
+              "100 USDT (nạp tối thiểu 50 USDT)"
+            ],
+            [
+              "Cách nạp tiền",
+              "Nạp bằng tiền mã hóa",
+              "Số dư tài khoản sàn (không nạp trực tiếp tiền pháp định)",
+              "Gửi tài sản (Direct) hoặc vay thế chấp (Borrow)",
+              "Nạp từ ví cá nhân hoặc sàn"
+            ],
+            [
+              "Thanh toán quốc tế",
+              "Điểm chấp nhận Visa",
+              "Điểm chấp nhận Visa",
+              "Điểm chấp nhận Visa",
+              "Điểm chấp nhận Visa"
+            ],
+            [
+              "Chuyển tiền giữa các thẻ",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Có hỗ trợ"
+            ],
+            [
+              "Ví thành viên → ví ngoài",
+              "Có hỗ trợ (chuyển on-chain; không rút trực tiếp về ngân hàng)",
+              "Có hỗ trợ (rút on-chain qua tài khoản sàn OKX; không phải tính năng riêng của thẻ)",
+              "Không cung cấp (chưa mở xuất khóa riêng; đã công bố sẽ hỗ trợ)",
+              "Có hỗ trợ (người dùng chịu phí gas)"
+            ],
+            [
+              "Phí nạp tiền",
+              "Không có (chỉ phí gas on-chain)",
+              "Không công bố",
+              "Không công bố",
+              "2%"
+            ],
+            [
+              "Phí thanh toán",
+              "1% cùng loại tiền",
+              "0%",
+              "0% (FX tính riêng)",
+              "1% cùng loại tiền"
+            ],
+            [
+              "Phí thanh toán quốc tế / FX",
+              "Thêm 1,2% phí quy đổi (tổng 2,2%)",
+              "0% (spread stablecoin 0,4% tính riêng)",
+              "1% cho mọi hạng",
+              "1% + 0,30 USD mỗi giao dịch"
+            ],
+            [
+              "Phí ATM",
+              "2%",
+              "2% (tối thiểu 1 USD)",
+              "2%",
+              "2% (tối thiểu 1 USD)"
+            ],
+            [
+              "Hạn mức thanh toán",
+              "Tối đa 100.000 USD mỗi giao dịch",
+              "Cần kiểm tra nguồn chính thức",
+              "Không công bố",
+              "Thẻ vật lý 1.000.000 USD/tháng"
+            ],
+            [
+              "Hạn mức rút ATM",
+              "Không công bố",
+              "Không công bố",
+              "Không công bố",
+              "15.000 USD/tháng (1.500 USD mỗi lần và mỗi ngày)"
+            ],
+            [
+              "Hoàn tiền",
+              "Không có",
+              "Tối đa 2% (chỉ USDG), trần tháng 5 USD (thường) – 1.000 USD (VIP)",
+              "Core 3% → 1% → 0,5% theo bậc (khác nhau theo hạng)",
+              "Không có"
+            ],
+            [
+              "Điều kiện hoàn tiền",
+              "Không áp dụng",
+              "Cần tài khoản OKX, KYC và bật OKX Pay; chỉ áp dụng khi thanh toán USDG",
+              "Cần staking ETHFI để nâng hạng; Borrow Mode có rủi ro thanh lý tài sản thế chấp",
+              "Không áp dụng"
+            ],
+            [
+              "Chương trình giới thiệu",
+              "Công bố hoa hồng tới 40% nhưng hiện dừng chi trả",
+              "Không có thông báo riêng",
+              "Không có thông báo riêng",
+              "Hỗ trợ tới 40% (áp dụng theo hạng, cần kiểm tra thêm)"
+            ],
+            [
+              "Đặc điểm chính khác",
+              "Liên kết Apple Pay",
+              "Apple Pay · Google Pay · thanh toán stablecoin qua OKX Pay",
+              "Apple Pay · Google Pay · cấu trúc ví không lưu ký (Safe)",
+              "Chuyển tiền giữa các thẻ · ví cá nhân · rút ra ví ngoài · Apple/Google/Samsung Pay"
+            ]
+          ],
+          "notes": [
+            "Visa là thương hiệu của Visa Inc.; tên và logo của các thẻ thuộc về chủ sở hữu tương ứng, chỉ được dùng để nhận diện đối tượng so sánh."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "warn",
+          "label": "LƯU Ý THEO KHU VỰC",
+          "p": [
+            "1. Thẻ crypto nên được tiếp cận theo hai nhóm: nhóm ưu tiên hoàn tiền và nhóm ưu tiên tính năng thực dụng như hạn mức, chuyển tiền, ví. Nhóm hoàn tiền có thể bị đổi điều kiện hoặc dừng chương trình mà không báo trước; nhóm tính năng không có hoàn tiền nhưng mạnh về hạn mức và luân chuyển tiền.",
+            "2. RedotPay hiện dừng phát hành thẻ vật lý mới tại Hàn Quốc và đồng thời dừng chi trả hoa hồng giới thiệu. Nếu bạn đang cân nhắc tham gia vì chương trình giới thiệu, hãy lưu ý điểm này.",
+            "3. OKX Card yêu cầu có tài khoản sàn OKX và bật OKX Pay, và hoàn tiền chỉ áp dụng khi thanh toán bằng stablecoin riêng của OKX (USDG). Nghĩa là bạn phải sử dụng sàn OKX liên tục để nhận hoàn tiền.",
+            "4. Ether.fi Cash do một protocol phát hành token riêng (ETHFI) vận hành; nâng hạng cần staking ETHFI và có hai chế độ thanh toán là Direct Mode và Borrow Mode. Borrow Mode có thể bị thanh lý khi giá tài sản thế chấp giảm — đây là rủi ro không có ở thẻ thanh toán thông thường.",
+            "5. Chính sách phát hành, giao thẻ và chương trình giới thiệu có thể thay đổi thường xuyên; hãy kiểm tra thông báo mới nhất trên trang chính thức trước khi đăng ký.",
+            "6. Trên thị trường toàn cầu, những người dùng đã trải qua nhiều lần giảm tỷ lệ, thêm trần tích lũy và dừng hoa hồng giới thiệu đang chuyển dần từ thẻ chuyên hoàn tiền sang thẻ chuyên tính năng."
+          ]
+        }
+      ]
+    },
+    "fee-comparison": {
+      "title": "Các loại phí thẻ crypto | Nạp tiền, tỷ giá, thanh toán quốc tế, ATM | Crypto Cards Info",
+      "desc": "Chi phí phát hành, nạp tiền, quy đổi crypto, spread tỷ giá, thanh toán quốc tế và ATM phát sinh ở bước nào.",
+      "h1": "Các loại phí",
+      "lead": "'Phí 0%' không có nghĩa chi phí thực bằng không. Chi phí có thể phát sinh ở từng bước tiền di chuyển: nạp tiền, quy đổi crypto, ngoại tệ và spread tỷ giá, thanh toán, thanh toán quốc tế và rút ATM.",
+      "sections": [
+        {
+          "k": "flow",
+          "title": "Chi phí thực của thẻ crypto phát sinh ở đâu?",
+          "sub": "Thay vì con số 0%, hãy xem cuối cùng bao nhiêu tiền rời khỏi tay bạn.",
+          "steps": [
+            {
+              "num": "BƯỚC 1",
+              "t": "Nạp tiền",
+              "d": "Có thể phát sinh phí khi nạp số dư vào thẻ."
+            },
+            {
+              "num": "BƯỚC 2",
+              "t": "Quy đổi crypto",
+              "d": "Chi phí chuyển tài sản đang giữ thành tài sản có thể thanh toán."
+            },
+            {
+              "num": "BƯỚC 3",
+              "t": "Ngoại tệ / tỷ giá",
+              "d": "Tỷ giá áp dụng và spread (markup) quyết định số tiền thực chịu."
+            },
+            {
+              "num": "BƯỚC 4",
+              "t": "Thanh toán thẻ",
+              "d": "Cần kiểm tra loại tiền và cách xử lý tỷ giá tại thời điểm thanh toán."
+            },
+            {
+              "num": "BƯỚC 5",
+              "t": "Chi phí thanh toán quốc tế",
+              "d": "Có thể áp dụng phí theo tiêu chuẩn mạng thẻ khi thanh toán ở nước ngoài."
+            },
+            {
+              "num": "BƯỚC 6",
+              "t": "ATM / rút tiền",
+              "d": "Rút tiền mặt có thể áp dụng tỷ lệ riêng và mức tối thiểu."
+            },
+            {
+              "num": "KẾT QUẢ",
+              "t": "Tổng chi phí thực",
+              "d": "Phí phát hành + nạp + quy đổi + ngoại tệ + spread + thanh toán quốc tế + ATM − hoàn tiền thực nhận"
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "p": [
+            "Mục đích của việc so sánh không phải tìm mức phí danh nghĩa thấp nhất, mà xác định chi phí cuối cùng trong quá trình sử dụng thực tế. Cùng một số tiền chi tiêu, tổng chi phí vẫn khác nhau tùy cách nạp tiền và loại tiền thanh toán."
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "LƯU Ý QUAN TRỌNG",
+          "big": "Nhà cung cấp không công bố phí một cách minh bạch trên trang chính thức thì không thể là đối tượng để tin cậy.",
+          "p": [
+            "Việc công bố bảng phí không thuộc quyền tùy ý của nhà cung cấp, mà thuộc nghĩa vụ cung cấp thông tin cơ bản để người dùng biết trước điều kiện hợp đồng. Nếu phí phát hành, phí nạp, phí quy đổi, spread tỷ giá, phí thanh toán quốc tế và phí ATM không thể kiểm tra theo từng khoản trên trang hoặc điều khoản chính thức, người dùng không thể tính tổng chi phí trước khi ký kết.",
+            "Đặc biệt khi chỉ đưa ra các cụm từ như 'miễn phí', 'phí 0%', 'thấp nhất thị trường' mà không nêu tỷ lệ, không thể loại trừ khả năng chi phí thực đã được gộp vào spread tỷ giá hoặc bước quy đổi mà không hiển thị. Việc xếp các nhà cung cấp có quảng cáo không khớp bảng phí chính thức xuống thứ tự ưu tiên thấp hơn là hợp lý."
+          ]
+        },
+        {
+          "k": "grid",
+          "title": "Ba điều không xác minh được thì chúng tôi ghi 'Cần kiểm tra nguồn chính thức' thay vì suy đoán",
+          "items": [
+            {
+              "t": "Bảng phí chính thức theo từng khoản",
+              "d": "Kiểm tra xem phí phát hành, nạp, quy đổi, spread tỷ giá, thanh toán quốc tế và ATM có được niêm yết theo từng khoản."
+            },
+            {
+              "t": "Thủ tục thông báo trước khi đổi tỷ lệ",
+              "d": "Kiểm tra xem điều khoản có quy định thủ tục và thời hạn thông báo trước khi thay đổi tỷ lệ."
+            },
+            {
+              "t": "Cơ sở của tỷ giá áp dụng",
+              "d": "Kiểm tra xem có dùng tỷ giá tham chiếu của mạng thẻ và biên độ markup là bao nhiêu."
+            }
+          ]
+        },
+        {
+          "k": "grid",
+          "title": "Cần kiểm tra trước khi chọn thẻ",
+          "items": [
+            {
+              "t": "Bảng phí có được niêm yết công khai",
+              "d": "Kiểm tra bảng phí theo từng khoản trên trang hoặc điều khoản chính thức."
+            },
+            {
+              "t": "Lịch sử và cách thông báo thay đổi tỷ lệ",
+              "d": "Xem có thể tra được lịch sử thay đổi tỷ lệ trước đây và cách công bố."
+            },
+            {
+              "t": "Khả năng tự tính tổng chi phí",
+              "d": "Kiểm tra xem bạn có tự tính được tổng chi phí mà không cần liên hệ tổng đài."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "warn",
+          "label": "KHUYẾN NGHỊ KIỂM CHỨNG",
+          "p": [
+            "Nếu một trong các hạng mục trên không xác minh được, hãy thử thanh toán một khoản nhỏ để kiểm chứng số tiền bị trừ thực tế trước khi nạp tiền lớn."
+          ]
+        }
+      ]
+    },
+    "limit-comparison": {
+      "title": "Tính năng và hạn mức thẻ crypto | Thanh toán, ATM, chuyển tiền | Crypto Cards Info",
+      "desc": "So sánh hạn mức nạp, thanh toán, ATM, chuyển tiền giữa các thẻ cùng với phát hành ví và rút ra ví ngoài.",
+      "h1": "Tính năng và hạn mức thẻ",
+      "lead": "Càng chi tiêu nhiều, điều cản trở không phải tỷ lệ hoàn tiền mà là hạn mức. Ngoài thanh toán, cách bạn giữ và di chuyển số tiền đã nạp cũng rất quan trọng. Trang này so sánh tính năng và hạn mức cùng nhau.",
+      "sections": [
+        {
+          "k": "compare2",
+          "title": "Đối tượng so sánh trên trang này chia thành hai loại",
+          "sub": "Trước khi so sánh tính năng và hạn mức, cần phân biệt mục đích thiết kế của từng thẻ. Xếp các thẻ khác mục đích trên cùng một tiêu chuẩn sẽ làm sai lệch chính việc so sánh.",
+          "cols": [
+            {
+              "tone": "amber",
+              "label": "Thẻ chuyên hoàn tiền",
+              "t": "RedotPay · OKX Card · Ether.fi Cash",
+              "items": [
+                "Được thiết kế với phần thưởng thanh toán là giá trị trung tâm.",
+                "Hạn mức và tính năng chuyển tiền thường công bố hẹp hoặc không có dưới dạng tính năng của thẻ.",
+                "Trọng tâm là 'nhận lại bao nhiêu khi thanh toán', không phải luân chuyển tiền."
+              ],
+              "note": "Vì vậy, việc các hạng mục hạn mức hay chuyển tiền hiển thị 'Không công bố' hoặc 'Không cung cấp' ở loại thẻ này là khác biệt về mục đích thiết kế, không phải khiếm khuyết."
+            },
+            {
+              "tone": "teal",
+              "label": "Thẻ chuyên tính năng",
+              "t": "Anytap Card",
+              "items": [
+                "Được thiết kế với hạn mức và khả năng luân chuyển tiền là giá trị trung tâm.",
+                "Chuyển tiền giữa các thẻ, phát hành ví cá nhân và rút ra ví ngoài là tính năng của thẻ.",
+                "Không có hoàn tiền, nhưng cấu trúc phí đơn giản nên dễ tính tổng chi phí."
+              ],
+              "note": "Loại này không có phần thưởng, nên phí nạp, thanh toán và quy đổi vẫn là chi phí thực. Có thể không có lợi với người dùng số tiền nhỏ và không cần hạn mức cao."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "XU HƯỚNG TOÀN CẦU",
+          "p": [
+            "Trên thị trường thẻ crypto toàn cầu, tỷ lệ người dùng chọn thẻ chuyên tính năng đang tăng sau khi liên tục gặp thay đổi điều kiện hoàn tiền. Trong thực tế, vấn đề thường không nằm ở tỷ lệ mà ở chỗ 'hạn mức tháng có đủ cho chi tiêu' và 'có rút được số dư còn lại ra ví ngoài'.",
+            "Khi đọc hai bảng dưới đây, chúng tôi khuyên bạn kiểm tra theo hai câu hỏi đó thay vì theo tỷ lệ."
+          ]
+        },
+        {
+          "k": "table",
+          "title": "So sánh tính năng thẻ",
+          "sub": "Nếu không xác minh được tính năng trong tài liệu chính thức công khai, chúng tôi ghi 'Không cung cấp' hoặc 'Không công bố'.",
+          "head": [
+            "Tính năng",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Thẻ chuyên hoàn tiền"
+            },
+            {
+              "tone": "teal",
+              "label": "Thẻ chuyên tính năng"
+            }
+          ],
+          "legend": "Màu nền của cột được phân biệt vì loại thiết kế của thẻ khác nhau. RedotPay, OKX Card và Ether.fi Cash là thẻ chuyên hoàn tiền lấy phần thưởng thanh toán làm trung tâm; Anytap Card là thẻ chuyên tính năng lấy hạn mức và luân chuyển tiền làm trung tâm. Việc phân màu chỉ để chỉ loại thẻ, không nhằm ưu ái hay hạ thấp bất kỳ thẻ nào. Ngược lại, xếp các thẻ khác mục đích cùng một màu để người đọc so sánh trên cùng một tiêu chuẩn mới là điều dễ gây nhầm lẫn hơn.",
+          "rows": [
+            [
+              "Chuyển tiền giữa các thẻ",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Có hỗ trợ (phí 0,5%)"
+            ],
+            [
+              "Phát hành ví cá nhân (địa chỉ nạp/rút)",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Miễn phí"
+            ],
+            [
+              "Nạp trực tiếp từ ví cá nhân",
+              "Không cung cấp (nạp qua sàn hoặc ứng dụng)",
+              "Không cung cấp (dùng số dư tài khoản sàn)",
+              "Không cung cấp (cấu trúc gửi tài sản / thế chấp)",
+              "Có hỗ trợ"
+            ],
+            [
+              "Ví thành viên → ví ngoài",
+              "Có hỗ trợ (chuyển on-chain; không rút trực tiếp về ngân hàng)",
+              "Có hỗ trợ (rút on-chain qua tài khoản sàn OKX; không phải tính năng riêng của thẻ)",
+              "Không cung cấp (chưa mở xuất khóa riêng; đã công bố sẽ hỗ trợ)",
+              "Có hỗ trợ (miễn phí; người dùng chịu phí gas)"
+            ],
+            [
+              "Số thẻ mỗi người",
+              "Không công bố",
+              "Không công bố",
+              "Không công bố",
+              "Mặc định 3 thẻ (phát hành số lượng lớn theo thỏa thuận)"
+            ],
+            [
+              "Liên kết thanh toán di động",
+              "Apple Pay",
+              "Apple Pay · Google Pay",
+              "Apple Pay · Google Pay",
+              "Apple Pay · Google Pay · Samsung Pay"
+            ]
+          ],
+          "notes": [
+            "'Không cung cấp' nghĩa là không xác minh được tính năng trong tài liệu chính thức công khai, không phủ nhận các tính năng mà nhà cung cấp vận hành nội bộ."
+          ]
+        },
+        {
+          "k": "table",
+          "title": "So sánh hạn mức",
+          "sub": "Hạng mục không có tài liệu chính thức được ghi 'Không công bố' hoặc 'Cần kiểm tra nguồn chính thức' thay vì suy đoán.",
+          "head": [
+            "Hạn mức",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Thẻ chuyên hoàn tiền"
+            },
+            {
+              "tone": "teal",
+              "label": "Thẻ chuyên tính năng"
+            }
+          ],
+          "legend": "Bảng hạn mức cũng được phân màu theo cùng tiêu chí. Thẻ chuyên hoàn tiền không lấy hạn mức làm yếu tố cạnh tranh cốt lõi nên thường công bố hẹp; thẻ chuyên tính năng công bố hạn mức như một thông số chính. Phân màu nhằm làm rõ khác biệt thiết kế đó, không phải đánh giá hơn kém hay phân biệt đối xử với nhà cung cấp nào.",
+          "rows": [
+            [
+              "Hạn mức nạp",
+              "Không công bố",
+              "Không công bố",
+              "Không công bố",
+              "Không giới hạn"
+            ],
+            [
+              "Hạn mức mỗi giao dịch",
+              "Tối đa 100.000 USD",
+              "Cần kiểm tra nguồn chính thức",
+              "Không công bố",
+              "20.000 USD"
+            ],
+            [
+              "Hạn mức thanh toán ngày",
+              "Không công bố",
+              "Không công bố",
+              "Không công bố",
+              "Thẻ vật lý 250.000 USD (tối đa 100 giao dịch/ngày)"
+            ],
+            [
+              "Hạn mức thanh toán tháng",
+              "Không công bố",
+              "Cần kiểm tra nguồn chính thức",
+              "Không công bố",
+              "Thẻ vật lý 1.000.000 USD"
+            ],
+            [
+              "Hạn mức ATM mỗi lần",
+              "Không công bố",
+              "Không công bố",
+              "Không công bố",
+              "1.500 USD"
+            ],
+            [
+              "Hạn mức ATM ngày",
+              "Không công bố",
+              "Không công bố",
+              "Không công bố",
+              "1.500 USD (tối đa 30 lần/ngày)"
+            ],
+            [
+              "Hạn mức ATM tháng",
+              "Không công bố",
+              "Không công bố",
+              "Không công bố",
+              "15.000 USD"
+            ],
+            [
+              "Hạn mức chuyển tiền giữa các thẻ",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Không cung cấp",
+              "Không công bố mức trần riêng"
+            ]
+          ],
+          "notes": [
+            "Hạn mức có thể khác nhau theo hạng người dùng, mức xác minh danh tính, quốc gia và loại thẻ. Nếu dự định thanh toán giá trị lớn, hãy kiểm tra cả hạn mức ngày, hạn mức mỗi giao dịch và giới hạn số lần giao dịch."
+          ]
+        },
+        {
+          "k": "split",
+          "title": "Chuyển khoản ngân hàng và chuyển tiền giữa các thẻ",
+          "cols": [
+            {
+              "t": "Chuyển khoản ngân hàng",
+              "steps": [
+                "Ứng dụng ngân hàng",
+                "Chọn ngân hàng",
+                "Nhập số tài khoản",
+                "Nhập số tiền",
+                "Chuyển"
+              ],
+              "note": "Tiền di chuyển dựa trên tài khoản và số tài khoản ngân hàng."
+            },
+            {
+              "t": "Chuyển tiền giữa các thẻ",
+              "steps": [
+                "Ứng dụng thẻ",
+                "Thông tin thẻ người nhận (email, 4 số cuối)",
+                "Nhập số tiền",
+                "Chuyển"
+              ],
+              "note": "Tiền di chuyển dựa trên tài khoản thẻ. Khả năng hỗ trợ và mức phí khác nhau theo từng thẻ."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "CẦN KIỂM TRA",
+          "p": [
+            "Chuyển tiền giữa các thẻ và rút ra ví ngoài có thể bị hạn chế theo chính sách của nhà cung cấp và môi trường pháp lý.",
+            "Giao dịch on-chain không thể hoàn tác, vì vậy hãy luôn kiểm tra mạng và địa chỉ."
+          ]
+        }
+      ]
+    },
+    "cashback-fact-check": {
+      "title": "Hoàn tiền thẻ crypto: so sánh và lưu ý | Crypto Cards Info",
+      "desc": "Hoàn tiền cơ bản và tối đa, điều kiện áp dụng, hạn mức tháng, tài sản chi trả, yêu cầu hạng và staking, rủi ro thay đổi chính sách.",
+      "h1": "Hoàn tiền: so sánh và lưu ý",
+      "sub": "Hoàn tiền không phải quyền đã xác lập, mà là chương trình khuyến mại do nhà cung cấp đặt ra và có thể thay đổi.",
+      "lead": "Hoàn tiền tối đa và hoàn tiền thực nhận có thể khác nhau. Điều quan trọng không phải tỷ lệ cao nhất trong quảng cáo, mà là điều kiện áp dụng cho bạn, hạn mức tháng và giá trị sử dụng thực tế của tài sản được chi trả.",
+      "sections": [
+        {
+          "k": "flow",
+          "title": "Thứ tự đánh giá hoàn tiền",
+          "sub": "Thay vì tỷ lệ cao, hãy xem số tiền thực tiết kiệm được.",
+          "steps": [
+            {
+              "num": "1",
+              "t": "Áp dụng cho ai?",
+              "d": "Đối tượng áp dụng thay đổi theo hạng, staking và điều kiện nắm giữ."
+            },
+            {
+              "num": "2",
+              "t": "Áp dụng cho giao dịch nào?",
+              "d": "Có trường hợp chỉ áp dụng cho một số điểm bán, ngành hàng, loại tiền hoặc phương thức thanh toán."
+            },
+            {
+              "num": "3",
+              "t": "Hạn mức tháng là bao nhiêu?",
+              "d": "Tỷ lệ cao cũng vô nghĩa khi đã đạt trần tích lũy tháng."
+            },
+            {
+              "num": "4",
+              "t": "Có điều kiện kèm theo?",
+              "d": "Kiểm tra chi tiêu tối thiểu, thời gian khóa và điều kiện duy trì."
+            },
+            {
+              "num": "5",
+              "t": "Chi trả bằng gì?",
+              "d": "Xác định là stablecoin, hay token/điểm riêng của nhà phát hành."
+            },
+            {
+              "num": "6",
+              "t": "Giá trị thực sử dụng được là bao nhiêu?",
+              "d": "Đánh giá gồm cả biến động giá, nơi sử dụng và thời hạn."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "So sánh điều kiện hoàn tiền được công bố",
+          "sub": "Dựa trên tài liệu công khai của từng nhà cung cấp; điều kiện có thể thay đổi theo chính sách.",
+          "head": [
+            "Hạng mục",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Thẻ chuyên hoàn tiền"
+            },
+            {
+              "tone": "teal",
+              "label": "Thẻ chuyên tính năng"
+            }
+          ],
+          "legend": "Màu nền của cột là phân loại thiết kế thẻ. Thẻ chuyên hoàn tiền (RedotPay, OKX Card, Ether.fi Cash) và thẻ chuyên tính năng (Anytap Card) có mục đích khác nhau, nên ghi chú 'Không áp dụng' ở cột Anytap nghĩa là thẻ không vận hành chương trình hoàn tiền, chứ không phải thiếu quyền lợi. Phân màu không phải đánh giá hơn kém.",
+          "rows": [
+            [
+              "Hoàn tiền cơ bản",
+              "Không có",
+              "Thường tối đa 2% (chỉ khi thanh toán USDG)",
+              "Core 3% cho 2.000 USD đầu",
+              "Không có"
+            ],
+            [
+              "Cấu trúc giảm dần",
+              "Không áp dụng",
+              "Dừng tích lũy khi đạt trần tháng",
+              "1% cho 2–3 nghìn USD → 0,5% trên 3 nghìn USD",
+              "Không áp dụng"
+            ],
+            [
+              "Điều kiện hạng cao",
+              "Không áp dụng",
+              "Nâng hạng VIP thì trần tháng tăng",
+              "Luxe 10.000 USD đầu / Pinnacle 50.000 USD đầu ở 3%",
+              "Không áp dụng"
+            ],
+            [
+              "Hạn mức hoàn tiền tháng",
+              "Không áp dụng",
+              "Thường 5 USD – VIP tối đa 1.000 USD",
+              "Trần theo bậc của từng hạng",
+              "Không áp dụng"
+            ],
+            [
+              "Điều kiện bắt buộc",
+              "Không áp dụng",
+              "Tài khoản sàn OKX · KYC · bật OKX Pay · thanh toán USDG",
+              "Cần staking token ETHFI để nâng hạng",
+              "Không áp dụng"
+            ],
+            [
+              "Tài sản chi trả",
+              "Không áp dụng",
+              "USDG (stablecoin riêng)",
+              "Tài sản do protocol chỉ định",
+              "Không áp dụng"
+            ],
+            [
+              "Rủi ro cấu trúc",
+              "Không có (không có chương trình hoàn tiền)",
+              "Phụ thuộc tài khoản sàn và stablecoin riêng",
+              "Rủi ro thanh lý tài sản thế chấp khi dùng Borrow Mode",
+              "Không có (không có chương trình hoàn tiền)"
+            ],
+            [
+              "Phí FX / thanh toán quốc tế",
+              "Thêm 1,2% phí quy đổi (tổng 2,2%)",
+              "0% (spread stablecoin 0,4% tính riêng)",
+              "1% cho mọi hạng",
+              "1% + 0,30 USD mỗi giao dịch"
+            ],
+            [
+              "Chương trình giới thiệu",
+              "Công bố tới 40% nhưng hiện dừng chi trả",
+              "Không có thông báo riêng",
+              "Không có thông báo riêng",
+              "Hỗ trợ tới 40% (cần kiểm tra điều kiện theo hạng)"
+            ],
+            [
+              "Khả năng thay đổi chính sách",
+              "Có thể thay đổi theo điều khoản",
+              "Có thể thay đổi theo điều khoản",
+              "Có thể thay đổi theo điều khoản",
+              "Không áp dụng"
+            ]
+          ],
+          "notes": [
+            "Phần lớn phần thưởng thẻ là chương trình khuyến mại mà nhà cung cấp có thể thay đổi hoặc dừng theo điều khoản. Hãy kiểm tra trong điều khoản chính thức xem tỷ lệ tại thời điểm đăng ký có được bảo đảm theo hợp đồng."
+          ]
+        },
+        {
+          "k": "articles",
+          "title": "Năm căn cứ cho thấy hoàn tiền có thể gây bất lợi",
+          "items": [
+            {
+              "t": "Căn cứ 1 — Nguồn hoàn tiền là chi phí người dùng đã trả",
+              "p": [
+                "Doanh thu của nhà phát hành thẻ gồm phí phát hành, phí nạp, phí quy đổi crypto, spread tỷ giá, phí thanh toán quốc tế và phí ATM. Hoàn tiền là chi phí marketing trả lại một phần trên cấu trúc doanh thu đó, không đến từ nguồn bên ngoài.",
+                "Nếu nạp tiền mất 2% và thanh toán quốc tế mất khoảng 1% mà bạn nhận lại 2% giá trị thanh toán, thực chất bạn chỉ được hoàn một phần chi phí đã trả. So theo tỷ lệ thì có vẻ lợi, nhưng tính theo tổng chi phí thì hiệu quả ròng có thể rất nhỏ hoặc âm."
+              ]
+            },
+            {
+              "t": "Căn cứ 2 — Bạn có thể không nhận được",
+              "p": [
+                "Hoàn tiền thường được quy định là chương trình khuyến mại mà nhà cung cấp có quyền thay đổi tỷ lệ và cách chi trả. Khi có khoảng cách thời gian giữa tích lũy và chi trả, không có gì bảo đảm điều kiện lúc tích lũy vẫn giữ nguyên đến lúc chi trả.",
+                "Đã có trường hợp giảm tỷ lệ, thêm trần tích lũy sau khi đã áp dụng, bỏ thưởng staking, dừng dịch vụ theo khu vực và dừng hoa hồng giới thiệu mà không báo trước. Trong số các thẻ được so sánh trên trang này cũng có trường hợp hoa hồng giới thiệu hiện đã dừng chi trả."
+              ]
+            },
+            {
+              "t": "Căn cứ 3 — Bị phụ thuộc vào sàn và token cụ thể",
+              "p": [
+                "Tỷ lệ cao thường đi kèm điều kiện. Thẻ do sàn phát hành yêu cầu duy trì tài khoản sàn và thanh toán bằng stablecoin riêng; thẻ dựa trên protocol yêu cầu staking token riêng để giữ hạng.",
+                "Người dùng khi đó mất quyền tự do chọn phương thức thanh toán và chịu rủi ro từ chính sách tài khoản của một nhà cung cấp cụ thể cũng như giá và thanh khoản của một token cụ thể. Nếu tài khoản bị hạn chế hoặc tài sản đó ngừng được hỗ trợ, việc sử dụng phần thưởng đã tích lũy có thể trở nên khó khăn."
+              ]
+            },
+            {
+              "t": "Căn cứ 4 — Giá trị thực của tài sản chi trả khác với tỷ lệ",
+              "p": [
+                "Khi hoàn tiền được trả bằng token riêng hoặc điểm, tỷ lệ công bố giữ nguyên nhưng giá trị thực nhận vẫn thay đổi. Nếu giá giảm hoặc thanh khoản kém, mức 3% trên danh nghĩa trở thành tỷ lệ hoàn thực tế thấp hơn.",
+                "Ngoài ra, thời hạn sử dụng, giới hạn nơi dùng và mức rút tối thiểu có thể khiến bạn không dùng hết toàn bộ số đã tích lũy."
+              ]
+            },
+            {
+              "t": "Căn cứ 5 — Chi phí duy trì điều kiện không xuất hiện trong bảng tỷ lệ",
+              "p": [
+                "Staking để giữ hạng khiến tiền bị khóa trong một thời gian. Rủi ro giá và chi phí cơ hội của khoảng thời gian đó do người dùng gánh, nhưng không hiện trong bảng tỷ lệ.",
+                "Với cấu trúc thanh toán dựa trên tài sản thế chấp còn có thêm rủi ro thanh lý khi giá giảm. Tính đầy đủ các khoản này, sẽ có những vùng mà chi phí duy trì điều kiện lớn hơn phần thưởng nhận được."
+              ]
+            },
+            {
+              "t": "Tổng kết — Cách kiểm chứng",
+              "p": [
+                "Lợi ích thực của hoàn tiền phải tính bằng '(tỷ lệ × chi tiêu đủ điều kiện × khả năng quy đổi của tài sản chi trả) − (phí nạp + phí quy đổi + spread tỷ giá + phí thanh toán quốc tế + phí ATM + chi phí duy trì điều kiện)'.",
+                "Thẻ không thể thực hiện phép tính này, tức thẻ không công bố tỷ lệ theo từng khoản, thì không thể kiểm chứng lợi ích và nên bị xếp sau trong so sánh. Đây cũng là lý do chính được nêu ra cho việc người dùng toàn cầu đang chuyển từ thẻ chuyên hoàn tiền sang thẻ chuyên tính năng."
+              ]
+            }
+          ]
+        },
+        {
+          "k": "list",
+          "title": "Vì sao tỷ lệ công bố và số thực nhận khác nhau",
+          "items": [
+            {
+              "t": "Yêu cầu chi tiêu",
+              "d": "Hoàn tiền tỷ lệ thuận với số chi tiêu. Với thẻ 3%, chi 400 USD một tháng chỉ tích lũy khoảng 12 USD."
+            },
+            {
+              "t": "Trần tích lũy tháng",
+              "d": "Khi có trần, chi tiêu thêm cũng không làm tăng số thực nhận vượt mức đó."
+            },
+            {
+              "t": "Cấu trúc giảm dần",
+              "d": "Thường chỉ khoảng đầu được tỷ lệ cao, phần vượt bị hạ xuống tỷ lệ thấp hơn."
+            },
+            {
+              "t": "Yêu cầu staking",
+              "d": "Khi tỷ lệ cao phụ thuộc staking token riêng, rủi ro giá và chi phí cơ hội trong thời gian khóa do người dùng gánh."
+            },
+            {
+              "t": "Giá trị tài sản chi trả",
+              "d": "Nếu chi trả bằng token hoặc điểm riêng, giá trị thực có thể thay đổi dù tỷ lệ không đổi."
+            },
+            {
+              "t": "Giao dịch bị loại trừ",
+              "d": "Nạp tiền, chuyển tiền, một số ngành hàng và giao dịch gần với rút tiền mặt thường bị loại khỏi phạm vi tích lũy."
+            }
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "LƯU Ý QUAN TRỌNG",
+          "big": "Phạm vi có thể kiểm chứng bằng so sánh là hữu hạn, và nguồn hoàn tiền cuối cùng vẫn đến từ chi phí người dùng đã trả.",
+          "p": [
+            "Thứ nhất, dù người dùng so sánh cẩn thận đến đâu, vẫn có những phần về cấu trúc là không thể kiểm chứng: biên độ thực của spread tỷ giá, cơ sở tính tỷ giá quyết toán nội bộ, thời điểm quyết định thay đổi tỷ lệ, hay việc ngân sách khuyến mại đã dùng hết hay chưa. Vì vậy các con số trong bảng chỉ là 'điều kiện được công bố', không phải bảo đảm khớp với số tiền bị trừ thực tế.",
+            "Thứ hai, tiêu chí chọn thẻ phải là mục đích sử dụng của bạn, không phải tỷ lệ cao nhất. Thẻ phù hợp sẽ khác nhau tùy bạn chủ yếu chi tiêu nhỏ, cần thanh toán lớn và luân chuyển tiền, hay chủ yếu nắm giữ tài sản của một hệ sinh thái cụ thể.",
+            "Thứ ba, cần hiểu bản chất kinh tế của hoàn tiền. Nhà phát hành có nhiều nguồn thu: phí phát hành, phí nạp, spread tỷ giá, phí thanh toán quốc tế, phí ATM, cùng với động lực lưu thông và staking token riêng. Ngay khi không lấy lợi nhuận từ khâu thanh toán thẻ, họ vẫn có thể hiện thực hóa doanh thu qua việc tạo nhu cầu cho token riêng hoặc thu hút tài sản gửi vào. Nói cách khác, nguồn hoàn tiền phần lớn đến từ chi phí người dùng đã trả và giá trị do tài sản người dùng gửi tạo ra. Chính xác hơn, hoàn tiền là chi phí marketing để thu hút và giữ tiền của người dùng, không phải một khoản chuyển giao thuần túy.",
+            "Thứ tư, do đó hoàn tiền là hạng mục có thể bị thu hẹp hoặc dừng khi cấu trúc doanh thu thay đổi hoặc ngân sách khuyến mại kết thúc.",
+            "Vì vậy hãy kiểm tra điều khoản về thay đổi và dừng phần thưởng, loại tài sản chi trả và khả năng quy đổi, cùng điều kiện hủy yêu cầu staking trước khi quyết định. Số dư thẻ trả trước và tài sản mã hóa không thuộc đối tượng bảo hiểm tiền gửi, và rủi ro nhà cung cấp do người dùng gánh. Chi tiết được nêu tại trang Miễn trừ và giới hạn trách nhiệm."
+          ]
+        }
+      ]
+    },
+    "card-selection-guide": {
+      "title": "Hướng dẫn chọn thẻ crypto | Tiêu chí giữa hoàn tiền và tính năng | Crypto Cards Info",
+      "desc": "Tiêu chí quyết định giữa ưu tiên hoàn tiền và ưu tiên tính năng, cùng thứ tự kiểm tra phí, tỷ giá, hạn mức và chuyển tiền.",
+      "h1": "Hướng dẫn chọn thẻ",
+      "sub": "Chọn một khoản hoàn tiền không chắc chắn, hay chọn một tính năng đã xác định?",
+      "lead": "Điều cần xác định trước tiên không phải tỷ lệ mà là tiêu chí phán đoán. Hoàn tiền là quyền lợi có điều kiện, phụ thuộc chính sách của nhà cung cấp về thời điểm chi trả, tài sản chi trả và điều kiện duy trì. Trong khi đó, tính năng và hạn mức là hạng mục được công bố và xác định trong điều khoản. Đặt hai yếu tố khác bản chất lên cùng một bàn cân sẽ khiến việc lựa chọn khó hợp lý.",
+      "sections": [
+        {
+          "k": "articles",
+          "title": "Nên lấy gì làm tiêu chí: hoàn tiền hay tính năng?",
+          "items": [
+            {
+              "t": "1. Hoàn tiền là 'giá trị kỳ vọng', tính năng là 'giá trị xác định'",
+              "p": [
+                "Số tiền hoàn chỉ được xác định sau khi vượt qua năm biến số: tỷ lệ, hạn mức tháng, điều kiện hạng, tài sản chi trả và giao dịch bị loại trừ. Mỗi biến số đều có thể được nhà cung cấp thay đổi theo điều khoản, nên tại thời điểm ký kết người dùng chỉ biết giá trị kỳ vọng.",
+                "Ngược lại, hạn mức thanh toán, chuyển tiền giữa các thẻ, phát hành ví cá nhân và khả năng rút ra ví ngoài được công bố như điều kiện hợp đồng và hoạt động đúng như vậy khi sử dụng. Trong cùng một mức bất định, ưu tiên giá trị xác định hơn giá trị kỳ vọng là hợp lý."
+              ]
+            },
+            {
+              "t": "2. Hãy xác định lại mục đích dùng thẻ crypto",
+              "p": [
+                "Giá trị cốt lõi của thẻ crypto là chuyển tài sản trên sàn hoặc ví cá nhân thành phương tiện thanh toán mà không cần qua tài khoản ngân hàng. Giá trị đó được quyết định bởi hạn mức, đường luân chuyển tiền và mức độ được chấp nhận khi thanh toán.",
+                "Hoàn tiền chỉ là yếu tố cộng thêm, không thay thế giá trị cốt lõi. Nếu hạn mức tháng không đủ khiến giao dịch bị từ chối, hoặc số dư còn lại không thể rút về ví ngoài, thì tỷ lệ bao nhiêu phần trăm cũng mất ý nghĩa."
+              ]
+            },
+            {
+              "t": "3. Phần thưởng luôn kèm chi phí và điều kiện phụ thuộc",
+              "p": [
+                "Nếu phải staking token riêng, chỉ thanh toán bằng một stablecoin nhất định, hoặc duy trì tài khoản sàn để giữ tỷ lệ cao, thì bản thân các yêu cầu đó là chi phí và rủi ro. Biến động giá tài sản staking, khả năng bị thanh lý và rủi ro bị hạn chế tài khoản không hiện trong bảng tỷ lệ.",
+                "Vì vậy khi so sánh tỷ lệ, cần tính cả câu hỏi 'phải khóa những gì để duy trì tỷ lệ đó'."
+              ]
+            },
+            {
+              "t": "4. Kết luận — Phân theo nhóm phần thưởng nhỏ và nhóm tính năng thực dụng",
+              "p": [
+                "Nếu chi tiêu tháng nhỏ và mục tiêu là tối đa hóa phần thưởng, thẻ hoàn tiền có thể hợp lý. Ngay trong trường hợp đó vẫn phải kiểm tra trần tích lũy tháng và khả năng quy đổi của tài sản chi trả.",
+                "Ngược lại, nếu quy mô thanh toán lớn hoặc cần điều phối tiền trực tiếp từ ví cá nhân, chọn theo hạn mức và tính năng chuyển tiền sẽ dẫn tới tiết kiệm thực tế hơn."
+              ]
+            }
+          ]
+        },
+        {
+          "k": "branch",
+          "title": "Sơ đồ tiêu chí lựa chọn",
+          "sub": "Đối tượng so sánh thay đổi theo điều bạn ưu tiên.",
+          "root": "Điểm khởi đầu — tôi ưu tiên điều gì?",
+          "branches": [
+            {
+              "q": "Ưu tiên hạn mức và luân chuyển tiền",
+              "card": "Anytap Card",
+              "d": "Hạn mức thẻ vật lý 1.000.000 USD/tháng, chuyển tiền giữa các thẻ, phát hành ví cá nhân, rút ra ví ngoài. Không có hoàn tiền và phí nạp 2%."
+            },
+            {
+              "q": "Ưu tiên hoàn tiền và phần thưởng",
+              "card": "OKX Card · Ether.fi Cash",
+              "d": "Tỷ lệ được nêu cao nhưng đi kèm điều kiện hạng, staking, phương thức thanh toán và trần tích lũy tháng; điều kiện có thể thay đổi."
+            },
+            {
+              "q": "Chỉ cần thuận tiện thanh toán",
+              "card": "RedotPay",
+              "d": "Không có chương trình hoàn tiền nên phí thanh toán và quy đổi là chi phí thực. Hãy kiểm tra mức độ công bố tỷ lệ trước."
+            }
+          ],
+          "foot": "Phân loại trên dựa theo mục đích thiết kế của từng thẻ, không phải đánh giá hơn kém. Trên thị trường toàn cầu, tỷ lệ người dùng chuyển sang thẻ chuyên tính năng đang tăng sau khi liên tục gặp thay đổi điều kiện hoàn tiền. Dù chọn hướng nào, hãy kiểm tra tỷ lệ có được công bố theo từng khoản và bạn có tự tính được tổng chi phí hay không."
+        },
+        {
+          "k": "grid",
+          "title": "Nội dung cần kiểm tra",
+          "sub": "Kiểm tra sáu hạng mục sau theo thứ tự sẽ giúp thu hẹp danh sách so sánh. Mỗi hàng ba hạng mục: 1–3 về cấu trúc chi phí, 4–6 về điều kiện sử dụng thực tế.",
+          "items": [
+            {
+              "t": "Tính năng cần thiết",
+              "d": "Xác định trước là chỉ thanh toán, hay cần cả ví và chuyển tiền."
+            },
+            {
+              "t": "Toàn bộ phí",
+              "d": "Kiểm tra phí phát hành, nạp, quy đổi, thanh toán và ATM theo từng khoản."
+            },
+            {
+              "t": "Tỷ giá / spread",
+              "d": "Xem tỷ giá áp dụng và markup được xử lý thế nào theo từng loại tiền."
+            },
+            {
+              "t": "Điều kiện nạp / thanh toán / ATM",
+              "d": "Kiểm tra cách nạp, hạn mức và giới hạn số lần giao dịch."
+            },
+            {
+              "t": "Chuyển tiền giữa các thẻ",
+              "d": "Nếu cần luân chuyển tiền, kiểm tra khả năng hỗ trợ và mức phí."
+            },
+            {
+              "t": "Hoàn tiền",
+              "d": "Cuối cùng, tính khoản tiết kiệm thực gồm điều kiện áp dụng và hạn mức tháng."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Danh mục kiểm tra khi chọn thẻ",
+          "head": [
+            "Hạng mục",
+            "Nội dung người dùng cần xác nhận"
+          ],
+          "rows": [
+            [
+              "Đơn vị phát hành thẻ",
+              "Ai thực sự phát hành thẻ?"
+            ],
+            [
+              "Quản lý tiền",
+              "Tiền đã nạp được quản lý thế nào?"
+            ],
+            [
+              "Phí",
+              "Phí nạp, thanh toán, quy đổi và ATM là bao nhiêu?"
+            ],
+            [
+              "Tỷ giá",
+              "Tỷ giá áp dụng và spread thực tế là bao nhiêu?"
+            ],
+            [
+              "Hạn mức",
+              "Hạn mức nạp, thanh toán và ATM là bao nhiêu?"
+            ],
+            [
+              "Chuyển tiền",
+              "Có chuyển tiền giữa các thẻ được không?"
+            ],
+            [
+              "Nơi sử dụng",
+              "Có thể dùng ở đâu?"
+            ],
+            [
+              "Hoàn tiền",
+              "Điều kiện và hạn mức tháng là gì?"
+            ],
+            [
+              "Chính sách",
+              "Phí và quyền lợi có thể thay đổi không?"
+            ]
+          ],
+          "notes": [
+            "Số liệu của từng hạng mục có thể xem tại các trang So sánh thẻ, Các loại phí và Tính năng & hạn mức."
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "ĐIỀU QUAN TRỌNG NHẤT CẦN KIỂM TRA",
+          "big": "Thẻ không công bố tỷ lệ theo từng khoản thì không thể tính được khoản tiết kiệm, nên không thể là đối tượng so sánh.",
+          "p": [
+            "Mức cao thấp của tỷ lệ hoàn tiền chỉ là một trong nhiều biến số quyết định tổng chi phí. Nếu phí phát hành, phí nạp, phí quy đổi, spread tỷ giá, phí thanh toán quốc tế và phí ATM không được công bố theo từng khoản, người dùng không có giá trị cơ sở để áp tỷ lệ vào. 'Khoản tiết kiệm' tính ra trong tình trạng đó chỉ là con số ước lượng không thể kiểm chứng.",
+            "Vì vậy tiêu chí đầu tiên khi chọn thẻ không phải độ lớn của tỷ lệ mà là mức độ công bố của hệ thống phí. Hợp lý nhất là ưu tiên so sánh những thẻ có bảng phí theo từng khoản trên trang hoặc điều khoản chính thức, có quy định thủ tục thông báo trước khi đổi tỷ lệ, và nêu rõ cơ sở tỷ giá cùng biên độ markup.",
+            "Nếu ba điều trên không xác minh được, hãy thử thanh toán một khoản nhỏ để kiểm chứng số tiền bị trừ thực tế trước khi nạp tiền lớn."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Hỏi đáp về thẻ crypto | Hướng dẫn cho người mới | Crypto Cards Info",
+      "desc": "Giải thích dễ hiểu về thẻ ghi nợ crypto, stablecoin, nạp tiền, spread tỷ giá, phí, hoàn tiền, KYC và các thuật ngữ cơ bản.",
+      "h1": "Hỏi đáp về thẻ crypto",
+      "lead": "Những khái niệm và thuật ngữ cơ bản mà người mới dùng thẻ crypto thường hỏi. Đây là giải thích chung; điều kiện thực tế phải được kiểm tra trong tài liệu chính thức của dịch vụ bạn định dùng.",
+      "sections": [
+        {
+          "k": "faq",
+          "items": [
+            [
+              "Thẻ ghi nợ crypto là gì?",
+              "Là thẻ trả trước hoặc ghi nợ cho phép dùng tiền mã hóa hay stablecoin bạn đang giữ để thanh toán. Thông thường bạn nạp tài sản vào tài khoản thẻ rồi thanh toán tại các điểm chấp nhận trên mạng thẻ như Visa."
+            ],
+            [
+              "Tôi có thanh toán trực tiếp bằng tiền mã hóa không?",
+              "Phần lớn trường hợp, tiền mã hóa được quy đổi sang tiền pháp định tại thời điểm thanh toán và điểm bán nhận tiền pháp định. Điểm bán xử lý như một giao dịch thẻ thông thường, còn tài sản bị trừ trong tài khoản của bạn."
+            ],
+            [
+              "Stablecoin là gì?",
+              "Là tiền mã hóa được thiết kế để neo theo giá trị của một tài sản tham chiếu như đô la Mỹ. Biến động giá tương đối nhỏ nên thường dùng cho thanh toán, nhưng vẫn tồn tại rủi ro về dự trữ và tín nhiệm của nhà phát hành."
+            ],
+            [
+              "USDT và USDC khác nhau thế nào?",
+              "Cả hai đều neo theo đô la Mỹ nhưng khác nhau về nhà phát hành, cách công bố dự trữ, mạng được hỗ trợ và dịch vụ chấp nhận. Hãy kiểm tra thẻ của bạn hỗ trợ tài sản và mạng nào trước khi nạp."
+            ],
+            [
+              "Nạp tiền (top-up) là gì?",
+              "Là quá trình làm đầy số dư có thể chi tiêu bằng thẻ. Thường thực hiện bằng cách gửi tài sản từ ví cá nhân hoặc sàn, và có thể phát sinh phí nạp ở bước này."
+            ],
+            [
+              "Khi thanh toán có xảy ra quy đổi tiền tệ không?",
+              "Nếu loại tiền thanh toán khác loại tiền của số dư thẻ thì sẽ xảy ra quy đổi. Tỷ giá áp dụng và phí bổ sung khi đó quyết định số tiền bạn thực chịu."
+            ],
+            [
+              "Tỷ giá và spread là gì?",
+              "Spread là chênh lệch giữa tỷ giá tham chiếu và tỷ giá thực áp dụng. Dù phí công bố là 0%, spread rộng vẫn làm tăng chi phí thực."
+            ],
+            [
+              "Thẻ có những loại phí nào?",
+              "Phí phát hành, phí thường niên, phí nạp, phí quy đổi crypto, phí ngoại tệ và spread, phí thanh toán quốc tế và phí ATM. Chỉ khi tách riêng từng khoản bạn mới thấy được tổng chi phí."
+            ],
+            [
+              "Hoàn tiền được tính thế nào?",
+              "Thường lấy tỷ lệ nhân với phần chi tiêu đủ điều kiện, sau đó áp trần tháng và loại trừ các giao dịch không tính. Loại tài sản chi trả và điều kiện sử dụng cũng ảnh hưởng đến giá trị thực."
+            ],
+            [
+              "Hoàn tiền càng cao thì thẻ càng tốt?",
+              "Không. Khi tính cả trần tích lũy, yêu cầu staking, giá trị tài sản chi trả và phí nạp, phí quy đổi, khoản tiết kiệm thực có thể rất khác."
+            ],
+            [
+              "Fiat là gì?",
+              "Là tiền pháp định do chính phủ phát hành, ví dụ đồng Việt Nam, đô la Mỹ, euro."
+            ],
+            [
+              "Ví (wallet) là gì?",
+              "Là phần mềm hoặc thiết bị để giữ và gửi nhận tiền mã hóa. Có ví tự lưu ký, nơi bạn tự giữ khóa riêng, và ví do nhà cung cấp lưu ký."
+            ],
+            [
+              "Mạng blockchain là gì?",
+              "Là mạng nơi giao dịch được ghi nhận và truyền đi. Cùng một tài sản trên mạng khác nhau sẽ có đường truyền và mức phí khác nhau."
+            ],
+            [
+              "Phí gas / phí mạng là gì?",
+              "Là phí trả cho mạng blockchain để xử lý giao dịch. Khoản này phát sinh độc lập với phí của nhà cung cấp thẻ."
+            ],
+            [
+              "On-ramp và off-ramp là gì?",
+              "On-ramp là đường từ tiền pháp định sang tiền mã hóa; off-ramp là đường từ tiền mã hóa trở lại tiền pháp định."
+            ],
+            [
+              "KYC là gì?",
+              "Là quy trình nhà cung cấp dịch vụ tài chính xác minh danh tính người dùng, thường bắt buộc để phát hành thẻ và nâng hạn mức."
+            ],
+            [
+              "Phí FX là gì?",
+              "Là phí thanh toán ngoại tệ khi loại tiền thanh toán khác loại tiền quyết toán của thẻ. Có thể áp dụng đồng thời tỷ lệ của mạng thẻ và của nhà cung cấp."
+            ],
+            [
+              "Phí ATM là gì?",
+              "Là phí nhà cung cấp thẻ thu khi bạn rút tiền mặt tại ATM, thường gồm một tỷ lệ kèm mức tối thiểu."
+            ],
+            [
+              "Chuyển tiền giữa các thẻ là gì?",
+              "Là tính năng chuyển số dư thẻ trực tiếp giữa những người dùng cùng một dịch vụ. Khả năng hỗ trợ, phí và hạn mức khác nhau theo dịch vụ."
+            ],
+            [
+              "Số dư thẻ của tôi có được bảo hiểm không?",
+              "Số dư thẻ trả trước và tài sản mã hóa không thuộc đối tượng bảo hiểm tiền gửi. Hãy kiểm tra đơn vị phát hành thẻ thực tế và cách tài sản được quản lý."
+            ]
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "title": "Miễn trừ và giới hạn trách nhiệm | Crypto Cards Info",
+      "desc": "Bản chất thông tin do Crypto Cards Info cung cấp, phạm vi trách nhiệm của người dùng và giới hạn trách nhiệm với dịch vụ bên ngoài.",
+      "h1": "Miễn trừ và giới hạn trách nhiệm",
+      "lead": "Trang này nhằm nêu rõ bản chất thông tin do Crypto Cards Info cung cấp và phạm vi trách nhiệm của người dùng.",
+      "stamp": "Cập nhật lần cuối: 6/9/2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Điều 1 (Mục đích và phạm vi áp dụng)",
+              "p": [
+                "Thông báo này áp dụng cho toàn bộ trang, bảng, sơ đồ, số liệu và diễn giải mà Crypto Cards Info (sau đây gọi là 'trang này') công bố.",
+                "Trang này không phải website chính thức của bất kỳ đơn vị phát hành thẻ, sàn giao dịch, nhà cung cấp ví hay protocol nào, và không có quan hệ đại diện, được uỷ quyền hay đại lý bán hàng với các đơn vị đó. Việc truy cập trang này hoặc sử dụng thông tin được công bố được coi là đã xác nhận nội dung thông báo này."
+              ]
+            },
+            {
+              "t": "Điều 2 (Bản chất của thông tin)",
+              "p": [
+                "Thông tin do trang này cung cấp là thông tin chung được tổng hợp từ tài liệu công khai, tài liệu chính thức và các nguồn tham khảo khác.",
+                "Thông tin phản ánh tài liệu tại thời điểm biên soạn hoặc cập nhật; sau đó chính sách, phí, hạn mức, quyền lợi và giới hạn theo khu vực của nhà cung cấp có thể thay đổi."
+              ]
+            },
+            {
+              "t": "Điều 3 (Về tính chính xác)",
+              "p": [
+                "Trang này nỗ lực hợp lý để giữ thông tin chính xác và cập nhật, nhưng không thể luôn ngăn chặn hay bảo đảm đối với việc thay đổi, sai sót, thiếu sót hoặc chậm trễ trong thông tin do bên thứ ba cung cấp.",
+                "Trang này không đưa ra bất kỳ bảo đảm nào, dù minh thị hay mặc định, về tính đầy đủ, chính xác, cập nhật hay phù hợp cho một mục đích cụ thể của thông tin được công bố."
+              ]
+            },
+            {
+              "t": "Điều 4 (Không khuyến nghị, không mời gọi)",
+              "p": [
+                "Việc một thẻ xuất hiện trên trang này, hoặc một điều kiện được thể hiện là có lợi hơn trong bảng so sánh, không được hiểu là khuyến nghị hay mời gọi đầu tư, đăng ký hoặc sử dụng bất kỳ sản phẩm, dịch vụ tài chính nào.",
+                "Thông tin trên trang này không cấu thành tư vấn đầu tư, tài chính, pháp lý, thuế hay kế toán.",
+                "Việc phân màu, thứ tự sắp xếp và vị trí đăng tải trong bảng so sánh nhằm phân biệt loại thiết kế của thẻ hoặc đảm bảo tính dễ đọc, không phải xếp hạng hay biểu thị hơn kém giữa các nhà cung cấp."
+              ]
+            },
+            {
+              "t": "Điều 5 (Phán đoán và trách nhiệm của người dùng)",
+              "p": [
+                "Người dùng chỉ nên sử dụng thông tin trên trang này như tài liệu tham khảo.",
+                "Quyết định cuối cùng về đăng ký thẻ, KYC, nạp tiền, thanh toán, rút tiền, chuyển tiền, quy đổi tài sản mã hóa và sử dụng hoàn tiền do người dùng tự đưa ra.",
+                "Người dùng tự kiểm tra và tự gánh các rủi ro có thể phát sinh như chi phí, thua lỗ, biến động tỷ giá, thay đổi chính sách, hạn chế dịch vụ, hạn chế tài khoản và việc tài sản bị phong toả hay mất mát."
+              ]
+            },
+            {
+              "t": "Điều 6 (Sai sót và thay đổi thông tin)",
+              "p": [
+                "Chính sách và điều kiện của nhà cung cấp có thể thay đổi không cần báo trước hoặc theo chính sách của họ.",
+                "Do đó, phí, hạn mức, hoàn tiền, điều kiện sử dụng và các thông tin khác hiển thị trên trang này có thể khác điều kiện thực tế hiện hành. Trước khi thực hiện giao dịch hoặc đăng ký quan trọng, hãy kiểm tra website, ứng dụng, điều khoản và thông báo mới nhất của dịch vụ."
+              ]
+            },
+            {
+              "t": "Điều 7 (Rủi ro nội tại khi dùng thẻ crypto)",
+              "p": [
+                "Thẻ crypto khác về bản chất pháp lý so với tài khoản tiền gửi ngân hàng. Trong quá trình chuyển tài sản mã hóa hoặc stablecoin vào tài khoản, ví của nhà cung cấp và chuyển thành số dư thanh toán, có thể phát sinh rủi ro lưu ký, rủi ro quy đổi, rủi ro nhà cung cấp, rủi ro pháp lý, rủi ro on-chain và rủi ro tự lưu ký.",
+                "Các rủi ro này tồn tại chung, không phụ thuộc loại thẻ, và do người dùng gánh chịu."
+              ]
+            },
+            {
+              "t": "Điều 8 (Giới hạn trách nhiệm với dịch vụ bên ngoài)",
+              "p": [
+                "Trang này có thể cung cấp liên kết tới website của các công ty thẻ, sàn giao dịch, ví và dịch vụ thanh toán bên ngoài.",
+                "Khi đó, việc vận hành dịch vụ, xử lý dữ liệu cá nhân, phí, điều khoản, giao dịch, KYC, hạn chế tài khoản, lưu ký tài sản, hoàn tiền, hoàn trả và thay đổi chính sách của website bên ngoài thuộc trách nhiệm và điều kiện của nhà cung cấp đó. Trang này không kiểm soát việc vận hành hay chính sách của dịch vụ bên ngoài."
+              ]
+            },
+            {
+              "t": "Điều 9 (Nguyên tắc khi có liên kết tiếp thị hoặc quảng cáo)",
+              "p": [
+                "Khi sử dụng liên kết tiếp thị hoặc quảng cáo, chúng được phân biệt rõ với nội dung thông thường và được đánh dấu để người dùng dễ nhận biết.",
+                "Việc có quảng cáo hay quan hệ tiếp thị không thay đổi tiêu chí so sánh khách quan hay tính xác thực của thông tin. Quan hệ tiếp thị và hoạt động biên tập được vận hành tách biệt."
+              ]
+            },
+            {
+              "t": "Điều 10 (Giới hạn phạm vi bảo vệ tài sản)",
+              "p": [
+                "Số dư thẻ trả trước và tài sản mã hóa không thuộc đối tượng bảo hiểm tiền gửi. Khi nhà cung cấp mất khả năng chi trả, số dư được xử lý như một khoản nợ thông thường và việc thu hồi cùng thời điểm thu hồi phụ thuộc thủ tục pháp lý liên quan.",
+                "Nghĩa vụ bảo vệ tài sản người dùng theo pháp luật của một quốc gia chỉ áp dụng cho nhà cung cấp đã đăng ký tại quốc gia đó, và không áp dụng như nhau cho nhà cung cấp phát hành, vận hành thẻ ở nước ngoài."
+              ]
+            },
+            {
+              "t": "Điều 11 (Giới hạn trách nhiệm)",
+              "p": [
+                "Đối với thiệt hại trực tiếp, gián tiếp, kèm theo hoặc hệ quả phát sinh do người dùng tin vào thông tin được công bố để phát hành, nạp tiền, thanh toán thẻ hoặc chuyển, gửi tài sản — bao gồm thua lỗ, chi phí cơ hội, việc không được chi trả hay bị dừng phần thưởng, việc dừng dịch vụ, tài sản bị phong toả hay mất mát — trang này và đơn vị vận hành không chịu bất kỳ trách nhiệm pháp lý nào trong phạm vi tối đa mà pháp luật cho phép.",
+                "Tuy nhiên, điều khoản này không được hiểu là loại trừ những trách nhiệm mà pháp luật không cho phép giới hạn hoặc loại trừ."
+              ]
+            },
+            {
+              "t": "Điều 12 (Thương hiệu và chỉ dẫn của bên thứ ba)",
+              "p": [
+                "Visa là thương hiệu của Visa Inc., Apple Pay của Apple Inc., Google Pay của Google LLC và Samsung Pay của Samsung Electronics Co., Ltd.; tên nhà cung cấp, tên thẻ và logo thuộc về chủ sở hữu tương ứng.",
+                "Việc nêu tên trên trang này chỉ nhằm nhận diện đối tượng so sánh và không hàm ý sự tài trợ, chấp thuận hay liên kết của chủ sở hữu."
+              ]
+            },
+            {
+              "t": "Điều 13 (Luật áp dụng và thẩm quyền)",
+              "p": [
+                "Việc giải thích và áp dụng thông báo này tuân theo pháp luật hiện hành tại nơi đơn vị vận hành đặt trụ sở, và tranh chấp được giải quyết tại toà án có thẩm quyền theo pháp luật tố tụng dân sự.",
+                "Nếu một điều khoản của thông báo này bị coi là vô hiệu hoặc không thể thi hành, các điều khoản còn lại vẫn giữ hiệu lực."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Điều khoản sử dụng | Crypto Cards Info",
+      "desc": "Điều khoản về điều kiện sử dụng website Crypto Cards Info cùng quyền và nghĩa vụ của người dùng và đơn vị vận hành.",
+      "h1": "Điều khoản sử dụng",
+      "lead": "Điều khoản này quy định điều kiện và trình tự sử dụng website Crypto Cards Info, cùng quyền, nghĩa vụ và trách nhiệm của người dùng và đơn vị vận hành.",
+      "stamp": "Cập nhật lần cuối: 6/9/2026 · Ngày hiệu lực: 6/9/2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Điều 1 (Mục đích)",
+              "p": [
+                "Điều khoản này quy định quyền, nghĩa vụ, trách nhiệm và các nội dung cần thiết khác giữa trang này và người dùng liên quan đến việc sử dụng dịch vụ thông tin do Crypto Cards Info cung cấp."
+              ]
+            },
+            {
+              "t": "Điều 2 (Định nghĩa)",
+              "p": [
+                "'Dịch vụ' là toàn bộ hoạt động cung cấp thông tin so sánh, tổng hợp về thẻ crypto mà trang này cung cấp trực tuyến.",
+                "'Người dùng' là người truy cập trang này và sử dụng dịch vụ theo điều khoản này.",
+                "'Nội dung' là văn bản, bảng, sơ đồ, hình ảnh và các tập hợp biên tập do trang này tạo ra và công bố."
+              ]
+            },
+            {
+              "t": "Điều 3 (Hiệu lực và thay đổi điều khoản)",
+              "p": [
+                "Điều khoản này có hiệu lực khi được công bố trên trang này.",
+                "Trang này có thể thay đổi điều khoản khi có lý do hợp lý như thay đổi pháp luật liên quan hoặc thay đổi cấu trúc dịch vụ, và sẽ công bố nội dung thay đổi cùng ngày cập nhật trên trang này.",
+                "Nếu không đồng ý với điều khoản đã thay đổi, người dùng có thể ngừng sử dụng dịch vụ. Việc tiếp tục sử dụng sau khi công bố được coi là đồng ý với thay đổi."
+              ]
+            },
+            {
+              "t": "Điều 4 (Nội dung dịch vụ)",
+              "p": [
+                "Trang này tổng hợp và cung cấp thông tin về chi phí, hạn mức, tính năng và điều kiện hoàn tiền của thẻ crypto dựa trên tài liệu công khai.",
+                "Trang này không phát hành, bán, làm trung gian hay giới thiệu thẻ, và không cung cấp dịch vụ thanh toán, lưu ký tài sản, đổi tiền hay bán sản phẩm tài chính."
+              ]
+            },
+            {
+              "t": "Điều 5 (Không có tài khoản thành viên)",
+              "p": [
+                "Trang này nhằm cung cấp thông tin và không có chức năng đăng ký thành viên, đăng nhập, thanh toán hay yêu cầu nhập dữ liệu cá nhân.",
+                "Vì vậy bất kỳ ai cũng có thể đọc nội dung mà không cần tài khoản, và không phát sinh nghĩa vụ quản lý tài khoản của người dùng."
+              ]
+            },
+            {
+              "t": "Điều 6 (Nghĩa vụ và hành vi bị cấm)",
+              "p": [
+                "Người dùng không được sao chép, phân phối, truyền tải, xuất bản, tạo tác phẩm phái sinh hoặc khai thác thương mại nội dung của trang này mà không có sự đồng ý trước bằng văn bản của đơn vị vận hành.",
+                "Người dùng không được sử dụng phương tiện tự động (crawler, scraper, macro…) gây tải quá mức hoặc cản trở hoạt động bình thường của dịch vụ.",
+                "Người dùng không được bóp méo thông tin của trang này khi truyền đạt cho bên thứ ba hoặc sử dụng theo cách lan truyền thông tin sai lệch."
+              ]
+            },
+            {
+              "t": "Điều 7 (Quyền sở hữu trí tuệ)",
+              "p": [
+                "Quyền tác giả và các quyền sở hữu trí tuệ khác đối với nội dung do trang này tạo ra thuộc về đơn vị vận hành.",
+                "Quyền đối với thương hiệu, tên thương mại, hình ảnh và logo thẻ của bên thứ ba thuộc về chủ sở hữu tương ứng, và việc sử dụng trên trang này chỉ giới hạn ở mục đích nhận diện đối tượng so sánh."
+              ]
+            },
+            {
+              "t": "Điều 8 (Thay đổi và tạm dừng dịch vụ)",
+              "p": [
+                "Đơn vị vận hành có thể thay đổi cấu trúc dịch vụ, hạng mục so sánh, bố cục trang và nội dung công bố mà không cần thông báo trước.",
+                "Đơn vị vận hành có thể tạm dừng một phần hoặc toàn bộ dịch vụ khi bảo trì thiết bị, sự cố truyền thông, thiên tai hoặc các lý do bất khả kháng khác, và không chịu trách nhiệm về thiệt hại phát sinh nếu không có lỗi cố ý hoặc lỗi nghiêm trọng."
+              ]
+            },
+            {
+              "t": "Điều 9 (Liên kết và dịch vụ của bên thứ ba)",
+              "p": [
+                "Trang này có thể chứa liên kết tới website do bên thứ ba vận hành.",
+                "Nội dung, điều kiện, việc xử lý dữ liệu cá nhân và giao dịch của dịch vụ bên thứ ba tuân theo điều khoản và chính sách của dịch vụ đó; trang này không bảo đảm và không chịu trách nhiệm về những nội dung này."
+              ]
+            },
+            {
+              "t": "Điều 10 (Miễn trừ và giới hạn trách nhiệm)",
+              "p": [
+                "Thông tin do trang này cung cấp là thông tin chung mang tính tham khảo và không cấu thành tư vấn đầu tư, tài chính, pháp lý, thuế hay kế toán.",
+                "Việc miễn trừ và giới hạn trách nhiệm liên quan đến việc sử dụng thông tin tuân theo nội dung trang 'Miễn trừ và giới hạn trách nhiệm', trong phạm vi pháp luật cho phép, và không loại trừ những trách nhiệm mà pháp luật không cho phép loại trừ."
+              ]
+            },
+            {
+              "t": "Điều 11 (Giải quyết tranh chấp và thẩm quyền)",
+              "p": [
+                "Việc giải thích và áp dụng điều khoản này tuân theo pháp luật hiện hành tại nơi đơn vị vận hành đặt trụ sở.",
+                "Khi phát sinh tranh chấp, các bên ưu tiên giải quyết thông qua thương lượng thiện chí; nếu không đạt được, tranh chấp sẽ được giải quyết tại toà án có thẩm quyền theo pháp luật tố tụng dân sự."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Chính sách bảo mật | Crypto Cards Info",
+      "desc": "Tiêu chuẩn xử lý dữ liệu cá nhân, hạng mục thu thập, mục đích sử dụng, thời gian lưu giữ và quyền của người dùng.",
+      "h1": "Chính sách bảo mật",
+      "lead": "Crypto Cards Info được vận hành nhằm cung cấp thông tin và không yêu cầu đăng ký thành viên hay nhập dữ liệu cá nhân để sử dụng dịch vụ. Chính sách này nêu tiêu chuẩn xử lý dữ liệu cá nhân của trang này theo pháp luật bảo vệ dữ liệu cá nhân hiện hành.",
+      "stamp": "Cập nhật lần cuối: 6/9/2026 · Ngày hiệu lực: 6/9/2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Điều 1 (Hạng mục dữ liệu cá nhân được xử lý)",
+              "p": [
+                "Trang này không có chức năng đăng ký thành viên, đăng nhập hay thanh toán, và không thu thập dữ liệu nhận dạng trực tiếp như tên, số liên lạc, địa chỉ hay thông tin tài khoản.",
+                "Trường hợp người dùng tự nguyện cung cấp thông tin qua thư điện tử để liên hệ, thông tin đó chỉ được dùng cho mục đích xử lý liên hệ và được tiêu huỷ ngay sau khi hoàn tất."
+              ]
+            },
+            {
+              "t": "Điều 2 (Thông tin được tạo và thu thập tự động)",
+              "p": [
+                "Vì mục đích vận hành, bảo mật và phân tích thống kê, các thông tin kỹ thuật như log truy cập, thời điểm truy cập, thông tin trình duyệt và hệ điều hành, trang tham chiếu và loại thiết bị có thể được tạo và ghi lại tự động.",
+                "Các thông tin này được xử lý dưới dạng không nhận dạng cá nhân và chỉ dùng để cải thiện dịch vụ, xử lý lỗi và phòng ngừa sử dụng gian lận."
+              ]
+            },
+            {
+              "t": "Điều 3 (Mục đích xử lý)",
+              "p": [
+                "Trang này xử lý thông tin được thu thập, tạo ra chỉ nhằm cung cấp và vận hành dịch vụ, bảo đảm ổn định website, phân tích thống kê truy cập và phản hồi liên hệ của người dùng.",
+                "Trang này không dùng thông tin đã thu thập để nhận dạng cá nhân cho mục đích tiếp thị, lập chân dung người dùng hay ra quyết định tự động."
+              ]
+            },
+            {
+              "t": "Điều 4 (Cookie và công nghệ tương tự)",
+              "p": [
+                "Trang này có thể sử dụng bộ lưu trữ của trình duyệt cho các tiện ích như thiết lập ngôn ngữ.",
+                "Người dùng có thể từ chối hoặc xoá cookie và dữ liệu lưu trữ thông qua thiết lập trình duyệt; khi đó một số tiện ích có thể bị hạn chế."
+              ]
+            },
+            {
+              "t": "Điều 5 (Cung cấp cho bên thứ ba)",
+              "p": [
+                "Trang này không bán hay cung cấp dữ liệu cá nhân của người dùng cho bên thứ ba.",
+                "Tuy nhiên, khi có yêu cầu dựa trên căn cứ pháp luật hoặc yêu cầu hợp pháp của cơ quan điều tra, trang này có thể cung cấp trong phạm vi pháp luật quy định."
+              ]
+            },
+            {
+              "t": "Điều 6 (Uỷ thác xử lý dữ liệu)",
+              "p": [
+                "Trang này có thể uỷ thác công việc xử lý cho bên ngoài trong phạm vi cần thiết cho vận hành, như lưu trữ web, phân phối nội dung và phân tích thống kê truy cập.",
+                "Khi uỷ thác, các nội dung về quản lý an toàn dữ liệu cá nhân được đưa vào hợp đồng theo pháp luật liên quan, và trang này quản lý, giám sát hoạt động xử lý của bên nhận uỷ thác."
+              ]
+            },
+            {
+              "t": "Điều 7 (Chuyển dữ liệu ra nước ngoài)",
+              "p": [
+                "Khi sử dụng dịch vụ lưu trữ và mạng phân phối nội dung toàn cầu, thông tin kỹ thuật có thể được lưu trữ và xử lý trên máy chủ ở nước ngoài.",
+                "Trong trường hợp đó, trang này tuân thủ các biện pháp bảo vệ mà pháp luật liên quan quy định."
+              ]
+            },
+            {
+              "t": "Điều 8 (Lưu giữ và tiêu huỷ)",
+              "p": [
+                "Thông tin được tạo tự động chỉ được lưu trong thời gian cần thiết cho mục đích vận hành và bảo mật, sau đó được tiêu huỷ không chậm trễ.",
+                "Thông tin dưới dạng tệp điện tử được xoá bằng phương pháp kỹ thuật không thể phục hồi; bản in được tiêu huỷ bằng cách xé nhỏ hoặc đốt."
+              ]
+            },
+            {
+              "t": "Điều 9 (Liên kết bên ngoài)",
+              "p": [
+                "Khi bạn chuyển sang dịch vụ bên ngoài, tiêu chuẩn xử lý dữ liệu cá nhân của website đó sẽ được áp dụng.",
+                "Trang này không chịu trách nhiệm về việc xử lý dữ liệu cá nhân tại website bên ngoài, vì vậy hãy kiểm tra riêng chính sách bảo mật của website bạn truy cập."
+              ]
+            },
+            {
+              "t": "Điều 10 (Quyền của người dùng và người đại diện theo pháp luật)",
+              "p": [
+                "Người dùng có thể yêu cầu được xem, chỉnh sửa, xoá hoặc tạm dừng xử lý thông tin của mình theo pháp luật liên quan.",
+                "Việc thực hiện quyền có thể qua văn bản hoặc thư điện tử, và trang này sẽ xử lý trong thời hạn pháp luật quy định."
+              ]
+            },
+            {
+              "t": "Điều 11 (Dữ liệu cá nhân của trẻ em)",
+              "p": [
+                "Trang này không cung cấp dịch vụ hướng tới trẻ em dưới 14 tuổi và không cố ý thu thập dữ liệu cá nhân của trẻ em."
+              ]
+            },
+            {
+              "t": "Điều 12 (Biện pháp bảo đảm an toàn)",
+              "p": [
+                "Trang này áp dụng các biện pháp bảo vệ kỹ thuật và quản lý theo yêu cầu của pháp luật liên quan, gồm mã hoá đường truyền (HTTPS), quản lý quyền truy cập, lưu giữ và chống giả mạo log truy cập."
+              ]
+            },
+            {
+              "t": "Điều 13 (Thay đổi chính sách)",
+              "p": [
+                "Chính sách này có thể được sửa đổi theo thay đổi của pháp luật, chính sách hoặc cấu trúc dịch vụ; khi sửa đổi, nội dung thay đổi và ngày cập nhật sẽ được công bố trên trang này."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "principles": {
+      "title": "Nguyên tắc cung cấp thông tin | Crypto Cards Info",
+      "desc": "Nguyên tắc biên tập, tiêu chuẩn nguồn, cách ghi chú xác minh và quy trình đính chính của Crypto Cards Info.",
+      "h1": "Nguyên tắc cung cấp thông tin",
+      "lead": "Crypto Cards Info không phải trang bán thẻ crypto, mà là một kênh thông tin chuyên biệt giúp người dùng tự đánh giá chi phí và tính năng thực tế. Chúng tôi áp dụng các nguyên tắc sau một cách nhất quán trên toàn bộ trang.",
+      "stamp": "Cập nhật lần cuối: 6/9/2026",
+      "sections": [
+        {
+          "k": "list",
+          "title": "Nguyên tắc biên tập",
+          "items": [
+            {
+              "t": "① Thông tin khách quan",
+              "d": "Không khuyến nghị hay chỉ trích vô điều kiện bất kỳ thẻ hay công ty nào. Điểm mạnh và hạn chế được trình bày với trọng lượng như nhau."
+            },
+            {
+              "t": "② Quyết định thuộc về người dùng",
+              "d": "Chúng tôi đưa ra tiêu chí so sánh và hạng mục cần kiểm tra; lựa chọn cuối cùng do người dùng quyết định."
+            },
+            {
+              "t": "③ Ưu tiên tài liệu chính thức",
+              "d": "Nguồn ưu tiên là website chính thức, điều khoản, bảng phí, trung tâm trợ giúp, thông báo và tài liệu chính sách chính thức."
+            },
+            {
+              "t": "④ Không dùng thông tin chưa xác minh",
+              "d": "Chúng tôi không suy đoán con số, mà ghi 'Cần kiểm tra nguồn chính thức', 'Không công bố' hoặc 'Không cung cấp'."
+            },
+            {
+              "t": "⑤ Tách quảng cáo khỏi sự thật",
+              "d": "Các cụm từ như 'phí 0%' hay 'hoàn tiền tới X%' luôn được trình bày tách biệt với điều kiện áp dụng thực tế."
+            },
+            {
+              "t": "⑥ Nguyên tắc cập nhật",
+              "d": "Chỉ cập nhật thông tin thực sự thay đổi; không đổi ngày chỉ để nội dung trông như mới."
+            },
+            {
+              "t": "⑦ Nguyên tắc phân loại thẻ",
+              "d": "Thẻ được phân thành thẻ chuyên hoàn tiền và thẻ chuyên tính năng theo mục đích thiết kế. Phân màu là chỉ dẫn loại thẻ, không phải đánh giá hơn kém."
+            },
+            {
+              "t": "⑧ Công bố quan hệ lợi ích",
+              "d": "Khi có quan hệ kinh tế phát sinh từ tiếp thị hoặc quảng cáo, chúng tôi nêu rõ trên bài liên quan và vận hành tách biệt với tiêu chí biên tập."
+            },
+            {
+              "t": "⑨ Quy trình đính chính",
+              "d": "Khi phát hiện sai sót, chúng tôi sửa ngay và phản ánh các sửa đổi quan trọng vào ngày cập nhật của trang đó."
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "title": "Tiêu chuẩn ghi chú xác minh",
+          "p": [
+            "Hạng mục không xác minh được giá trị trong tài liệu chính thức sẽ không bị để trống hay suy đoán, mà được ghi 'Cần kiểm tra nguồn chính thức', 'Không công bố'. Ghi chú này không có nghĩa tính năng hay điều kiện đó không tồn tại, mà có nghĩa người dùng cần tự kiểm tra trong tài liệu chính thức.",
+            "Khi đánh giá rằng một tính năng không được cung cấp dưới dạng dịch vụ thẻ, chúng tôi ghi 'Không cung cấp', kèm nghĩa là không xác minh được trong tài liệu chính thức công khai.",
+            "Ngày kiểm tra chỉ ghi ngày thực sự đã đối chiếu tài liệu và không được cập nhật tự động."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "ĐỀ NGHỊ ĐÍNH CHÍNH",
+          "p": [
+            "Nếu bạn cho rằng một con số hay điều kiện được công bố khác với tài liệu chính thức, hãy gửi kèm căn cứ (địa chỉ trang chính thức, điều khoản, ngày thông báo); chúng tôi sẽ kiểm tra, sửa và phản ánh vào ngày cập nhật.",
+            "Yêu cầu đính chính từ phía nhà cung cấp cũng được xử lý theo cùng tiêu chuẩn, và bản thân việc có yêu cầu không làm thay đổi tiêu chí so sánh hay cách phân loại thẻ."
+          ]
+        }
+      ]
+    }
+  }
+}
