@@ -1,0 +1,1664 @@
+{
+  "ui": {
+    "home": "Beranda",
+    "nav": [
+      "Beranda",
+      "Perbandingan kartu",
+      "Rincian biaya",
+      "Fitur & limit",
+      "Cashback: perbandingan dan peringatan",
+      "Panduan memilih kartu",
+      "Tanya jawab"
+    ],
+    "footBrand": "Platform informasi yang membandingkan biaya, limit, fitur, dan syarat cashback kartu kripto dengan standar yang sama.",
+    "footNoticeLabel": "PEMBERITAHUAN INFORMASI",
+    "footNotice": "Informasi mengenai kartu, biaya, limit, cashback, dan hal terkait yang disediakan Crypto Cards Info merupakan informasi umum yang dihimpun dari dokumen publik dan dokumen resmi. Informasi ini tidak dimaksudkan untuk merekomendasikan, menjamin, atau mengajak penggunaan maupun pendaftaran kartu atau layanan tertentu, dan bukan merupakan nasihat investasi, keuangan, hukum, pajak, atau akuntansi. Syarat layanan, biaya, limit, manfaat, dan kebijakan dapat berubah, sehingga pengguna wajib memeriksa sendiri dokumen resmi dan ketentuan terbaru dari penyedia sebelum menggunakan atau mendaftar. Keputusan akhir beserta pertimbangan dan tanggung jawab yang menyertainya berada pada pengguna; sepanjang diizinkan hukum yang berlaku, tanggung jawab pengelola atas hasil keputusan yang hanya berdasarkan informasi situs ini dibatasi.",
+    "copyright": "© 2026 Crypto Cards Info",
+    "groups": [
+      {
+        "t": "PERBANDINGAN",
+        "items": [
+          "card-comparison",
+          "fee-comparison",
+          "limit-comparison"
+        ]
+      },
+      {
+        "t": "INFORMASI",
+        "items": [
+          "cashback-fact-check",
+          "card-selection-guide",
+          "faq"
+        ]
+      },
+      {
+        "t": "KEBIJAKAN",
+        "items": [
+          "terms",
+          "privacy",
+          "disclaimer",
+          "principles"
+        ]
+      }
+    ],
+    "labels": {
+      "terms": "Ketentuan Penggunaan",
+      "privacy": "Kebijakan Privasi",
+      "disclaimer": "Penafian dan Pembatasan Tanggung Jawab",
+      "principles": "Prinsip Penyediaan Informasi"
+    },
+    "unverified": "Perlu diperiksa di sumber resmi"
+  },
+  "pages": {
+    "home": {
+      "title": "Perbandingan kartu kripto | Biaya, limit, cashback | Crypto Cards Info",
+      "desc": "Crypto Cards Info membandingkan biaya, kurs, limit, fitur transfer, dan syarat cashback kartu kripto dengan standar yang sama.",
+      "h1": "Akan memilih kartu kripto hanya dari cashback?",
+      "sub": "Anda ingin kartu cashback atau kartu fungsional? Sulit mendapatkan keduanya sekaligus.",
+      "lead": "Apakah Anda menyerahkan pilihan kartu pada cashback yang belum diterima dan program reward yang syaratnya bisa berubah kapan saja? Satu angka dalam iklan tidak memberi tahu berapa yang sebenarnya Anda bayar. Crypto Cards Info tidak menjual dan tidak mempromosikan kartu mana pun — kami menyusun biaya, kurs, limit, fitur transfer, dan syarat cashback dengan standar yang sama agar Anda dapat menilai sendiri.",
+      "sections": [
+        {
+          "k": "text",
+          "title": "Mengapa kami membuat situs ini",
+          "p": [
+            "Setiap iklan kartu kripto terdengar meyakinkan. 'Cashback hingga 4,5%', 'biaya 0%', 'terendah di pasar' — masing-masing memakai standar berbeda, sehingga pengguna sering memilih kartu sebelum tahu apa yang seharusnya dibandingkan.",
+            "Crypto Cards Info berawal dari titik itu. Kami tidak menyatakan kartu mana yang terbaik. Kami membantu Anda menjawab sendiri dua pertanyaan: 'Saya ingin kartu cashback atau kartu fungsional?' dan 'Untuk tujuan apa saya membutuhkan kartu kripto?'",
+            "Kriteria pemilihan bukan besarnya persentase, melainkan tujuan penggunaan. Ketika tujuan sudah jelas, daftar perbandingan menyempit dengan sendirinya — dan saat itulah pilihan yang bijak menjadi mungkin. Itulah satu-satunya tujuan situs ini."
+          ]
+        },
+        {
+          "k": "compare2",
+          "title": "Pemilihan kartu terbagi menjadi dua arah",
+          "sub": "Kartu kripto dirancang untuk dua tujuan yang berbeda. RedotPay, OKX Card, dan Ether.fi Cash adalah kartu khusus cashback yang menempatkan reward pembayaran sebagai pusatnya. Anytap Card adalah kartu khusus fungsional yang menempatkan limit dan mobilitas dana sebagai pusatnya. Keduanya tidak dapat optimal secara bersamaan.",
+          "cols": [
+            {
+              "tone": "amber",
+              "label": "Kartu khusus cashback · RedotPay · OKX · Ether.fi",
+              "t": "Kartu yang mengutamakan struktur pengembalian setiap kali membayar",
+              "items": [
+                "Tarif terikat pada tingkat keanggotaan, staking, atau metode pembayaran tertentu.",
+                "Ada plafon akumulasi bulanan, sehingga belanja lebih banyak tidak menambah penerimaan.",
+                "Reward umumnya dibayarkan dalam token milik penerbit sendiri.",
+                "Dapat mensyaratkan pemeliharaan akun bursa atau aset jaminan."
+              ],
+              "note": "Inilah titik yang perlu diwaspadai secara khusus. Cashback dan komisi referral umumnya merupakan promosi yang menurut ketentuan dapat diubah atau dihentikan penyedia, dan pernah terjadi penurunan tarif atau penghentian pembayaran tanpa pemberitahuan."
+            },
+            {
+              "tone": "teal",
+              "label": "Kartu khusus fungsional · Anytap",
+              "t": "Kartu yang mengutamakan limit dan mobilitas dana",
+              "items": [
+                "Yang penting adalah apakah limit bulanan, harian, dan per transaksi diungkapkan dengan jelas.",
+                "Periksa transfer antar kartu, penerbitan dompet pribadi, dan penarikan ke dompet eksternal.",
+                "Tidak ada cashback, tetapi struktur biaya sederhana sehingga total biaya dapat dihitung lebih dulu.",
+                "Kriteria penilaiannya adalah tingkat biaya, bukan risiko berubahnya manfaat."
+              ],
+              "note": "Kartu fungsional tidak memberi reward, sehingga biaya isi saldo, pembayaran, dan konversi tetap menjadi biaya nyata. Periksa lebih dulu apakah tarif diungkapkan per pos dan apakah Anda dapat menghitung total biaya sendiri."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "TREN GLOBAL",
+          "p": [
+            "Di pasar kartu kripto global, semakin banyak pengguna yang jenuh dengan persaingan cashback beralih ke kartu khusus fungsional. Penurunan tarif, penambahan plafon akumulasi, pengetatan syarat staking, dan penghentian komisi referral yang terjadi berulang menunjukkan bahwa pihak yang memilih kartu berdasarkan reward justru menanggung risiko perubahan syarat.",
+            "Karena itu, proporsi pengguna yang memilih kartu dengan pertanyaan 'apakah limitnya cukup, apakah dana dapat dipindahkan sesuai kebutuhan, apakah total biaya dapat dihitung lebih dulu' terus meningkat. Inilah alasan Crypto Cards Info membedakan kedua jenis kartu secara jelas."
+          ]
+        },
+        {
+          "k": "links",
+          "title": "Apa yang dapat Anda bandingkan",
+          "items": [
+            {
+              "p": "card-comparison",
+              "kicker": "PERBANDINGAN KARTU",
+              "t": "RedotPay · OKX · Ether.fi · Anytap",
+              "d": "Biaya penerbitan, biaya tahunan, cara isi saldo, pembayaran luar negeri, ATM, transfer antar kartu, limit, dan syarat cashback dalam standar yang sama."
+            },
+            {
+              "p": "fee-comparison",
+              "kicker": "RINCIAN BIAYA",
+              "t": "Apakah 'biaya 0%' berarti tanpa biaya sama sekali?",
+              "d": "Periksa tahap demi tahap: biaya penerbitan, isi saldo, konversi kripto, spread kurs, pembayaran luar negeri, dan ATM."
+            },
+            {
+              "p": "limit-comparison",
+              "kicker": "FITUR & LIMIT",
+              "t": "Limit isi saldo, pembayaran, ATM, dan transfer",
+              "d": "Semakin besar belanja, yang menghambat adalah limit, bukan tarif cashback. Dibandingkan bersama cara dana disimpan dan dipindahkan."
+            },
+            {
+              "p": "cashback-fact-check",
+              "kicker": "CASHBACK",
+              "t": "Sudahkah Anda memeriksa syarat di balik kalimat 'hingga X%'?",
+              "d": "Belanja minimum, plafon bulanan, syarat tingkat dan staking, aset pembayaran, serta transaksi yang dikecualikan."
+            },
+            {
+              "p": "card-selection-guide",
+              "kicker": "PANDUAN MEMILIH KARTU",
+              "t": "Fitur → biaya → kurs → limit → cashback",
+              "d": "Kartu yang baik bukan kartu dengan cashback tertinggi. Kami menunjukkan urutan yang perlu diperiksa."
+            },
+            {
+              "p": "faq",
+              "kicker": "TANYA JAWAB",
+              "t": "Konsep dan istilah dasar",
+              "d": "20 pertanyaan singkat tentang stablecoin, isi saldo, spread kurs, KYC, biaya ATM, dan lainnya."
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "title": "Bandingkan dengan total biaya yang sebenarnya",
+          "p": [
+            "Angka dalam iklan umumnya hanya menampilkan satu pos dari keseluruhan biaya. Jumlah yang benar-benar ditanggung pengguna baru diketahui setelah menjumlahkan biaya penerbitan, biaya isi saldo, biaya konversi kripto, biaya valuta dan spread kurs, biaya pembayaran luar negeri, serta biaya ATM, lalu menguranginya dengan cashback yang benar-benar diterima.",
+            "Karena itu Crypto Cards Info tidak mencari tarif nominal terendah, melainkan membandingkan total biaya akhir dalam pemakaian nyata. Cashback yang Anda anggap diterima kembali bisa jadi hanya sebagian dari biaya yang sudah Anda bayar sebelumnya."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "PRINSIP PENYEDIAAN INFORMASI",
+          "p": [
+            "Semua informasi disediakan untuk membantu pengguna menilai dengan benar. Pemilihan kartu kripto bergantung pada apakah Anda mengutamakan cashback atau fitur yang sesuai tujuan pemakaian, dan jawabannya berbeda bagi setiap orang.",
+            "Prinsip terpenting adalah seluruh biaya harus diungkapkan secara transparan di situs resmi penerbit kartu.",
+            "Kami menyajikan informasi secara objektif, tanpa merekomendasikan atau mengkritik kartu maupun perusahaan mana pun tanpa syarat. Sumber yang diutamakan adalah situs resmi, ketentuan, daftar biaya, dan pengumuman resmi; pos yang tidak dapat diverifikasi ditandai 'Perlu diperiksa di sumber resmi' atau 'Tidak diungkapkan' tanpa dugaan."
+          ]
+        }
+      ]
+    },
+    "card-comparison": {
+      "title": "Perbandingan kartu kripto | RedotPay · OKX · Ether.fi · Anytap | Crypto Cards Info",
+      "desc": "Membandingkan biaya, fitur pembayaran, ATM, transfer antar kartu, limit, dan syarat cashback kartu kripto utama.",
+      "h1": "Perbandingan kartu kripto",
+      "lead": "Crypto Cards Info membandingkan biaya, fitur pembayaran, penggunaan ATM, transfer antar kartu, limit, dan syarat cashback kartu kripto utama. Objek perbandingan dibagi menjadi kartu khusus cashback (RedotPay, OKX Card, Ether.fi Cash) dan kartu khusus fungsional (Anytap Card).",
+      "stamp": "Diperiksa terakhir: 6 September 2026 · Informasi ini mengacu pada dokumen publik masing-masing layanan dan dapat berubah sesuai kebijakan penyedia. Periksa dokumen resmi terbaru sebelum menggunakan.",
+      "sections": [
+        {
+          "k": "cards",
+          "title": "Kartu kripto utama",
+          "items": [
+            {
+              "key": "redotpay",
+              "name": "RedotPay",
+              "tag": "Kartu khusus cashback · pembayaran global",
+              "rows": [
+                [
+                  "Biaya kartu virtual",
+                  "10 USD (terbit langsung)"
+                ],
+                [
+                  "Biaya kartu fisik",
+                  "100 USD (penerbitan baru di Korea saat ini dihentikan)"
+                ],
+                [
+                  "Biaya pembayaran",
+                  "Mata uang sama 1% / valuta asing 2,2% (1% + 1,2% biaya konversi)"
+                ],
+                [
+                  "Cashback",
+                  "Tidak ada"
+                ]
+              ],
+              "sum": "Tidak memiliki program cashback sendiri, sehingga tidak ada manfaat yang mengimbangi beban biaya."
+            },
+            {
+              "key": "okx",
+              "name": "OKX Card",
+              "tag": "Kartu khusus cashback · diterbitkan bursa",
+              "rows": [
+                [
+                  "Cashback",
+                  "Umum maksimum 2% (hanya saat membayar dengan USDG) · plafon bulanan 5 USD / tingkat VIP maksimum 1.000 USD"
+                ],
+                [
+                  "Biaya penerbitan",
+                  "Tidak ada"
+                ],
+                [
+                  "Biaya ATM",
+                  "2% (minimum 1 USD)"
+                ],
+                [
+                  "Spread konversi stablecoin",
+                  "0,4%"
+                ]
+              ],
+              "sum": "Cashback hanya berlaku bila akun bursa OKX, pengaktifan OKX Pay, dan pembayaran USDG semuanya terpenuhi."
+            },
+            {
+              "key": "etherfi",
+              "name": "Ether.fi Cash",
+              "tag": "Kartu khusus cashback · berbasis protokol",
+              "rows": [
+                [
+                  "Cashback",
+                  "Core 3% untuk 2.000 USD pertama → 1% pada 2–3 ribu USD → 0,5% di atas 3 ribu USD"
+                ],
+                [
+                  "Tingkat lebih tinggi",
+                  "Luxe 10.000 USD pertama / Pinnacle 50.000 USD pertama pada 3%"
+                ],
+                [
+                  "Biaya FX",
+                  "1% untuk semua tingkat"
+                ],
+                [
+                  "Naik tingkat",
+                  "Perlu staking token ETHFI"
+                ]
+              ],
+              "sum": "Terdapat dua struktur pembayaran: Direct Mode (menyetor aset) dan Borrow Mode (pinjaman berjaminan); Borrow Mode memiliki risiko likuidasi."
+            },
+            {
+              "key": "anytap",
+              "name": "Anytap Card",
+              "tag": "Kartu khusus fungsional · limit dan mobilitas dana",
+              "rows": [
+                [
+                  "Cashback",
+                  "Tidak ada"
+                ],
+                [
+                  "Biaya kartu virtual / fisik",
+                  "20 USDT / 100 USDT (setoran minimum 50 USDT)"
+                ],
+                [
+                  "Biaya isi saldo",
+                  "2%"
+                ],
+                [
+                  "Biaya pembayaran / luar negeri",
+                  "Mata uang sama 1% / 1% + 0,30 USD per transaksi"
+                ]
+              ],
+              "sum": "Sebagai pengganti cashback, kartu ini memperkuat limit serta fitur dompet dan transfer."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Tabel perbandingan dasar",
+          "sub": "Pos yang tidak dapat diverifikasi dari dokumen resmi ditandai 'Perlu diperiksa di sumber resmi' atau 'Tidak diungkapkan'. Ini tidak berarti fiturnya tidak ada.",
+          "head": [
+            "Pos",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Kartu khusus cashback"
+            },
+            {
+              "tone": "teal",
+              "label": "Kartu khusus fungsional"
+            }
+          ],
+          "legend": "Warna latar kolom menunjukkan jenis rancangan kartu, bukan penilaian lebih baik atau lebih buruk. RedotPay, OKX Card, dan Ether.fi Cash dikelompokkan dengan warna sama karena merupakan kartu khusus cashback yang menempatkan reward pembayaran sebagai pusatnya; Anytap Card memakai warna terpisah karena merupakan kartu khusus fungsional yang menempatkan limit dan mobilitas dana sebagai pusatnya. Bila kartu dengan tujuan berbeda ditempatkan dalam satu warna, pembaca mudah salah paham bahwa keduanya dibandingkan dengan standar yang sama — pembedaan warna ini justru untuk mencegah kesalahpahaman tersebut.",
+          "rows": [
+            [
+              "Biaya kartu virtual",
+              "10 USD",
+              "Tidak ada (gratis)",
+              "Tidak diungkapkan",
+              "20 USDT"
+            ],
+            [
+              "Biaya kartu fisik",
+              "100 USD (penerbitan baru di Korea dihentikan)",
+              "Berfokus pada kartu virtual; kartu fisik berbeda per wilayah",
+              "Gratis (kartu logam pada tingkat atas)",
+              "100 USDT (setoran minimum 50 USDT)"
+            ],
+            [
+              "Cara isi saldo",
+              "Isi saldo dengan mata uang kripto",
+              "Saldo akun bursa (tidak menerima setoran mata uang fiat langsung)",
+              "Setoran aset (Direct) atau pinjaman berjaminan (Borrow)",
+              "Setoran dari dompet pribadi atau bursa"
+            ],
+            [
+              "Pembayaran luar negeri",
+              "Merchant Visa",
+              "Merchant Visa",
+              "Merchant Visa",
+              "Merchant Visa"
+            ],
+            [
+              "Transfer antar kartu",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Didukung"
+            ],
+            [
+              "Dompet anggota → dompet eksternal",
+              "Didukung (transfer on-chain; tidak dapat ditarik langsung ke rekening bank)",
+              "Didukung (penarikan on-chain melalui akun bursa OKX; bukan fitur khusus kartu)",
+              "Tidak disediakan (ekspor kunci pribadi belum tersedia; diumumkan akan didukung)",
+              "Didukung (biaya gas ditanggung pengguna)"
+            ],
+            [
+              "Biaya isi saldo",
+              "Tidak ada (hanya biaya gas on-chain)",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "2%"
+            ],
+            [
+              "Biaya pembayaran",
+              "1% mata uang sama",
+              "0%",
+              "0% (FX dihitung terpisah)",
+              "1% mata uang sama"
+            ],
+            [
+              "Biaya pembayaran luar negeri / FX",
+              "Ditambah 1,2% biaya konversi (total 2,2%)",
+              "0% (spread stablecoin 0,4% terpisah)",
+              "1% untuk semua tingkat",
+              "1% + 0,30 USD per transaksi"
+            ],
+            [
+              "Biaya ATM",
+              "2%",
+              "2% (minimum 1 USD)",
+              "2%",
+              "2% (minimum 1 USD)"
+            ],
+            [
+              "Limit pembayaran",
+              "Maksimum 100.000 USD per transaksi",
+              "Perlu diperiksa di sumber resmi",
+              "Tidak diungkapkan",
+              "Kartu fisik 1.000.000 USD per bulan"
+            ],
+            [
+              "Limit penarikan ATM",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "15.000 USD per bulan (1.500 USD per transaksi dan per hari)"
+            ],
+            [
+              "Cashback",
+              "Tidak ada",
+              "Maksimum 2% (hanya USDG), plafon bulanan 5 USD (umum) – 1.000 USD (VIP)",
+              "Core 3% → 1% → 0,5% bertingkat (berbeda per tingkat)",
+              "Tidak ada"
+            ],
+            [
+              "Syarat cashback",
+              "Tidak berlaku",
+              "Wajib akun OKX, KYC, dan pengaktifan OKX Pay; hanya berlaku saat membayar dengan USDG",
+              "Perlu staking ETHFI untuk naik tingkat; Borrow Mode memiliki risiko likuidasi jaminan",
+              "Tidak berlaku"
+            ],
+            [
+              "Program referral",
+              "Komisi hingga 40% diumumkan, tetapi saat ini pembayaran dihentikan",
+              "Tidak ada pengumuman terpisah",
+              "Tidak ada pengumuman terpisah",
+              "Didukung hingga 40% (syarat per tingkat, perlu pemeriksaan lanjutan)"
+            ],
+            [
+              "Fitur penting lainnya",
+              "Terhubung Apple Pay",
+              "Apple Pay · Google Pay · pembayaran stablecoin via OKX Pay",
+              "Apple Pay · Google Pay · struktur dompet non-kustodial (Safe)",
+              "Transfer antar kartu · dompet pribadi · penarikan ke dompet eksternal · Apple/Google/Samsung Pay"
+            ]
+          ],
+          "notes": [
+            "Visa adalah merek dagang Visa Inc.; nama dan logo kartu adalah milik pemegang hak masing-masing dan digunakan hanya untuk mengidentifikasi objek perbandingan."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "warn",
+          "label": "CATATAN UNTUK PENGGUNA",
+          "p": [
+            "1. Kartu kripto sebaiknya didekati dalam dua kelompok: kelompok yang mengutamakan cashback dan kelompok yang mengutamakan fungsi pemakaian nyata seperti limit, transfer, dan dompet. Kelompok cashback dapat mengubah syarat atau menghentikan program tanpa pemberitahuan; kelompok fungsional tidak memberi cashback tetapi kuat pada limit dan mobilitas dana.",
+            "2. RedotPay menghentikan penerbitan kartu fisik baru di Korea sekaligus menghentikan pembayaran komisi referral. Jika Anda mempertimbangkan mendaftar karena program referral, harap perhatikan hal ini.",
+            "3. OKX Card mensyaratkan kepemilikan akun bursa OKX dan pengaktifan OKX Pay, dan cashback hanya berlaku saat membayar dengan stablecoin milik OKX (USDG). Artinya Anda harus terus menggunakan bursa OKX untuk memperoleh cashback.",
+            "4. Ether.fi Cash dijalankan oleh protokol yang menerbitkan tokennya sendiri (ETHFI); naik tingkat memerlukan staking ETHFI dan terdapat dua mode pembayaran, Direct Mode dan Borrow Mode. Borrow Mode dapat terlikuidasi bila harga aset jaminan turun — risiko yang tidak ada pada kartu pembayaran biasa.",
+            "5. Kebijakan penerbitan, pengiriman, dan program referral dapat berubah cukup sering; periksa pengumuman terbaru di situs resmi sebelum mendaftar.",
+            "6. Di pasar global, pengguna yang berulang kali mengalami penurunan tarif, penambahan plafon akumulasi, dan penghentian komisi referral kini semakin beralih dari kartu khusus cashback ke kartu khusus fungsional."
+          ]
+        }
+      ]
+    },
+    "fee-comparison": {
+      "title": "Rincian biaya kartu kripto | Isi saldo, kurs, luar negeri, ATM | Crypto Cards Info",
+      "desc": "Pada tahap mana biaya penerbitan, isi saldo, konversi kripto, spread kurs, pembayaran luar negeri, dan ATM timbul.",
+      "h1": "Rincian biaya",
+      "lead": "'Biaya 0%' tidak berarti biaya nyata adalah nol. Biaya dapat timbul pada setiap tahap perpindahan dana: isi saldo, konversi kripto, valuta dan spread kurs, pembayaran, pembayaran luar negeri, serta penarikan ATM.",
+      "sections": [
+        {
+          "k": "flow",
+          "title": "Di mana biaya nyata kartu kripto timbul?",
+          "sub": "Alih-alih angka 0%, lihat berapa yang akhirnya keluar dari kantong Anda.",
+          "steps": [
+            {
+              "num": "TAHAP 1",
+              "t": "Isi saldo",
+              "d": "Biaya dapat timbul saat mengisi saldo kartu."
+            },
+            {
+              "num": "TAHAP 2",
+              "t": "Konversi kripto",
+              "d": "Biaya mengubah aset yang dimiliki menjadi aset yang dapat dibelanjakan."
+            },
+            {
+              "num": "TAHAP 3",
+              "t": "Valuta / kurs yang berlaku",
+              "d": "Kurs yang dipakai dan spread (markup) menentukan jumlah yang benar-benar ditanggung."
+            },
+            {
+              "num": "TAHAP 4",
+              "t": "Pembayaran kartu",
+              "d": "Perlu memeriksa mata uang dan cara penanganan kurs pada saat pembayaran."
+            },
+            {
+              "num": "TAHAP 5",
+              "t": "Biaya pembayaran luar negeri",
+              "d": "Biaya sesuai standar jaringan kartu dapat berlaku pada merchant luar negeri."
+            },
+            {
+              "num": "TAHAP 6",
+              "t": "ATM / penarikan",
+              "d": "Penarikan tunai dapat dikenai tarif tersendiri dan jumlah minimum."
+            },
+            {
+              "num": "HASIL",
+              "t": "Total biaya sebenarnya",
+              "d": "Biaya penerbitan + isi saldo + konversi + valuta + spread + pembayaran luar negeri + ATM − cashback yang benar-benar diterima"
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "p": [
+            "Tujuan perbandingan bukan mencari tarif nominal terendah, melainkan memastikan biaya akhir dalam pemakaian nyata. Meski jumlah belanja sama, total biaya tetap berbeda menurut cara isi saldo dan mata uang pembayaran."
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "PERINGATAN UNTUK PENGGUNA",
+          "big": "Penyedia yang tidak mengungkapkan biaya secara transparan di situs resminya tidak dapat menjadi objek kepercayaan.",
+          "p": [
+            "Pengungkapan struktur biaya bukan kewenangan bebas penyedia, melainkan bagian dari kewajiban dasar menyediakan informasi agar pengguna mengetahui syarat perjanjian lebih dulu. Bila biaya penerbitan, biaya isi saldo, biaya konversi, spread kurs, biaya pembayaran luar negeri, dan biaya ATM tidak dapat diperiksa per pos di situs atau ketentuan resmi, pengguna tidak dapat menghitung total biaya sebelum mengikat perjanjian.",
+            "Khususnya bila hanya disajikan ungkapan seperti 'gratis', 'biaya 0%', atau 'terendah di industri' tanpa menyebut tarif, tidak dapat dikesampingkan kemungkinan biaya nyata tertanam dalam spread kurs atau tahap konversi sehingga tidak ditampilkan. Menempatkan penyedia yang materi iklannya tidak sesuai dengan daftar biaya resmi pada prioritas lebih rendah dalam perbandingan adalah hal yang wajar."
+          ]
+        },
+        {
+          "k": "grid",
+          "title": "Tiga hal yang bila tidak dapat diverifikasi kami tandai 'Perlu diperiksa di sumber resmi' alih-alih menduga",
+          "items": [
+            {
+              "t": "Daftar biaya resmi per pos",
+              "d": "Periksa apakah biaya penerbitan, isi saldo, konversi, spread, pembayaran luar negeri, dan ATM dicantumkan per pos."
+            },
+            {
+              "t": "Prosedur pemberitahuan sebelum tarif berubah",
+              "d": "Periksa apakah ketentuan mengatur prosedur dan tenggat pemberitahuan sebelum tarif diubah."
+            },
+            {
+              "t": "Dasar kurs yang berlaku",
+              "d": "Periksa apakah kurs acuan jaringan kartu dipakai dan berapa besar rentang markup."
+            }
+          ]
+        },
+        {
+          "k": "grid",
+          "title": "Periksa sebelum memilih kartu",
+          "items": [
+            {
+              "t": "Ketersediaan daftar biaya resmi",
+              "d": "Periksa daftar biaya per pos di situs atau ketentuan resmi."
+            },
+            {
+              "t": "Riwayat dan cara pemberitahuan perubahan tarif",
+              "d": "Lihat apakah riwayat perubahan tarif sebelumnya dan cara pengumumannya dapat dilacak."
+            },
+            {
+              "t": "Kemampuan menghitung total biaya sendiri",
+              "d": "Periksa apakah Anda dapat menghitung total biaya sendiri tanpa menghubungi pusat layanan."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "warn",
+          "label": "SARAN VERIFIKASI",
+          "p": [
+            "Bila salah satu pos di atas tidak dapat diverifikasi, disarankan melakukan pembayaran uji dalam jumlah kecil untuk memverifikasi tagihan nyata sebelum menyetor dana dalam jumlah besar."
+          ]
+        }
+      ]
+    },
+    "limit-comparison": {
+      "title": "Fitur dan limit kartu kripto | Pembayaran, ATM, transfer antar kartu | Crypto Cards Info",
+      "desc": "Membandingkan limit isi saldo, pembayaran, ATM, dan transfer antar kartu bersama penerbitan dompet serta penarikan ke dompet eksternal.",
+      "h1": "Fitur dan limit kartu",
+      "lead": "Semakin besar belanja, yang menghambat bukan tarif cashback melainkan limit. Selain pembayaran, cara dana yang telah diisi disimpan dan dipindahkan juga penting. Halaman ini membandingkan fitur dan limit sekaligus.",
+      "sections": [
+        {
+          "k": "compare2",
+          "title": "Objek perbandingan di halaman ini terbagi dua jenis",
+          "sub": "Sebelum membandingkan fitur dan limit, tujuan rancangan setiap kartu harus dibedakan lebih dulu, sebab menempatkan kartu dengan tujuan berbeda dalam satu standar akan mendistorsi perbandingan itu sendiri.",
+          "cols": [
+            {
+              "tone": "amber",
+              "label": "Kartu khusus cashback",
+              "t": "RedotPay · OKX Card · Ether.fi Cash",
+              "items": [
+                "Dirancang dengan reward pembayaran sebagai nilai utama.",
+                "Limit dan fitur transfer sering diungkapkan secara terbatas atau tidak tersedia sebagai fitur kartu.",
+                "Fokusnya adalah 'berapa yang kembali saat membayar', bukan perpindahan dana."
+              ],
+              "note": "Karena itu, pos limit atau transfer yang bertanda 'Tidak diungkapkan' atau 'Tidak disediakan' pada jenis kartu ini merupakan perbedaan tujuan rancangan, bukan kekurangan."
+            },
+            {
+              "tone": "teal",
+              "label": "Kartu khusus fungsional",
+              "t": "Anytap Card",
+              "items": [
+                "Dirancang dengan limit dan mobilitas dana sebagai nilai utama.",
+                "Transfer antar kartu, penerbitan dompet pribadi, dan penarikan ke dompet eksternal tersedia sebagai fitur kartu.",
+                "Tidak ada cashback, tetapi struktur biaya sederhana sehingga total biaya mudah dihitung."
+              ],
+              "note": "Jenis ini tidak memberi reward, sehingga biaya isi saldo, pembayaran, dan konversi tetap menjadi biaya nyata. Bisa jadi kurang menguntungkan bagi pengguna bernilai kecil yang tidak memerlukan limit tinggi."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "TREN GLOBAL",
+          "p": [
+            "Di pasar kartu kripto global, proporsi pengguna yang memilih kartu khusus fungsional meningkat setelah berulang kali mengalami perubahan syarat cashback. Dalam praktiknya, masalah sering bukan pada tarif, melainkan pada 'apakah limit bulanan mencukupi belanja' dan 'apakah saldo sisa dapat ditarik ke dompet eksternal'.",
+            "Saat membaca kedua tabel di bawah, kami menyarankan Anda memeriksa dengan dua pertanyaan itu, bukan dengan tarif."
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Perbandingan fitur kartu",
+          "sub": "Bila fitur tidak dapat diverifikasi dari dokumen resmi yang dipublikasikan, kami tandai 'Tidak disediakan' atau 'Tidak diungkapkan'.",
+          "head": [
+            "Fitur",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Kartu khusus cashback"
+            },
+            {
+              "tone": "teal",
+              "label": "Kartu khusus fungsional"
+            }
+          ],
+          "legend": "Warna latar kolom dibedakan karena jenis rancangan kartunya berbeda. RedotPay, OKX Card, dan Ether.fi Cash adalah kartu khusus cashback, sedangkan Anytap Card adalah kartu khusus fungsional. Pembedaan warna hanyalah penanda jenis, bukan untuk mengistimewakan atau merendahkan kartu mana pun. Sebaliknya, menempatkan kartu dengan tujuan berbeda dalam satu warna agar pembaca membandingkannya dengan standar yang sama justru berpotensi lebih menyesatkan.",
+          "rows": [
+            [
+              "Transfer antar kartu",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Didukung (biaya 0,5%)"
+            ],
+            [
+              "Penerbitan dompet pribadi (alamat setor/tarik)",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Gratis"
+            ],
+            [
+              "Isi saldo langsung dari dompet pribadi",
+              "Tidak disediakan (isi saldo lewat bursa atau aplikasi)",
+              "Tidak disediakan (memakai saldo akun bursa)",
+              "Tidak disediakan (struktur setoran aset / jaminan)",
+              "Didukung"
+            ],
+            [
+              "Dompet anggota → dompet eksternal",
+              "Didukung (transfer on-chain; tidak dapat ditarik langsung ke rekening bank)",
+              "Didukung (penarikan on-chain melalui akun bursa OKX; bukan fitur khusus kartu)",
+              "Tidak disediakan (ekspor kunci pribadi belum tersedia; diumumkan akan didukung)",
+              "Didukung (tanpa biaya; biaya gas ditanggung pengguna)"
+            ],
+            [
+              "Jumlah kartu per orang",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Dasar 3 kartu (penerbitan massal berdasarkan kesepakatan)"
+            ],
+            [
+              "Integrasi pembayaran seluler",
+              "Apple Pay",
+              "Apple Pay · Google Pay",
+              "Apple Pay · Google Pay",
+              "Apple Pay · Google Pay · Samsung Pay"
+            ]
+          ],
+          "notes": [
+            "'Tidak disediakan' berarti fitur tersebut tidak dapat diverifikasi dari dokumen resmi yang dipublikasikan, bukan penyangkalan atas fitur yang dijalankan penyedia secara internal."
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Perbandingan limit",
+          "sub": "Pos tanpa dokumen resmi ditandai 'Tidak diungkapkan' atau 'Perlu diperiksa di sumber resmi' alih-alih diduga.",
+          "head": [
+            "Limit",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Kartu khusus cashback"
+            },
+            {
+              "tone": "teal",
+              "label": "Kartu khusus fungsional"
+            }
+          ],
+          "legend": "Tabel limit dibedakan warnanya dengan kriteria yang sama. Kartu khusus cashback tidak menempatkan limit sebagai faktor persaingan utama sehingga sering diungkapkan terbatas, sedangkan kartu khusus fungsional mengungkapkan limit sebagai spesifikasi utama. Pembedaan warna dimaksudkan untuk menunjukkan perbedaan rancangan tersebut, bukan penilaian lebih baik atau perlakuan diskriminatif terhadap penyedia mana pun.",
+          "rows": [
+            [
+              "Limit isi saldo",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tanpa batas"
+            ],
+            [
+              "Limit per transaksi",
+              "Maksimum 100.000 USD",
+              "Perlu diperiksa di sumber resmi",
+              "Tidak diungkapkan",
+              "20.000 USD"
+            ],
+            [
+              "Limit pembayaran harian",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Kartu fisik 250.000 USD (maksimum 100 transaksi per hari)"
+            ],
+            [
+              "Limit pembayaran bulanan",
+              "Tidak diungkapkan",
+              "Perlu diperiksa di sumber resmi",
+              "Tidak diungkapkan",
+              "Kartu fisik 1.000.000 USD"
+            ],
+            [
+              "Limit ATM per penarikan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "1.500 USD"
+            ],
+            [
+              "Limit ATM harian",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "1.500 USD (maksimum 30 kali per hari)"
+            ],
+            [
+              "Limit ATM bulanan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "Tidak diungkapkan",
+              "15.000 USD"
+            ],
+            [
+              "Limit transfer antar kartu",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Tidak disediakan",
+              "Tidak ada plafon terpisah yang diumumkan"
+            ]
+          ],
+          "notes": [
+            "Limit dapat berbeda menurut tingkat pengguna, tahap verifikasi identitas, negara, dan jenis kartu. Bila merencanakan pembayaran bernilai besar, periksa juga limit harian, limit per transaksi, dan batasan jumlah transaksi."
+          ]
+        },
+        {
+          "k": "split",
+          "title": "Transfer bank dan transfer antar kartu",
+          "cols": [
+            {
+              "t": "Transfer bank biasa",
+              "steps": [
+                "Aplikasi bank",
+                "Pilih bank",
+                "Masukkan nomor rekening",
+                "Masukkan jumlah",
+                "Kirim"
+              ],
+              "note": "Dana berpindah berdasarkan rekening dan nomor rekening bank."
+            },
+            {
+              "t": "Transfer antar kartu",
+              "steps": [
+                "Aplikasi kartu",
+                "Data kartu penerima (email, 4 digit terakhir)",
+                "Masukkan jumlah",
+                "Transfer"
+              ],
+              "note": "Dana berpindah berdasarkan akun kartu. Ketersediaan dan biaya berbeda pada setiap kartu."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "PERLU DIPERIKSA",
+          "p": [
+            "Transfer antar kartu dan penarikan ke dompet eksternal dapat dibatasi oleh kebijakan penyedia dan lingkungan regulasi.",
+            "Transaksi on-chain tidak dapat dibatalkan, karena itu selalu periksa jaringan dan alamatnya."
+          ]
+        }
+      ]
+    },
+    "cashback-fact-check": {
+      "title": "Cashback kartu kripto: perbandingan dan peringatan | Crypto Cards Info",
+      "desc": "Cashback dasar dan maksimum, syarat penerapan, plafon bulanan, aset pembayaran, syarat tingkat dan staking, serta risiko perubahan kebijakan.",
+      "h1": "Cashback: perbandingan dan peringatan",
+      "sub": "Cashback bukan hak yang sudah pasti, melainkan promosi yang syaratnya ditetapkan dan dapat diubah penyedia.",
+      "lead": "Cashback maksimum dan cashback yang benar-benar diterima bisa berbeda. Yang penting bukan tarif tertinggi dalam iklan, melainkan syarat yang berlaku bagi Anda, plafon bulanan, dan nilai pakai nyata dari aset yang dibayarkan.",
+      "sections": [
+        {
+          "k": "flow",
+          "title": "Urutan menilai cashback",
+          "sub": "Alih-alih tarif tinggi, lihat jumlah yang benar-benar dihemat.",
+          "steps": [
+            {
+              "num": "1",
+              "t": "Berlaku bagi siapa?",
+              "d": "Pihak yang berhak berubah menurut tingkat, staking, dan syarat kepemilikan."
+            },
+            {
+              "num": "2",
+              "t": "Berlaku untuk transaksi apa?",
+              "d": "Ada program yang hanya berlaku untuk merchant, kategori, mata uang, atau metode pembayaran tertentu."
+            },
+            {
+              "num": "3",
+              "t": "Berapa plafon bulanannya?",
+              "d": "Tarif tinggi kehilangan arti begitu plafon akumulasi bulanan tercapai."
+            },
+            {
+              "num": "4",
+              "t": "Apakah ada syarat tambahan?",
+              "d": "Periksa belanja minimum, masa lock-up, dan syarat pemeliharaan."
+            },
+            {
+              "num": "5",
+              "t": "Dibayarkan dalam bentuk apa?",
+              "d": "Pastikan apakah stablecoin, atau token/poin milik penerbit sendiri."
+            },
+            {
+              "num": "6",
+              "t": "Berapa nilai yang benar-benar dapat dipakai?",
+              "d": "Nilai dengan memasukkan volatilitas harga, tempat pemakaian, dan masa berlaku."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Perbandingan syarat cashback yang diungkapkan",
+          "sub": "Mengacu dokumen publik masing-masing penyedia; syarat dapat berubah sesuai kebijakan.",
+          "head": [
+            "Pos",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Kartu khusus cashback"
+            },
+            {
+              "tone": "teal",
+              "label": "Kartu khusus fungsional"
+            }
+          ],
+          "legend": "Warna latar kolom merupakan pembagian jenis rancangan kartu. Kartu khusus cashback (RedotPay, OKX Card, Ether.fi Cash) dan kartu khusus fungsional (Anytap Card) memiliki tujuan berbeda, sehingga tanda 'Tidak berlaku' pada kolom Anytap berarti kartu tersebut tidak menjalankan program cashback, bukan kekurangan manfaat. Pembedaan warna bukan penilaian lebih baik.",
+          "rows": [
+            [
+              "Cashback dasar",
+              "Tidak ada",
+              "Umum maksimum 2% (hanya saat membayar USDG)",
+              "Core 3% untuk 2.000 USD pertama",
+              "Tidak ada"
+            ],
+            [
+              "Struktur menurun",
+              "Tidak berlaku",
+              "Akumulasi berhenti saat plafon bulanan tercapai",
+              "1% pada 2–3 ribu USD → 0,5% di atas 3 ribu USD",
+              "Tidak berlaku"
+            ],
+            [
+              "Syarat tingkat atas",
+              "Tidak berlaku",
+              "Kenaikan tingkat VIP memperbesar plafon bulanan",
+              "Luxe 10.000 USD pertama / Pinnacle 50.000 USD pertama pada 3%",
+              "Tidak berlaku"
+            ],
+            [
+              "Plafon cashback bulanan",
+              "Tidak berlaku",
+              "Umum 5 USD – VIP maksimum 1.000 USD",
+              "Plafon bertingkat sesuai masing-masing tingkat",
+              "Tidak berlaku"
+            ],
+            [
+              "Syarat wajib",
+              "Tidak berlaku",
+              "Akun bursa OKX · KYC · pengaktifan OKX Pay · pembayaran USDG",
+              "Perlu staking token ETHFI untuk naik tingkat",
+              "Tidak berlaku"
+            ],
+            [
+              "Aset pembayaran",
+              "Tidak berlaku",
+              "USDG (stablecoin sendiri)",
+              "Aset yang ditetapkan protokol",
+              "Tidak berlaku"
+            ],
+            [
+              "Risiko struktural",
+              "Tidak ada (tidak ada program cashback)",
+              "Bergantung pada akun bursa dan stablecoin sendiri",
+              "Risiko likuidasi jaminan saat memakai Borrow Mode",
+              "Tidak ada (tidak ada program cashback)"
+            ],
+            [
+              "Biaya FX / luar negeri",
+              "Ditambah 1,2% biaya konversi (total 2,2%)",
+              "0% (spread stablecoin 0,4% terpisah)",
+              "1% untuk semua tingkat",
+              "1% + 0,30 USD per transaksi"
+            ],
+            [
+              "Program referral",
+              "Diumumkan hingga 40% tetapi saat ini dihentikan",
+              "Tidak ada pengumuman terpisah",
+              "Tidak ada pengumuman terpisah",
+              "Didukung hingga 40% (syarat per tingkat perlu diperiksa)"
+            ],
+            [
+              "Kemungkinan perubahan kebijakan",
+              "Dapat berubah menurut ketentuan",
+              "Dapat berubah menurut ketentuan",
+              "Dapat berubah menurut ketentuan",
+              "Tidak berlaku"
+            ]
+          ],
+          "notes": [
+            "Sebagian besar reward kartu merupakan promosi yang menurut ketentuan dapat diubah atau dihentikan penyedia. Periksa dalam ketentuan resmi apakah tarif pada saat pendaftaran dijamin secara kontraktual."
+          ]
+        },
+        {
+          "k": "articles",
+          "title": "Lima dasar yang menunjukkan cashback bisa merugikan",
+          "items": [
+            {
+              "t": "Dasar 1 — Sumber dana cashback adalah biaya yang sudah dibayar pengguna",
+              "p": [
+                "Pendapatan penerbit kartu terdiri dari biaya penerbitan, biaya isi saldo, biaya konversi kripto, spread kurs, biaya pembayaran luar negeri, dan biaya ATM. Cashback adalah biaya pemasaran yang mengembalikan sebagian di atas struktur pendapatan itu, bukan berasal dari sumber dana eksternal.",
+                "Bila isi saldo dikenai 2% dan pembayaran luar negeri sekitar 1%, lalu Anda menerima kembali 2% dari nilai pembayaran, sebenarnya Anda hanya memperoleh kembali sebagian biaya yang sudah dibayar. Dihitung menurut total biaya, efek bersihnya bisa sangat kecil atau negatif."
+              ]
+            },
+            {
+              "t": "Dasar 2 — Anda bisa tidak menerimanya",
+              "p": [
+                "Cashback umumnya ditetapkan sebagai promosi yang penyedianya berhak mengubah tarif dan cara pembayaran. Ketika ada jeda waktu antara akumulasi dan pembayaran, tidak ada jaminan syarat saat akumulasi tetap bertahan hingga saat pembayaran.",
+                "Pernah terjadi penurunan tarif, penambahan plafon akumulasi setelah berjalan, penghapusan reward staking, penghentian layanan per wilayah, dan penghentian komisi referral tanpa pemberitahuan. Di antara kartu yang dibandingkan di situs ini pun ada kasus komisi referral yang saat ini dihentikan."
+              ]
+            },
+            {
+              "t": "Dasar 3 — Terikat pada bursa dan token tertentu",
+              "p": [
+                "Tarif tinggi umumnya datang bersama syarat. Kartu terbitan bursa mensyaratkan pemeliharaan akun bursa dan pembayaran dengan stablecoin miliknya; kartu berbasis protokol mensyaratkan staking token miliknya untuk mempertahankan tingkat.",
+                "Pengguna kemudian kehilangan kebebasan memilih metode pembayaran dan terpapar kebijakan akun satu penyedia tertentu serta harga dan likuiditas satu token tertentu. Bila akun dibatasi atau aset itu berhenti didukung, penggunaan reward yang telah terkumpul pun bisa menjadi sulit."
+              ]
+            },
+            {
+              "t": "Dasar 4 — Nilai nyata aset pembayaran berbeda dari tarifnya",
+              "p": [
+                "Ketika cashback dibayarkan dalam token atau poin milik penerbit, tarif yang diumumkan tetap tetapi nilai yang benar-benar diterima dapat berubah. Bila harga atau likuiditas turun, 3% secara nominal menjadi tingkat pengembalian nyata yang lebih rendah.",
+                "Selain itu, masa berlaku, batasan tempat pemakaian, dan satuan penarikan minimum dapat membuat Anda tidak dapat memakai seluruh saldo yang terkumpul."
+              ]
+            },
+            {
+              "t": "Dasar 5 — Biaya pemeliharaan syarat tidak muncul dalam tabel tarif",
+              "p": [
+                "Staking untuk mempertahankan tingkat membuat dana terkunci selama suatu periode. Risiko harga dan biaya peluang selama periode itu ditanggung pengguna, tetapi tidak muncul dalam tabel tarif.",
+                "Pada struktur pembayaran berbasis jaminan terdapat tambahan risiko likuidasi saat harga turun. Dengan memasukkan pos-pos ini, akan ada rentang di mana biaya pemeliharaan syarat lebih besar daripada reward yang diterima."
+              ]
+            },
+            {
+              "t": "Ringkasan — Cara memverifikasi",
+              "p": [
+                "Manfaat nyata cashback harus dihitung dengan '(tarif × belanja yang memenuhi syarat × kemampuan pencairan aset pembayaran) − (biaya isi saldo + biaya konversi + spread kurs + biaya pembayaran luar negeri + biaya ATM + biaya pemeliharaan syarat)'.",
+                "Kartu yang tidak memungkinkan perhitungan ini, yakni kartu yang tidak mengungkapkan tarif per pos, manfaatnya tidak dapat diverifikasi dan sebaiknya ditempatkan pada prioritas lebih rendah dalam perbandingan. Ini juga alasan utama yang dikemukakan atas beralihnya pengguna global dari kartu khusus cashback ke kartu khusus fungsional."
+              ]
+            }
+          ]
+        },
+        {
+          "k": "list",
+          "title": "Mengapa tarif yang diumumkan dan jumlah yang diterima berbeda",
+          "items": [
+            {
+              "t": "Syarat belanja",
+              "d": "Cashback sebanding dengan nilai belanja. Dengan kartu 3%, belanja 400 USD sebulan mengumpulkan sekitar 12 USD."
+            },
+            {
+              "t": "Plafon akumulasi bulanan",
+              "d": "Bila ada plafon, menambah belanja tidak menambah penerimaan melampaui plafon itu."
+            },
+            {
+              "t": "Struktur menurun",
+              "d": "Umumnya hanya rentang awal memperoleh tarif tinggi, kelebihannya turun ke tarif lebih rendah."
+            },
+            {
+              "t": "Syarat staking",
+              "d": "Bila tarif tinggi bergantung pada staking token sendiri, risiko harga dan biaya peluang selama masa lock-up ditanggung pengguna."
+            },
+            {
+              "t": "Nilai aset pembayaran",
+              "d": "Bila dibayar dalam token atau poin sendiri, nilai nyatanya dapat berubah meski tarifnya tetap."
+            },
+            {
+              "t": "Transaksi yang dikecualikan",
+              "d": "Isi saldo, transfer, kategori tertentu, dan transaksi yang mendekati penarikan tunai sering dikeluarkan dari akumulasi."
+            }
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "PEMBERITAHUAN PENTING",
+          "big": "Cakupan yang dapat diverifikasi melalui perbandingan itu terbatas, dan sumber dana cashback pada akhirnya berasal dari biaya yang telah dibayar pengguna.",
+          "p": [
+            "Pertama, sekalipun pengguna membandingkan dengan sangat teliti, tetap ada bagian yang secara struktural tidak dapat diverifikasi: rentang nyata spread kurs, dasar perhitungan kurs penyelesaian internal, saat pengambilan keputusan mengubah tarif, atau apakah anggaran promosi telah habis. Karena itu angka dalam tabel hanyalah 'syarat yang diungkapkan', bukan jaminan kesesuaian dengan tagihan nyata.",
+            "Kedua, kriteria memilih kartu haruslah tujuan pemakaian Anda, bukan tarif tertinggi. Kartu yang sesuai berbeda menurut apakah Anda dominan berbelanja kecil, memerlukan pembayaran besar dan perpindahan dana, atau utamanya memegang aset satu ekosistem tertentu.",
+            "Ketiga, perlu memahami hakikat ekonomi cashback. Penerbit kartu memiliki beberapa sumber pendapatan: biaya penerbitan, biaya isi saldo, spread kurs, biaya pembayaran luar negeri, biaya ATM, serta insentif peredaran dan staking token miliknya. Meski tidak mengambil margin pada tahap pembayaran kartu, pendapatan tetap dapat direalisasikan melalui penciptaan permintaan token sendiri atau penghimpunan aset yang disetor. Dengan kata lain, sumber dana cashback sebagian besar berasal dari biaya yang telah dibayar pengguna dan nilai yang diciptakan aset yang disetor pengguna. Lebih tepatnya, cashback adalah biaya pemasaran untuk menarik dan menahan dana pengguna, bukan pengalihan murni.",
+            "Keempat, akibatnya cashback merupakan pos yang dapat dikurangi atau dihentikan ketika struktur pendapatan berubah atau anggaran promosi berakhir.",
+            "Karena itu, periksalah klausul perubahan dan penghentian reward, jenis aset pembayaran beserta kemampuan pencairannya, dan syarat pembatalan staking sebelum memutuskan. Saldo kartu prabayar dan aset kripto tidak termasuk dalam cakupan penjaminan simpanan, dan risiko penyedia ditanggung pengguna. Rinciannya dapat dilihat pada halaman Penafian dan Pembatasan Tanggung Jawab."
+          ]
+        }
+      ]
+    },
+    "card-selection-guide": {
+      "title": "Panduan memilih kartu kripto | Kriteria antara cashback dan fungsi | Crypto Cards Info",
+      "desc": "Kriteria memutuskan antara mengutamakan cashback atau fungsi, beserta urutan memeriksa biaya, kurs, limit, dan transfer.",
+      "h1": "Panduan memilih kartu",
+      "sub": "Memilih cashback yang tidak pasti, atau fungsi yang sudah ditetapkan?",
+      "lead": "Yang perlu ditetapkan lebih dulu bukan tarif, melainkan kriteria penilaian. Cashback adalah manfaat bersyarat yang bergantung pada kebijakan penyedia menyangkut waktu pembayaran, aset pembayaran, dan syarat pemeliharaan. Sementara itu, fitur dan limit adalah pos yang diungkapkan dan ditetapkan dalam ketentuan. Menempatkan dua hal yang berbeda sifatnya pada satu timbangan membuat pilihan sulit menjadi masuk akal.",
+      "sections": [
+        {
+          "k": "articles",
+          "title": "Apa yang seharusnya menjadi kriteria: cashback atau fungsi?",
+          "items": [
+            {
+              "t": "1. Cashback adalah 'nilai harapan', fungsi adalah 'nilai yang pasti'",
+              "p": [
+                "Jumlah pengembalian baru pasti setelah melewati lima variabel: tarif, plafon bulanan, syarat tingkat, aset pembayaran, dan transaksi yang dikecualikan. Setiap variabel dapat diubah penyedia menurut ketentuan, sehingga pada saat mengikat perjanjian pengguna hanya mengetahui nilai harapan.",
+                "Sebaliknya, limit pembayaran, transfer antar kartu, penerbitan dompet pribadi, dan kemampuan menarik ke dompet eksternal diungkapkan sebagai syarat perjanjian dan bekerja demikian saat dipakai. Pada tingkat ketidakpastian yang sama, mengutamakan nilai yang pasti di atas nilai harapan adalah hal yang masuk akal."
+              ]
+            },
+            {
+              "t": "2. Tinjau kembali tujuan memakai kartu kripto",
+              "p": [
+                "Nilai inti kartu kripto adalah mengubah aset di bursa atau dompet pribadi menjadi alat pembayaran tanpa melalui rekening bank. Nilai itu ditentukan oleh limit, jalur perpindahan dana, dan keberterimaan pada pembayaran.",
+                "Cashback hanyalah unsur tambahan, bukan pengganti nilai inti. Bila limit bulanan tidak mencukupi hingga transaksi ditolak, atau saldo sisa tidak dapat ditarik ke dompet eksternal, berapa pun persen tarifnya kehilangan arti."
+              ]
+            },
+            {
+              "t": "3. Reward selalu disertai biaya dan syarat yang mengikat",
+              "p": [
+                "Bila Anda harus melakukan staking token penerbit, membayar hanya dengan stablecoin tertentu, atau memelihara akun bursa untuk mempertahankan tarif tinggi, persyaratan itu sendiri adalah biaya dan risiko. Volatilitas harga aset yang di-staking, kemungkinan likuidasi, dan risiko pembatasan akun tidak muncul dalam tabel tarif.",
+                "Karena itu saat membandingkan tarif, perhitungkan juga pertanyaan 'apa yang harus dikunci untuk mempertahankan tarif itu'."
+              ]
+            },
+            {
+              "t": "4. Kesimpulan — Bedakan kelompok reward bernilai kecil dan kelompok fungsi pemakaian nyata",
+              "p": [
+                "Bila belanja bulanan kecil dan tujuannya memaksimalkan reward, kartu cashback bisa masuk akal. Bahkan dalam hal itu, plafon akumulasi bulanan dan kemampuan pencairan aset pembayaran tetap wajib diperiksa.",
+                "Sebaliknya, bila skala pembayaran besar atau Anda perlu mengelola dana langsung dari dompet pribadi, memilih berdasarkan limit dan fitur transfer akan menghasilkan penghematan yang lebih nyata."
+              ]
+            }
+          ]
+        },
+        {
+          "k": "branch",
+          "title": "Diagram kriteria pemilihan",
+          "sub": "Objek perbandingan berubah menurut apa yang Anda utamakan.",
+          "root": "Titik awal — apa yang saya utamakan?",
+          "branches": [
+            {
+              "q": "Mengutamakan limit dan mobilitas dana",
+              "card": "Anytap Card",
+              "d": "Limit kartu fisik 1.000.000 USD per bulan, transfer antar kartu, penerbitan dompet pribadi, penarikan ke dompet eksternal. Tidak ada cashback dan ada biaya isi saldo 2%."
+            },
+            {
+              "q": "Mengutamakan cashback dan reward",
+              "card": "OKX Card · Ether.fi Cash",
+              "d": "Tarif disajikan tinggi tetapi disertai syarat tingkat, staking, metode pembayaran, dan plafon akumulasi bulanan; syaratnya dapat berubah."
+            },
+            {
+              "q": "Hanya membutuhkan kemudahan pembayaran",
+              "card": "RedotPay",
+              "d": "Tidak ada program cashback sehingga biaya pembayaran dan konversi tetap menjadi biaya nyata. Periksa lebih dulu tingkat pengungkapan tarifnya."
+            }
+          ],
+          "foot": "Penggolongan di atas mengacu pada tujuan rancangan masing-masing kartu, bukan penilaian lebih baik atau lebih buruk. Di pasar global, proporsi pengguna yang beralih ke kartu khusus fungsional meningkat setelah berulang kali mengalami perubahan syarat cashback. Jalur mana pun yang Anda pilih, periksa apakah tarif diungkapkan per pos dan apakah Anda dapat menghitung total biaya sendiri."
+        },
+        {
+          "k": "grid",
+          "title": "Hal yang perlu diperiksa",
+          "sub": "Memeriksa enam pos berikut secara berurutan akan mempersempit daftar perbandingan. Tiga pos per baris: nomor 1–3 tentang struktur biaya, nomor 4–6 tentang syarat pemakaian nyata.",
+          "items": [
+            {
+              "t": "Fitur yang dibutuhkan",
+              "d": "Tetapkan lebih dulu apakah hanya untuk pembayaran, atau juga memerlukan dompet dan transfer."
+            },
+            {
+              "t": "Seluruh biaya",
+              "d": "Periksa biaya penerbitan, isi saldo, konversi, pembayaran, dan ATM per pos."
+            },
+            {
+              "t": "Kurs / spread",
+              "d": "Lihat bagaimana kurs yang dipakai dan markup ditangani menurut masing-masing mata uang."
+            },
+            {
+              "t": "Syarat isi saldo / pembayaran / ATM",
+              "d": "Periksa cara isi saldo, limit, dan batasan jumlah transaksi."
+            },
+            {
+              "t": "Transfer antar kartu",
+              "d": "Bila perlu memindahkan dana, periksa ketersediaan dan biayanya."
+            },
+            {
+              "t": "Cashback",
+              "d": "Terakhir, hitung penghematan nyata termasuk syarat penerapan dan plafon bulanan."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Daftar periksa saat memilih kartu",
+          "head": [
+            "Pos",
+            "Hal yang perlu dipastikan pengguna"
+          ],
+          "rows": [
+            [
+              "Penerbit kartu",
+              "Siapa yang sebenarnya menerbitkan kartu?"
+            ],
+            [
+              "Pengelolaan dana",
+              "Bagaimana dana yang diisikan dikelola?"
+            ],
+            [
+              "Biaya",
+              "Berapa biaya isi saldo, pembayaran, konversi, dan ATM?"
+            ],
+            [
+              "Kurs",
+              "Berapa kurs yang berlaku dan spread sebenarnya?"
+            ],
+            [
+              "Limit",
+              "Berapa limit isi saldo, pembayaran, dan ATM?"
+            ],
+            [
+              "Transfer",
+              "Apakah transfer antar kartu tersedia?"
+            ],
+            [
+              "Tempat pemakaian",
+              "Di mana kartu dapat dipakai?"
+            ],
+            [
+              "Cashback",
+              "Apa syarat dan plafon bulanannya?"
+            ],
+            [
+              "Kebijakan",
+              "Apakah biaya dan manfaat dapat berubah?"
+            ]
+          ],
+          "notes": [
+            "Angka setiap pos dapat dilihat pada halaman Perbandingan kartu, Rincian biaya, serta Fitur & limit."
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "HAL TERPENTING UNTUK DIPERIKSA",
+          "big": "Kartu yang tidak mengungkapkan tarif per pos tidak memungkinkan penghitungan penghematan, sehingga tidak dapat menjadi objek perbandingan.",
+          "p": [
+            "Tinggi rendahnya tarif cashback hanyalah satu dari banyak variabel yang menentukan total biaya. Bila biaya penerbitan, biaya isi saldo, biaya konversi, spread kurs, biaya pembayaran luar negeri, dan biaya ATM tidak diungkapkan per pos, pengguna tidak memiliki nilai dasar untuk menerapkan tarif tersebut. 'Penghematan' yang dihitung dalam keadaan itu hanyalah perkiraan yang tidak dapat diverifikasi.",
+            "Karena itu kriteria pertama dalam memilih kartu bukan besarnya tarif, melainkan tingkat pengungkapan sistem biayanya. Yang paling masuk akal adalah mengutamakan kartu yang memiliki daftar biaya per pos di situs atau ketentuan resmi, mengatur prosedur pemberitahuan sebelum tarif diubah, serta menyebutkan dasar kurs beserta rentang markup secara jelas.",
+            "Bila ketiga hal di atas tidak dapat diverifikasi, disarankan melakukan pembayaran uji dalam jumlah kecil untuk memverifikasi tagihan nyata sebelum menyetor dana dalam jumlah besar."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Tanya jawab kartu kripto | Panduan pemula | Crypto Cards Info",
+      "desc": "Penjelasan sederhana tentang kartu debit kripto, stablecoin, isi saldo, spread kurs, biaya, cashback, KYC, dan istilah dasar.",
+      "h1": "Tanya jawab kartu kripto",
+      "lead": "Konsep dan istilah dasar yang sering ditanyakan pengguna baru kartu kripto. Ini adalah penjelasan umum; syarat sebenarnya harus diperiksa pada dokumen resmi layanan yang akan Anda pakai.",
+      "sections": [
+        {
+          "k": "faq",
+          "items": [
+            [
+              "Apa itu kartu debit kripto?",
+              "Kartu prabayar atau debit yang memungkinkan Anda memakai mata uang kripto atau stablecoin yang dimiliki untuk pembayaran. Umumnya Anda mengisi aset ke akun kartu lalu membayar di merchant pada jaringan kartu seperti Visa."
+            ],
+            [
+              "Apakah saya membayar langsung dengan kripto?",
+              "Pada umumnya kripto dikonversi menjadi mata uang fiat pada saat pembayaran dan merchant menerima fiat. Merchant memprosesnya seperti transaksi kartu biasa, sementara aset dipotong dari akun Anda."
+            ],
+            [
+              "Apa itu stablecoin?",
+              "Mata uang kripto yang dirancang mengikuti nilai aset acuan seperti dolar AS. Volatilitas harganya relatif kecil sehingga banyak dipakai untuk pembayaran, namun risiko cadangan dan kredibilitas penerbit tetap ada."
+            ],
+            [
+              "Apa perbedaan USDT dan USDC?",
+              "Keduanya mengikuti dolar AS tetapi berbeda pada penerbit, cara pengungkapan cadangan, jaringan yang didukung, dan layanan yang menerimanya. Periksa aset dan jaringan mana yang didukung kartu Anda sebelum mengisi saldo."
+            ],
+            [
+              "Apa itu isi saldo (top-up)?",
+              "Proses mengisi saldo yang dapat dibelanjakan dengan kartu. Umumnya dilakukan dengan mengirim aset dari dompet pribadi atau bursa, dan biaya isi saldo dapat timbul pada tahap ini."
+            ],
+            [
+              "Apakah terjadi konversi mata uang saat membayar?",
+              "Bila mata uang pembayaran berbeda dari mata uang saldo kartu, terjadi konversi. Kurs yang berlaku dan biaya tambahan saat itu menentukan jumlah yang benar-benar Anda tanggung."
+            ],
+            [
+              "Apa itu kurs dan spread?",
+              "Spread adalah selisih antara kurs acuan dan kurs yang benar-benar diterapkan. Meski biaya yang diumumkan 0%, spread yang lebar tetap menaikkan biaya nyata."
+            ],
+            [
+              "Apa saja jenis biaya kartu?",
+              "Biaya penerbitan, biaya tahunan, biaya isi saldo, biaya konversi kripto, biaya valuta dan spread, biaya pembayaran luar negeri, serta biaya ATM. Hanya dengan memisahkan per pos Anda dapat melihat total biaya."
+            ],
+            [
+              "Bagaimana cashback dihitung?",
+              "Umumnya tarif dikalikan dengan belanja yang memenuhi syarat, lalu diterapkan plafon bulanan dan pengecualian transaksi. Jenis aset pembayaran dan syarat pemakaiannya juga memengaruhi nilai nyata."
+            ],
+            [
+              "Apakah cashback yang lebih tinggi selalu lebih baik?",
+              "Tidak. Setelah memasukkan plafon akumulasi, syarat staking, nilai aset pembayaran, serta biaya isi saldo dan konversi, penghematan nyatanya bisa sangat berbeda."
+            ],
+            [
+              "Apa itu fiat?",
+              "Mata uang resmi yang diterbitkan pemerintah, misalnya rupiah, dolar AS, euro."
+            ],
+            [
+              "Apa itu dompet (wallet)?",
+              "Perangkat lunak atau perangkat untuk menyimpan dan mengirim kripto. Ada dompet self-custody, di mana Anda memegang kunci pribadi sendiri, dan dompet yang disimpan penyedia."
+            ],
+            [
+              "Apa itu jaringan blockchain?",
+              "Jaringan tempat transaksi dicatat dan diteruskan. Aset yang sama pada jaringan berbeda memiliki jalur dan biaya yang berbeda."
+            ],
+            [
+              "Apa itu biaya gas / biaya jaringan?",
+              "Biaya yang dibayarkan ke jaringan blockchain untuk memproses transaksi. Biaya ini timbul terpisah dari biaya penyedia kartu."
+            ],
+            [
+              "Apa itu on-ramp dan off-ramp?",
+              "On-ramp adalah jalur dari fiat ke kripto; off-ramp adalah jalur dari kripto kembali ke fiat."
+            ],
+            [
+              "Apa itu KYC?",
+              "Proses penyedia layanan keuangan memverifikasi identitas pengguna, sering diperlukan untuk penerbitan kartu dan kenaikan limit."
+            ],
+            [
+              "Apa itu biaya FX?",
+              "Biaya pembayaran valuta asing ketika mata uang pembayaran berbeda dari mata uang penyelesaian kartu. Tarif jaringan kartu dan tarif penyedia dapat berlaku bersamaan."
+            ],
+            [
+              "Apa itu biaya ATM?",
+              "Biaya yang dikenakan penyedia kartu saat Anda menarik uang tunai di ATM, umumnya berupa tarif beserta jumlah minimum."
+            ],
+            [
+              "Apa itu transfer antar kartu?",
+              "Fitur memindahkan saldo kartu secara langsung antar pengguna layanan yang sama. Ketersediaan, biaya, dan limitnya berbeda pada setiap layanan."
+            ],
+            [
+              "Apakah saldo kartu saya dijamin?",
+              "Saldo kartu prabayar dan aset kripto tidak termasuk dalam cakupan penjaminan simpanan. Periksa penerbit kartu yang sebenarnya dan cara aset dikelola."
+            ]
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "title": "Penafian dan Pembatasan Tanggung Jawab | Crypto Cards Info",
+      "desc": "Sifat informasi yang disediakan Crypto Cards Info, cakupan tanggung jawab pengguna, dan pembatasan tanggung jawab atas layanan eksternal.",
+      "h1": "Penafian dan pembatasan tanggung jawab",
+      "lead": "Halaman ini bertujuan menyatakan dengan jelas sifat informasi yang disediakan Crypto Cards Info dan cakupan tanggung jawab pengguna.",
+      "stamp": "Pembaruan terakhir: 6 September 2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Pasal 1 (Tujuan dan cakupan penerapan)",
+              "p": [
+                "Pemberitahuan ini berlaku atas seluruh halaman, tabel, diagram, angka, dan penjelasan yang dipublikasikan Crypto Cards Info (selanjutnya disebut 'situs ini').",
+                "Situs ini bukan situs resmi penerbit kartu, bursa, penyedia dompet, atau protokol mana pun, dan tidak memiliki hubungan sebagai wakil, penerima kuasa, atau agen penjualan. Mengakses situs ini atau memakai informasi yang dipublikasikan dianggap telah mengetahui isi pemberitahuan ini."
+              ]
+            },
+            {
+              "t": "Pasal 2 (Sifat informasi)",
+              "p": [
+                "Informasi yang disediakan situs ini merupakan informasi umum yang dihimpun dari dokumen publik, dokumen resmi, dan sumber acuan lain.",
+                "Informasi mencerminkan dokumen pada saat penyusunan atau pembaruan; setelah itu kebijakan, biaya, limit, manfaat, dan pembatasan per wilayah dari penyedia dapat berubah."
+              ]
+            },
+            {
+              "t": "Pasal 3 (Perihal ketepatan)",
+              "p": [
+                "Situs ini melakukan upaya yang wajar untuk menjaga ketepatan dan kemutakhiran informasi, tetapi tidak dapat selalu mencegah atau menjamin terhadap perubahan, kekeliruan, kelalaian, atau keterlambatan pada informasi yang disediakan pihak ketiga.",
+                "Situs ini tidak memberikan jaminan apa pun, baik tegas maupun tersirat, mengenai kelengkapan, ketepatan, kemutakhiran, atau kesesuaian untuk tujuan tertentu dari informasi yang dipublikasikan."
+              ]
+            },
+            {
+              "t": "Pasal 4 (Penafian rekomendasi dan ajakan)",
+              "p": [
+                "Munculnya suatu kartu di situs ini, atau ditampilkannya suatu syarat sebagai lebih menguntungkan dalam tabel perbandingan, tidak boleh ditafsirkan sebagai rekomendasi atau ajakan untuk berinvestasi, mendaftar, atau memakai produk maupun layanan keuangan apa pun.",
+                "Informasi di situs ini tidak merupakan nasihat investasi, keuangan, hukum, pajak, atau akuntansi.",
+                "Pembedaan warna, urutan penyusunan, dan posisi penempatan dalam tabel perbandingan dimaksudkan untuk membedakan jenis rancangan kartu atau menjaga keterbacaan, bukan pemeringkatan atau penunjukan bahwa suatu penyedia lebih baik."
+              ]
+            },
+            {
+              "t": "Pasal 5 (Penilaian dan tanggung jawab pengguna)",
+              "p": [
+                "Pengguna hendaknya memakai informasi di situs ini hanya sebagai bahan acuan.",
+                "Keputusan akhir mengenai pendaftaran kartu, KYC, isi saldo, pembayaran, penarikan, transfer, konversi aset kripto, dan pemakaian cashback diambil sendiri oleh pengguna.",
+                "Pengguna memeriksa dan menanggung sendiri risiko yang dapat timbul seperti biaya, kerugian, fluktuasi kurs, perubahan kebijakan, pembatasan layanan, pembatasan akun, serta pembekuan atau hilangnya aset."
+              ]
+            },
+            {
+              "t": "Pasal 6 (Kekeliruan dan perubahan informasi)",
+              "p": [
+                "Kebijakan dan syarat penyedia dapat berubah tanpa pemberitahuan sebelumnya atau sesuai kebijakan mereka.",
+                "Karena itu biaya, limit, cashback, syarat pemakaian, dan informasi lain yang ditampilkan di situs ini dapat berbeda dari syarat nyata yang berlaku saat ini. Sebelum melakukan transaksi atau pendaftaran penting, selalu periksa situs, aplikasi, ketentuan, dan pengumuman terbaru dari layanan tersebut."
+              ]
+            },
+            {
+              "t": "Pasal 7 (Risiko yang melekat pada pemakaian kartu kripto)",
+              "p": [
+                "Kartu kripto berbeda sifat hukumnya dari rekening simpanan bank. Dalam proses memindahkan aset kripto atau stablecoin ke akun maupun dompet penyedia dan mengubahnya menjadi saldo pembayaran, dapat timbul risiko penitipan, risiko konversi, risiko penyedia, risiko regulasi, risiko on-chain, dan risiko penyimpanan kunci sendiri.",
+                "Risiko tersebut ada secara bersama tanpa bergantung pada jenis kartu, dan menjadi beban pengguna."
+              ]
+            },
+            {
+              "t": "Pasal 8 (Pembatasan tanggung jawab atas layanan eksternal)",
+              "p": [
+                "Situs ini dapat menyediakan tautan ke situs perusahaan kartu, bursa, dompet, dan layanan pembayaran eksternal.",
+                "Dalam hal itu, pengoperasian layanan, pemrosesan data pribadi, biaya, ketentuan, transaksi, KYC, pembatasan akun, penitipan aset, pengembalian dana, cashback, dan perubahan kebijakan situs eksternal berada dalam tanggung jawab dan syarat penyedia tersebut. Situs ini tidak mengendalikan pengoperasian atau kebijakan layanan eksternal."
+              ]
+            },
+            {
+              "t": "Pasal 9 (Prinsip bila terdapat afiliasi atau iklan)",
+              "p": [
+                "Bila memakai tautan afiliasi atau iklan, hal itu dibedakan dengan jelas dari konten biasa dan ditandai agar mudah dikenali pengguna.",
+                "Adanya iklan atau hubungan afiliasi tidak mengubah kriteria perbandingan yang objektif maupun kebenaran faktual informasi. Hubungan afiliasi dan penyediaan informasi editorial dijalankan secara terpisah."
+              ]
+            },
+            {
+              "t": "Pasal 10 (Batas cakupan perlindungan aset)",
+              "p": [
+                "Saldo kartu prabayar dan aset kripto tidak termasuk dalam cakupan penjaminan simpanan. Ketika penyedia tidak mampu membayar, saldo diperlakukan sebagai utang biasa dan pemulihannya beserta waktunya bergantung pada prosedur hukum yang berlaku.",
+                "Kewajiban perlindungan aset pengguna menurut hukum suatu negara berlaku bagi penyedia yang terdaftar di negara tersebut, dan tidak berlaku sama bagi penyedia yang menerbitkan serta mengoperasikan kartu di luar negeri."
+              ]
+            },
+            {
+              "t": "Pasal 11 (Pembatasan tanggung jawab)",
+              "p": [
+                "Atas kerugian langsung, tidak langsung, insidental, atau konsekuensial yang timbul karena pengguna mempercayai informasi yang dipublikasikan untuk menerbitkan, mengisi saldo, membayar dengan kartu, atau memindahkan dan menyetor aset — termasuk kerugian, biaya peluang, tidak diterimanya atau dihentikannya reward, penghentian layanan, serta pembekuan atau hilangnya aset — situs ini dan pengelolanya tidak menanggung tanggung jawab hukum apa pun sepanjang cakupan maksimum yang diizinkan hukum yang berlaku.",
+                "Namun pasal ini tidak ditafsirkan sebagai mengesampingkan tanggung jawab yang menurut hukum tidak boleh dibatasi atau dikesampingkan."
+              ]
+            },
+            {
+              "t": "Pasal 12 (Merek dagang dan penyebutan pihak ketiga)",
+              "p": [
+                "Visa adalah merek dagang Visa Inc., Apple Pay milik Apple Inc., Google Pay milik Google LLC, dan Samsung Pay milik Samsung Electronics Co., Ltd.; nama penyedia, nama kartu, dan logo adalah milik pemegang hak masing-masing.",
+                "Penyebutan pada situs ini dipakai hanya untuk mengidentifikasi objek perbandingan dan tidak menyiratkan dukungan, persetujuan, atau afiliasi dari pemegang hak."
+              ]
+            },
+            {
+              "t": "Pasal 13 (Hukum yang berlaku dan yurisdiksi)",
+              "p": [
+                "Penafsiran dan penerapan pemberitahuan ini mengikuti hukum yang berlaku di tempat kedudukan pengelola, dan sengketa diselesaikan di pengadilan yang berwenang menurut hukum acara perdata.",
+                "Bila salah satu pasal dalam pemberitahuan ini dinyatakan batal atau tidak dapat dilaksanakan, pasal-pasal lainnya tetap berlaku."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Ketentuan Penggunaan | Crypto Cards Info",
+      "desc": "Ketentuan mengenai syarat penggunaan situs Crypto Cards Info beserta hak dan kewajiban pengguna serta pengelola.",
+      "h1": "Ketentuan Penggunaan",
+      "lead": "Ketentuan ini mengatur syarat dan prosedur penggunaan situs Crypto Cards Info beserta hak, kewajiban, dan tanggung jawab pengguna serta pengelola.",
+      "stamp": "Pembaruan terakhir: 6 September 2026 · Tanggal berlaku: 6 September 2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Pasal 1 (Tujuan)",
+              "p": [
+                "Ketentuan ini mengatur hak, kewajiban, tanggung jawab, dan hal lain yang diperlukan antara situs ini dan pengguna, berkenaan dengan penggunaan layanan informasi yang disediakan Crypto Cards Info."
+              ]
+            },
+            {
+              "t": "Pasal 2 (Definisi)",
+              "p": [
+                "'Layanan' berarti seluruh kegiatan penyediaan informasi perbandingan dan penghimpunan mengenai kartu kripto yang disediakan situs ini secara daring.",
+                "'Pengguna' berarti pihak yang mengakses situs ini dan memakai layanan sesuai ketentuan ini.",
+                "'Konten' berarti teks, tabel, diagram, gambar, dan susunan editorial yang dibuat dan dipublikasikan situs ini."
+              ]
+            },
+            {
+              "t": "Pasal 3 (Keberlakuan dan perubahan ketentuan)",
+              "p": [
+                "Ketentuan ini berlaku sejak dipublikasikan di situs ini.",
+                "Situs ini dapat mengubah ketentuan bila terdapat alasan yang wajar seperti perubahan hukum terkait atau perubahan struktur layanan, dan akan mempublikasikan isi perubahan beserta tanggal pembaruan pada halaman ini.",
+                "Bila tidak menyetujui ketentuan yang diubah, pengguna dapat berhenti memakai layanan. Melanjutkan pemakaian setelah publikasi dianggap menyetujui perubahan tersebut."
+              ]
+            },
+            {
+              "t": "Pasal 4 (Isi layanan)",
+              "p": [
+                "Situs ini menghimpun dan menyediakan informasi mengenai biaya, limit, fitur, dan syarat cashback kartu kripto berdasarkan dokumen publik.",
+                "Situs ini tidak menerbitkan, menjual, memperantarai, atau mengageni kartu, dan tidak menyediakan layanan pembayaran, penitipan aset, penukaran mata uang, atau penjualan produk keuangan."
+              ]
+            },
+            {
+              "t": "Pasal 5 (Tanpa akun keanggotaan)",
+              "p": [
+                "Situs ini bertujuan menyediakan informasi dan tidak memiliki fitur pendaftaran anggota, masuk akun, pembayaran, atau permintaan pengisian data pribadi.",
+                "Karena itu siapa pun dapat membaca konten tanpa akun, dan tidak timbul kewajiban pengelolaan akun bagi pengguna."
+              ]
+            },
+            {
+              "t": "Pasal 6 (Kewajiban dan larangan)",
+              "p": [
+                "Pengguna tidak boleh menyalin, menyebarkan, meneruskan, menerbitkan, membuat karya turunan, atau memanfaatkan konten situs ini secara komersial tanpa persetujuan tertulis sebelumnya dari pengelola.",
+                "Pengguna tidak boleh memakai sarana otomatis (crawler, scraper, makro, dan sebagainya) yang menimbulkan beban berlebih atau mengganggu operasi normal layanan.",
+                "Pengguna tidak boleh mendistorsi informasi situs ini saat menyampaikannya kepada pihak ketiga, atau memakainya dengan cara menyebarkan informasi tidak benar."
+              ]
+            },
+            {
+              "t": "Pasal 7 (Hak kekayaan intelektual)",
+              "p": [
+                "Hak cipta dan hak kekayaan intelektual lain atas konten yang dibuat situs ini berada pada pengelola.",
+                "Hak atas merek dagang, nama dagang, gambar, dan logo kartu pihak ketiga berada pada pemegang hak masing-masing, dan penggunaannya di situs ini terbatas pada tujuan mengidentifikasi objek perbandingan."
+              ]
+            },
+            {
+              "t": "Pasal 8 (Perubahan dan penghentian layanan)",
+              "p": [
+                "Pengelola dapat mengubah struktur layanan, pos perbandingan, tata letak halaman, dan konten yang dipublikasikan tanpa pemberitahuan sebelumnya.",
+                "Pengelola dapat menghentikan sebagian atau seluruh layanan saat pemeliharaan perangkat, gangguan komunikasi, bencana alam, atau sebab tak terhindarkan lain, dan tidak bertanggung jawab atas kerugian yang timbul kecuali terdapat kesengajaan atau kelalaian berat."
+              ]
+            },
+            {
+              "t": "Pasal 9 (Tautan dan layanan pihak ketiga)",
+              "p": [
+                "Situs ini dapat memuat tautan ke situs yang dioperasikan pihak ketiga.",
+                "Isi, syarat, pemrosesan data pribadi, dan transaksi layanan pihak ketiga tunduk pada ketentuan dan kebijakan layanan tersebut; situs ini tidak menjamin dan tidak bertanggung jawab atas hal-hal tersebut."
+              ]
+            },
+            {
+              "t": "Pasal 10 (Penafian dan pembatasan tanggung jawab)",
+              "p": [
+                "Informasi yang disediakan situs ini merupakan informasi umum yang bersifat acuan dan tidak merupakan nasihat investasi, keuangan, hukum, pajak, atau akuntansi.",
+                "Penafian dan pembatasan tanggung jawab berkenaan dengan pemakaian informasi mengikuti isi halaman 'Penafian dan Pembatasan Tanggung Jawab', sepanjang diizinkan hukum yang berlaku, dan tidak mengesampingkan tanggung jawab yang menurut hukum tidak boleh dikesampingkan."
+              ]
+            },
+            {
+              "t": "Pasal 11 (Penyelesaian sengketa dan yurisdiksi)",
+              "p": [
+                "Penafsiran dan penerapan ketentuan ini mengikuti hukum yang berlaku di tempat kedudukan pengelola.",
+                "Bila timbul sengketa, para pihak mengutamakan penyelesaian melalui musyawarah dengan itikad baik; bila tidak tercapai, sengketa diselesaikan di pengadilan yang berwenang menurut hukum acara perdata."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Kebijakan Privasi | Crypto Cards Info",
+      "desc": "Kriteria pemrosesan data pribadi, pos yang dikumpulkan, tujuan pemakaian, masa penyimpanan, dan hak pengguna.",
+      "h1": "Kebijakan Privasi",
+      "lead": "Crypto Cards Info dijalankan untuk menyediakan informasi dan tidak mensyaratkan pendaftaran anggota maupun pengisian data pribadi untuk memakai layanan. Kebijakan ini menyatakan kriteria pemrosesan data pribadi situs ini sesuai hukum perlindungan data pribadi yang berlaku.",
+      "stamp": "Pembaruan terakhir: 6 September 2026 · Tanggal berlaku: 6 September 2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Pasal 1 (Pos data pribadi yang diproses)",
+              "p": [
+                "Situs ini tidak memiliki fitur pendaftaran anggota, masuk akun, atau pembayaran, dan tidak mengumpulkan data yang secara langsung mengidentifikasi orang seperti nama, nomor kontak, alamat, atau informasi rekening.",
+                "Bila pengguna secara sukarela memberikan informasi melalui surel untuk keperluan pertanyaan, informasi tersebut dipakai hanya untuk tujuan penanganan pertanyaan dan dihancurkan segera setelah selesai."
+              ]
+            },
+            {
+              "t": "Pasal 2 (Informasi yang dibuat dan dikumpulkan otomatis)",
+              "p": [
+                "Untuk keperluan operasi, keamanan, dan analisis statistik, informasi teknis seperti log akses, waktu akses, informasi peramban dan sistem operasi, halaman perujuk, serta jenis perangkat dapat dibuat dan dicatat secara otomatis.",
+                "Informasi tersebut diproses dalam bentuk yang tidak mengidentifikasi orang dan dipakai hanya untuk meningkatkan layanan, menangani kesalahan, dan mencegah penyalahgunaan."
+              ]
+            },
+            {
+              "t": "Pasal 3 (Tujuan pemrosesan)",
+              "p": [
+                "Situs ini memproses informasi yang dikumpulkan dan dibuat hanya untuk penyediaan dan pengoperasian layanan, menjaga kestabilan situs, analisis statistik akses, dan menanggapi pertanyaan pengguna.",
+                "Situs ini tidak memakai informasi yang dikumpulkan untuk mengidentifikasi orang bagi keperluan pemasaran, penyusunan profil, atau pengambilan keputusan otomatis."
+              ]
+            },
+            {
+              "t": "Pasal 4 (Kuki dan teknologi serupa)",
+              "p": [
+                "Situs ini dapat memakai penyimpanan peramban untuk fitur kemudahan seperti pengaturan bahasa.",
+                "Pengguna dapat menolak atau menghapus kuki dan data tersimpan melalui pengaturan peramban, yang dapat membuat sebagian fitur kemudahan terbatas."
+              ]
+            },
+            {
+              "t": "Pasal 5 (Pemberian kepada pihak ketiga)",
+              "p": [
+                "Situs ini tidak menjual atau memberikan data pribadi pengguna kepada pihak ketiga.",
+                "Namun bila terdapat permintaan berdasarkan dasar hukum atau permintaan sah dari aparat penegak hukum, situs ini dapat memberikannya sepanjang cakupan yang ditentukan hukum."
+              ]
+            },
+            {
+              "t": "Pasal 6 (Pengalihdayaan pemrosesan)",
+              "p": [
+                "Situs ini dapat mengalihdayakan pekerjaan pemrosesan sepanjang diperlukan untuk operasi, seperti hosting web, pengiriman konten, dan analisis statistik akses.",
+                "Saat pengalihdayaan, hal-hal mengenai pengelolaan data pribadi secara aman dituangkan dalam perjanjian sesuai hukum terkait, dan situs ini mengelola serta mengawasi pelaksanaan pihak penerima."
+              ]
+            },
+            {
+              "t": "Pasal 7 (Pengalihan data ke luar negeri)",
+              "p": [
+                "Saat memakai layanan hosting dan jaringan pengiriman konten global, informasi teknis dapat disimpan dan diproses pada peladen di luar negeri.",
+                "Dalam hal itu, situs ini mematuhi langkah perlindungan yang ditentukan hukum terkait."
+              ]
+            },
+            {
+              "t": "Pasal 8 (Penyimpanan dan penghancuran)",
+              "p": [
+                "Informasi yang dibuat otomatis disimpan hanya selama masa yang diperlukan untuk tujuan operasi dan keamanan, lalu dihancurkan tanpa penundaan.",
+                "Informasi dalam bentuk berkas elektronik dihapus dengan metode teknis yang tidak dapat dipulihkan; keluaran cetak dihancurkan dengan cara dirobek halus atau dibakar."
+              ]
+            },
+            {
+              "t": "Pasal 9 (Tautan eksternal)",
+              "p": [
+                "Saat Anda beralih ke layanan eksternal, kriteria pemrosesan data pribadi situs tersebut yang berlaku.",
+                "Situs ini tidak bertanggung jawab atas pemrosesan data pribadi pada situs eksternal; periksa secara terpisah kebijakan privasi situs yang Anda akses."
+              ]
+            },
+            {
+              "t": "Pasal 10 (Hak pengguna dan wakil sah)",
+              "p": [
+                "Pengguna dapat meminta akses, perbaikan, penghapusan, atau penghentian pemrosesan atas informasinya sesuai hukum terkait.",
+                "Pelaksanaan hak dapat dilakukan secara tertulis atau melalui surel, dan situs ini akan menindaklanjuti dalam jangka waktu yang ditentukan hukum."
+              ]
+            },
+            {
+              "t": "Pasal 11 (Data pribadi anak)",
+              "p": [
+                "Situs ini tidak menyediakan layanan yang ditujukan bagi anak di bawah 14 tahun dan tidak dengan sengaja mengumpulkan data pribadi anak."
+              ]
+            },
+            {
+              "t": "Pasal 12 (Langkah pengamanan)",
+              "p": [
+                "Situs ini menerapkan langkah perlindungan teknis dan administratif sebagaimana disyaratkan hukum terkait, termasuk enkripsi jalur pengiriman (HTTPS), pengelolaan hak akses, serta penyimpanan dan pencegahan pemalsuan log akses."
+              ]
+            },
+            {
+              "t": "Pasal 13 (Perubahan kebijakan)",
+              "p": [
+                "Kebijakan ini dapat direvisi mengikuti perubahan hukum, kebijakan, atau struktur layanan; saat direvisi, isi perubahan dan tanggal pembaruan dipublikasikan pada halaman ini."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "principles": {
+      "title": "Prinsip Penyediaan Informasi | Crypto Cards Info",
+      "desc": "Prinsip editorial, kriteria sumber, cara penandaan verifikasi, dan prosedur koreksi Crypto Cards Info.",
+      "h1": "Prinsip penyediaan informasi",
+      "lead": "Crypto Cards Info bukan situs yang menjual kartu kripto, melainkan media informasi khusus yang membantu pengguna menilai sendiri biaya dan fitur yang sebenarnya. Kami menerapkan prinsip berikut secara konsisten di seluruh situs.",
+      "stamp": "Pembaruan terakhir: 6 September 2026",
+      "sections": [
+        {
+          "k": "list",
+          "title": "Prinsip editorial",
+          "items": [
+            {
+              "t": "① Informasi yang objektif",
+              "d": "Tidak merekomendasikan atau mengkritik kartu maupun perusahaan mana pun tanpa syarat. Kekuatan dan keterbatasan disajikan dengan bobot yang sama."
+            },
+            {
+              "t": "② Penilaian ada pada pengguna",
+              "d": "Kami menyajikan kriteria perbandingan dan pos yang perlu diperiksa; pilihan akhir ada pada pengguna."
+            },
+            {
+              "t": "③ Mengutamakan dokumen resmi",
+              "d": "Sumber yang diutamakan adalah situs resmi, ketentuan, daftar biaya, pusat bantuan, pengumuman, dan dokumen kebijakan resmi."
+            },
+            {
+              "t": "④ Melarang informasi yang belum terverifikasi",
+              "d": "Kami tidak menduga angka, melainkan menandai 'Perlu diperiksa di sumber resmi', 'Tidak diungkapkan', atau 'Tidak disediakan'."
+            },
+            {
+              "t": "⑤ Memisahkan iklan dari fakta",
+              "d": "Ungkapan seperti 'biaya 0%' atau 'cashback hingga X%' selalu disajikan terpisah dari syarat yang berlaku nyata."
+            },
+            {
+              "t": "⑥ Kriteria pembaruan",
+              "d": "Hanya memperbarui informasi yang benar-benar berubah; tidak mengganti tanggal semata agar konten tampak baru."
+            },
+            {
+              "t": "⑦ Prinsip pembagian jenis kartu",
+              "d": "Kartu dibagi menjadi kartu khusus cashback dan kartu khusus fungsional menurut tujuan rancangannya. Pembedaan warna adalah penanda jenis, bukan penilaian lebih baik."
+            },
+            {
+              "t": "⑧ Pengungkapan hubungan kepentingan",
+              "d": "Bila timbul hubungan ekonomi dari afiliasi atau iklan, kami menyatakannya pada tulisan terkait dan menjalankannya terpisah dari kriteria editorial."
+            },
+            {
+              "t": "⑨ Prosedur koreksi",
+              "d": "Bila ditemukan kekeliruan, kami segera memperbaikinya dan mencerminkan koreksi penting pada tanggal pembaruan halaman tersebut."
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "title": "Kriteria penandaan verifikasi",
+          "p": [
+            "Pos yang nilainya tidak dapat diverifikasi dari dokumen resmi tidak dibiarkan kosong maupun diduga, melainkan ditandai 'Perlu diperiksa di sumber resmi' atau 'Tidak diungkapkan'. Penandaan ini tidak berarti fitur atau syarat tersebut tidak ada, melainkan bahwa pengguna perlu memeriksanya sendiri pada dokumen resmi.",
+            "Bila dinilai suatu fitur tidak disediakan sebagai layanan kartu, kami menandainya 'Tidak disediakan', yang sekaligus mengandung makna tidak dapat diverifikasi dari dokumen resmi yang dipublikasikan.",
+            "Tanggal pemeriksaan hanya mencantumkan hari ketika dokumen benar-benar diperiksa dan tidak diperbarui secara otomatis."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "PERMINTAAN KOREKSI",
+          "p": [
+            "Bila Anda menilai suatu angka atau syarat yang dipublikasikan berbeda dari dokumen resmi, kirimkan dasarnya (alamat halaman resmi, pasal ketentuan, tanggal pengumuman); kami akan memeriksa, memperbaiki, dan mencerminkannya pada tanggal pembaruan.",
+            "Permintaan koreksi dari pihak penyedia juga ditangani dengan kriteria yang sama, dan adanya permintaan itu sendiri tidak mengubah kriteria perbandingan maupun pembagian jenis kartu."
+          ]
+        }
+      ]
+    }
+  }
+}

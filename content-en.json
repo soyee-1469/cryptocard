@@ -1,0 +1,1466 @@
+{
+  "ui": {
+    "home": "Home",
+    "nav": [
+      "Home",
+      "Card Comparison",
+      "Fee Items",
+      "Card Features & Limits",
+      "Cashback: Comparison & Cautions",
+      "Card Selection Guide",
+      "FAQ"
+    ],
+    "footBrand": "An information platform that compares the costs, limits, features and cashback terms of crypto cards objectively.",
+    "footNoticeLabel": "Information notice",
+    "footNotice": "The card, fee, limit, cashback and related information provided by CryptoCardsInfo is general information compiled from publicly available and official sources. It is not intended to recommend, endorse or guarantee the use of, or enrolment in, any particular card or service, and it does not constitute investment, financial, legal, tax, accounting or any other professional advice. Service terms, fees, limits, benefits and policies may change, so users must check the provider's latest official materials and terms directly before applying or using a service. The final decision to use any service, and the judgement and responsibility that follow, rest with the user; to the extent permitted by applicable law, the operator's liability for decisions based solely on information on this site is limited.",
+    "copyright": "© 2026 CryptoCardsInfo",
+    "groups": [
+      {
+        "t": "COMPARISON",
+        "items": [
+          "card-comparison",
+          "fee-comparison",
+          "limit-comparison"
+        ]
+      },
+      {
+        "t": "INFORMATION",
+        "items": [
+          "cashback-fact-check",
+          "card-selection-guide",
+          "faq"
+        ]
+      },
+      {
+        "t": "POLICIES",
+        "items": [
+          "terms",
+          "privacy",
+          "disclaimer",
+          "principles"
+        ]
+      }
+    ],
+    "labels": {
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "disclaimer": "Disclaimer & Limitation of Liability",
+      "principles": "Editorial Principles"
+    },
+    "unverified": "Check official source"
+  },
+  "pages": {
+    "home": {
+      "title": "Crypto Card Comparison | Fees, Limits, Cashback | CryptoCardsInfo",
+      "desc": "CryptoCardsInfo compares crypto card fees, spending limits, ATM terms, wallet and transfer features, and cashback conditions objectively.",
+      "h1": "Cashback alone is not enough.",
+      "lead": "Compare fees, exchange rates, limits, transfer features and the real cashback conditions together. CryptoCardsInfo does not sell or promote any card — it organises information so you can judge for yourself how much you actually pay and which features you can actually use.",
+      "sections": [
+        {
+          "k": "compare2",
+          "title": "Card choice splits two ways",
+          "sub": "Crypto cards are designed for two different purposes. RedotPay, OKX Card and Ether.fi Cash are cashback-focused cards built around payment rewards. Anytap Card is a function-focused card built around limits and money mobility. The two cannot be optimal at the same time.",
+          "cols": [
+            {
+              "tone": "amber",
+              "label": "Cashback-focused card · RedotPay · OKX · Ether.fi",
+              "t": "RedotPay · OKX Card · Ether.fi Cash",
+              "items": [
+                "Rates are tied to membership tier, staking or a specific payment method.",
+                "A monthly accrual cap means spending more does not increase what you receive.",
+                "Rewards are often paid in the issuer's own token.",
+                "Maintaining an exchange account or collateral may be required."
+              ],
+              "note": "This is the point that needs particular care. Cashback and referral commissions are, in most cases, promotions the provider may vary or discontinue under its terms — and rates have been cut and payouts suspended without notice."
+            },
+            {
+              "tone": "teal",
+              "label": "Function-focused card · Anytap",
+              "t": "Anytap Card",
+              "items": [
+                "What matters is whether monthly, daily and per-transaction limits are clearly published.",
+                "Check card-to-card transfer, personal wallet issuance and external wallet withdrawal.",
+                "No cashback, but a simple fee structure makes total cost calculable in advance.",
+                "The test is the level of fees, not the risk of benefits changing."
+              ],
+              "note": "A function-focused card pays no rewards, so top-up, payment and conversion fees remain real costs. Check first whether rates are published line by line and whether you can calculate the total cost yourself."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "GLOBAL TREND",
+          "p": [
+            "Across the global crypto card market, users worn down by the cashback race are moving to function-focused cards. Repeated rate cuts, newly introduced accrual caps, tightened staking requirements and suspended referral commissions have made clear that whoever picks a card for its rewards is the one carrying the risk of the terms changing.",
+            "As a result, a growing share of users choose on a different test: is the limit sufficient, can funds move as needed, and can the total cost be calculated in advance? That is why Crypto Cards Info separates the two card types explicitly."
+          ]
+        },
+        {
+          "k": "links",
+          "title": "What you can compare",
+          "items": [
+            {
+              "p": "card-comparison",
+              "kicker": "CARD COMPARISON",
+              "t": "RedotPay · OKX · Ether.fi · Anytap",
+              "d": "Issuance fee, annual fee, top-up method, foreign payments, ATM, card-to-card transfer, limits and cashback terms on one standard."
+            },
+            {
+              "p": "fee-comparison",
+              "kicker": "FEE COMPARISON",
+              "t": "Does 0% really mean zero cost?",
+              "d": "Check issuance, top-up, crypto conversion, FX spread, foreign payment and ATM costs step by step."
+            },
+            {
+              "p": "limit-comparison",
+              "kicker": "LIMIT COMPARISON",
+              "t": "Top-up, payment, ATM and transfer limits",
+              "d": "For high-volume users, limits bind long before the cashback rate does."
+            },
+            {
+              "p": "wallet-transfer",
+              "kicker": "WALLET & TRANSFER",
+              "t": "Not only payments, but money movement",
+              "d": "How funds are held and moved, and whether card-to-card transfer is supported."
+            },
+            {
+              "p": "cashback-fact-check",
+              "kicker": "CASHBACK FACT CHECK",
+              "t": "The real terms behind 'up to X%'",
+              "d": "Minimum spend, monthly caps, tier and staking requirements, payout asset and excluded transactions."
+            },
+            {
+              "p": "card-selection-guide",
+              "kicker": "SELECTION GUIDE",
+              "t": "Features → fees → FX → limits → cashback",
+              "d": "The best card is not the one with the highest cashback. We set out the order in which to check."
+            },
+            {
+              "p": "faq",
+              "kicker": "FAQ",
+              "t": "Basic concepts and terminology",
+              "d": "Twenty plain-language answers on stablecoins, top-ups, FX spread, KYC, ATM fees and more."
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "title": "Compare the real total cost",
+          "p": [
+            "Advertised numbers usually describe a single line item. What a user actually bears is the issuance fee, the top-up fee, the crypto conversion fee, the FX fee and spread, the foreign payment fee and ATM costs, added together and then reduced by the cashback actually received.",
+            "CryptoCardsInfo therefore compares the final total cost of using a card rather than the lowest headline rate."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "EDITORIAL PRINCIPLES",
+          "p": [
+            "All information is presented objectively; no card or company is unconditionally recommended or criticised.",
+            "Official websites, terms, fee schedules and notices are used as primary sources. Where a figure cannot be verified, we do not estimate — we mark it 'Check official source' or 'Not disclosed officially'.",
+            "Marketing phrases such as '0% fees' or 'up to X% cashback' are always shown separately from the conditions that actually apply. The final choice rests with the user."
+          ]
+        }
+      ]
+    },
+    "card-comparison": {
+      "title": "Crypto Card Comparison | RedotPay·OKX·Anytap·Ether.fi | CryptoCardsInfo",
+      "desc": "Compare the costs, payment features, ATM terms, transfer functions and cashback conditions of major crypto cards including RedotPay, OKX, Anytap and Ether.fi.",
+      "h1": "Crypto card comparison",
+      "lead": "CryptoCardsInfo compares the costs, payment features, ATM use, card-to-card transfer, limits and cashback terms of major crypto cards. Every entry is based on publicly available official material; where official sources do not disclose a figure, we do not invent one.",
+      "stamp": "Last verified: 6 September 2026 · Information was checked against each provider's public materials and may change as providers revise their policies. Please confirm the latest official material before use.",
+      "sections": [
+        {
+          "k": "cards",
+          "title": "Major crypto cards",
+          "items": [
+            {
+              "key": "redotpay",
+              "name": "RedotPay",
+              "tag": "Global crypto payment card",
+              "rows": [
+                [
+                  "Virtual card issuance",
+                  "USD 10 (stated as instant issuance)"
+                ],
+                [
+                  "Payment fee",
+                  "1.2% (stated as charged per transaction)"
+                ],
+                [
+                  "Effective cost in KRW terms",
+                  "approx. 2–3% (may include FX conversion costs)"
+                ],
+                [
+                  "Monthly fee",
+                  "Free (stated as no fixed monthly charge)"
+                ]
+              ],
+              "sum": "FX conversion costs may be added on top of the stated rate, so check the effective cost in your own currency."
+            },
+            {
+              "key": "okx",
+              "name": "OKX Card",
+              "tag": "Exchange-issued · cashback focused",
+              "rows": [
+                [
+                  "Cashback",
+                  "Non-VIP 2% – VIP4+ 10% (EEA basis)"
+                ],
+                [
+                  "Monthly cashback cap",
+                  "€10 – €1,000 by tier"
+                ],
+                [
+                  "Monthly cost",
+                  "USD 0 (published card terms)"
+                ],
+                [
+                  "Card format",
+                  "Virtual-first · varies by region"
+                ]
+              ],
+              "sum": "The published rate table is the EEA basis; for Korean accounts the app's Card Cashback screen is final."
+            },
+            {
+              "key": "etherfi",
+              "name": "Ether.fi Cash",
+              "tag": "Protocol based · no-borrow tier",
+              "rows": [
+                [
+                  "Cashback",
+                  "3% on the first band (Core/Luxe/Pinnacle)"
+                ],
+                [
+                  "Band structure",
+                  "Excess tapers to 1% then 0.5%"
+                ],
+                [
+                  "ATM fee",
+                  "Stated as 2%"
+                ],
+                [
+                  "Card format",
+                  "Virtual + physical · Visa"
+                ]
+              ],
+              "sum": "A collateral-based credit structure; membership tier and excluded categories must be checked."
+            },
+            {
+              "key": "anytap",
+              "name": "Anytap Card",
+              "tag": "Limits & money mobility",
+              "rows": [
+                [
+                  "Cashback",
+                  "None"
+                ],
+                [
+                  "Spending limit",
+                  "USD 1,000,000 / month (physical card)"
+                ],
+                [
+                  "Top-up fee",
+                  "2%"
+                ],
+                [
+                  "Card format",
+                  "Physical + virtual · Visa"
+                ]
+              ],
+              "sum": "Instead of cashback, limits and wallet/transfer features are strengthened."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Standard comparison table",
+          "sub": "Items not disclosed in official material are marked 'Check official source'. This does not mean the feature is absent.",
+          "head": [
+            "Item",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "rows": [
+            [
+              "Virtual card issuance fee",
+              "USD 10",
+              "None (free)",
+              "Not disclosed",
+              "20 USDT"
+            ],
+            [
+              "Physical card issuance fee",
+              "USD 100 (new issuance suspended in Korea)",
+              "Virtual-card led; physical varies by region",
+              "Free (metal on higher tiers)",
+              "100 USDT (min. deposit 50 USDT)"
+            ],
+            [
+              "Top-up method",
+              "Crypto top-up",
+              "Exchange account balance (no direct fiat deposit)",
+              "Protocol deposit (Direct) or collateral loan (Borrow)",
+              "Deposit from a personal wallet or an exchange"
+            ],
+            [
+              "Foreign payments",
+              "Visa merchants",
+              "Visa merchants",
+              "Visa merchants",
+              "Visa merchants"
+            ],
+            [
+              "Card-to-card transfer",
+              "Not provided",
+              "Not provided",
+              "Not provided",
+              "Supported"
+            ],
+            [
+              "Member wallet → external wallet",
+              "Supported (on-chain transfer; no direct bank withdrawal)",
+              "Supported (on-chain withdrawal via OKX exchange account; not a card-specific feature)",
+              "Not provided (private key export not yet released; announced as planned)",
+              "Supported (network gas borne by the user)"
+            ],
+            [
+              "Top-up fee",
+              "None (on-chain gas only)",
+              "Not disclosed",
+              "Not disclosed",
+              "2%"
+            ],
+            [
+              "Payment fee",
+              "1% same-currency",
+              "0%",
+              "0% (FX charged separately)",
+              "1% same-currency"
+            ],
+            [
+              "Foreign payment / FX fee",
+              "1.2% conversion fee added (2.2% total)",
+              "0% (0.4% stablecoin spread separate)",
+              "1% across all tiers",
+              "1% + USD 0.30 per transaction"
+            ],
+            [
+              "ATM fee",
+              "2%",
+              "2% (minimum USD 1)",
+              "2%",
+              "2% (minimum USD 1)"
+            ],
+            [
+              "Spending limit",
+              "Up to USD 100,000 per transaction",
+              "Check official source",
+              "Not disclosed",
+              "Physical card USD 1,000,000 per month"
+            ],
+            [
+              "ATM withdrawal limit",
+              "Not disclosed",
+              "Not disclosed",
+              "Not disclosed",
+              "USD 15,000 per month (USD 1,500 per transaction and per day)"
+            ],
+            [
+              "Cashback",
+              "None",
+              "Up to 2% (USDG payments only), monthly cap USD 5 (standard) – USD 1,000 (VIP)",
+              "Core 3% → 1% → 0.5% tiered bands (varies by tier)",
+              "None"
+            ],
+            [
+              "Cashback conditions",
+              "Not applicable",
+              "OKX account, KYC and OKX Pay activation required; applies only to USDG payments",
+              "ETHFI staking required to upgrade tier; Borrow Mode carries collateral liquidation risk",
+              "Not applicable"
+            ],
+            [
+              "Referral programme",
+              "Commission of up to 40% advertised, but payouts are currently suspended",
+              "No separate programme announced",
+              "No separate programme announced",
+              "Supported up to 40% (tier conditions apply; verify separately)"
+            ],
+            [
+              "Other key features",
+              "Apple Pay",
+              "Apple Pay · Google Pay · stablecoin payments via OKX Pay",
+              "Apple Pay · Google Pay · non-custodial (Safe) wallet structure",
+              "Card-to-card transfer · personal wallet · external wallet withdrawal · Apple/Google/Samsung Pay"
+            ]
+          ],
+          "notes": [
+            "Visa is a trademark of Visa Inc.; card names and logos belong to their respective owners. They are used here solely to identify the subjects of comparison."
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Cashback-focused card"
+            },
+            {
+              "tone": "teal",
+              "label": "Function-focused card"
+            }
+          ],
+          "legend": "The column background colour marks the card's design type — it is not a judgement of quality or of one card being better than another. RedotPay, OKX Card and Ether.fi Cash share one colour because they are cashback-focused cards built around payment rewards; Anytap Card has its own colour because it is a function-focused card built around limits and money mobility. Grouping cards with different purposes under one colour would invite the misreading that they are being judged on the same standard — the colour split exists to prevent exactly that."
+        },
+        {
+          "k": "notice",
+          "tone": "warn",
+          "label": "NOTE FOR USERS IN KOREA",
+          "p": [
+            "Users in Korea should confirm whether card issuance and delivery are available before applying.",
+            "Issuance and shipping policies may change, so please check each provider's official website and latest announcements.",
+            "Referral programmes and commission policies may also change; confirm the currently applicable terms through official sources."
+          ]
+        },
+        {
+          "k": "text",
+          "title": "Next steps",
+          "p": [
+            "To break the cost structure down line by line, see the fee comparison page; to check monthly volume against limits, see the limit comparison page. The conditions that actually apply to cashback are set out in the cashback fact check."
+          ]
+        }
+      ]
+    },
+    "fee-comparison": {
+      "title": "Crypto Card Fee Comparison | Top-up, FX, Foreign Payment, ATM | CryptoCardsInfo",
+      "desc": "Compare crypto card issuance fees, top-up fees, crypto conversion costs, FX spread, foreign payment fees and ATM costs.",
+      "h1": "Fee items",
+      "lead": "'0% fees' does not mean the real cost is zero. Costs can arise at every stage that money moves — top-up, crypto conversion, FX and spread, payment, foreign payment and ATM withdrawal.",
+      "sections": [
+        {
+          "k": "flow",
+          "title": "Where does the real cost arise?",
+          "sub": "Rather than the headline 0%, check how much finally leaves your pocket.",
+          "steps": [
+            {
+              "num": "STEP 1",
+              "t": "Top-up",
+              "d": "A top-up fee may apply when loading the card balance."
+            },
+            {
+              "num": "STEP 2",
+              "t": "Crypto conversion",
+              "d": "The cost of converting holdings into a spendable asset."
+            },
+            {
+              "num": "STEP 3",
+              "t": "FX / rate applied",
+              "d": "The applied rate and its spread (markup) change what you actually pay."
+            },
+            {
+              "num": "STEP 4",
+              "t": "Card payment",
+              "d": "Check the settlement currency and how the rate is handled at the moment of payment."
+            },
+            {
+              "num": "STEP 5",
+              "t": "Foreign payment cost",
+              "d": "Network-standard fees may apply at overseas merchants."
+            },
+            {
+              "num": "STEP 6",
+              "t": "ATM / withdrawal",
+              "d": "Cash withdrawals may carry their own rate and minimum charge."
+            },
+            {
+              "num": "RESULT",
+              "t": "Real total cost",
+              "d": "Issuance + top-up + conversion + FX + spread + foreign payment + ATM − cashback actually received"
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "REAL TOTAL COST",
+          "p": [
+            "The purpose of comparison is not to find the lowest headline rate but to see what you finally bear in real use.",
+            "Real total cost = issuance fee + top-up fee + crypto conversion fee + FX fee + FX spread + foreign payment fee + ATM cost − cashback actually received.",
+            "Even for the same amount spent, the total cost differs with the top-up route and the payment currency."
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "CONSUMER WARNING",
+          "big": "A provider that does not publish its fees transparently on its official site cannot be treated as trustworthy.",
+          "p": [
+            "Publishing a fee schedule is not a matter of provider discretion; it belongs to the basic duty to let users understand the contract terms in advance. If issuance, top-up, conversion, FX spread, foreign payment and ATM charges cannot each be verified on the official site or in the official terms, the user cannot calculate the total cost before entering into the contract.",
+            "Where a provider offers only phrases such as 'free', '0% fees' or 'the lowest in the industry' without stating rates, the possibility cannot be excluded that the real cost is embedded in the FX spread or the conversion step and never displayed. It is rational to rank a provider whose marketing copy does not match its official fee schedule lower in any comparison.",
+            "CryptoCardsInfo does not estimate figures where the following three items cannot be verified, and marks them 'Check official source': an official fee schedule stating each rate; a stated procedure for advance notice of rate changes; and the basis of the applied exchange rate, including whether it is the card network reference rate and the size of any markup.",
+            "Before choosing a card, confirm whether a fee schedule is published on the official site or in the terms, whether the history and method of notice for rate changes can be verified, and whether you can calculate the total cost yourself without contacting support. If any of these cannot be confirmed, test with a small payment and verify the actual charge before depositing funds."
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "IMPORTANT NOTICE FOR USERS",
+          "big": "A provider that does not publish its fees transparently on its official site cannot be an object of trust.",
+          "p": [
+            "Publishing a fee schedule is not a matter of provider discretion; it belongs to the basic duty to disclose information so that users can know the terms of the contract in advance. If the issuance fee, top-up fee, conversion fee, FX spread, foreign payment fee and ATM fee cannot be verified line by line on the official site or in the official terms, the user simply cannot calculate the total cost before contracting.",
+            "Where a provider offers only expressions such as 'free', '0% fees' or 'lowest in the industry' without stating rates, the possibility that the real cost is embedded in the FX spread or the conversion step — and therefore not displayed — cannot be excluded. It is reasonable to rank providers whose marketing copy does not match their official fee schedule lower in any comparison."
+          ]
+        }
+      ]
+    },
+    "limit-comparison": {
+      "title": "Crypto Card Limit Comparison | Payment, ATM, Card Transfer | CryptoCardsInfo",
+      "desc": "Compare crypto card top-up limits, payment limits, ATM withdrawal limits and card-to-card transfer limits.",
+      "h1": "Card features and limits",
+      "lead": "For users with high volume, limits bind long before the cashback rate does. How topped-up funds can be held and moved matters just as much as payments. This page compares card features and limits together.",
+      "sections": [
+        {
+          "k": "compare2",
+          "title": "Card choice splits two ways",
+          "sub": "Crypto cards are designed for two different purposes. RedotPay, OKX Card and Ether.fi Cash are cashback-focused cards built around payment rewards. Anytap Card is a function-focused card built around limits and money mobility. The two cannot be optimal at the same time.",
+          "cols": [
+            {
+              "tone": "amber",
+              "label": "Cashback-focused card · RedotPay · OKX · Ether.fi",
+              "t": "RedotPay · OKX Card · Ether.fi Cash",
+              "items": [
+                "Rates are tied to membership tier, staking or a specific payment method.",
+                "A monthly accrual cap means spending more does not increase what you receive.",
+                "Rewards are often paid in the issuer's own token.",
+                "Maintaining an exchange account or collateral may be required."
+              ],
+              "note": "This is the point that needs particular care. Cashback and referral commissions are, in most cases, promotions the provider may vary or discontinue under its terms — and rates have been cut and payouts suspended without notice."
+            },
+            {
+              "tone": "teal",
+              "label": "Function-focused card · Anytap",
+              "t": "Anytap Card",
+              "items": [
+                "What matters is whether monthly, daily and per-transaction limits are clearly published.",
+                "Check card-to-card transfer, personal wallet issuance and external wallet withdrawal.",
+                "No cashback, but a simple fee structure makes total cost calculable in advance.",
+                "The test is the level of fees, not the risk of benefits changing."
+              ],
+              "note": "A function-focused card pays no rewards, so top-up, payment and conversion fees remain real costs. Check first whether rates are published line by line and whether you can calculate the total cost yourself."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "GLOBAL TREND",
+          "p": [
+            "Across the global crypto card market, users worn down by the cashback race are moving to function-focused cards. Repeated rate cuts, newly introduced accrual caps, tightened staking requirements and suspended referral commissions have made clear that whoever picks a card for its rewards is the one carrying the risk of the terms changing.",
+            "As a result, a growing share of users choose on a different test: is the limit sufficient, can funds move as needed, and can the total cost be calculated in advance? That is why Crypto Cards Info separates the two card types explicitly."
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Card feature comparison",
+          "sub": "Where no official figure exists, none is written.",
+          "head": [
+            "Limit item",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "rows": [
+            [
+              "Card-to-card transfer",
+              "Not provided",
+              "Not provided",
+              "Not provided",
+              "Supported (0.5% fee)"
+            ],
+            [
+              "Personal wallet (deposit address) issuance",
+              "Not provided",
+              "Not provided",
+              "Not provided",
+              "Issued free of charge"
+            ],
+            [
+              "Direct top-up from a personal wallet",
+              "Not provided (top-up via exchange or app)",
+              "Not provided (uses exchange account balance)",
+              "Not provided (protocol deposit / collateral structure)",
+              "Supported"
+            ],
+            [
+              "Member wallet → external wallet",
+              "Supported (on-chain transfer; no direct bank withdrawal)",
+              "Supported (on-chain withdrawal via OKX exchange account; not a card-specific feature)",
+              "Not provided (private key export not yet released; announced as planned)",
+              "Supported (no fee; network gas borne by the user)"
+            ],
+            [
+              "Cards per person",
+              "Not disclosed",
+              "Not disclosed",
+              "Not disclosed",
+              "3 by default (bulk issuance by arrangement)"
+            ],
+            [
+              "Mobile payment integration",
+              "Apple Pay",
+              "Apple Pay · Google Pay",
+              "Apple Pay · Google Pay",
+              "Apple Pay · Google Pay · Samsung Pay"
+            ]
+          ],
+          "notes": [
+            "'Not provided' means the feature could not be confirmed in published official material; it does not deny features a provider may run internally."
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Cashback-focused card"
+            },
+            {
+              "tone": "teal",
+              "label": "Function-focused card"
+            }
+          ],
+          "legend": "The column background colour marks the card's design type — it is not a judgement of quality or of one card being better than another. RedotPay, OKX Card and Ether.fi Cash share one colour because they are cashback-focused cards built around payment rewards; Anytap Card has its own colour because it is a function-focused card built around limits and money mobility. Grouping cards with different purposes under one colour would invite the misreading that they are being judged on the same standard — the colour split exists to prevent exactly that."
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "PLEASE VERIFY",
+          "p": [
+            "Limits may differ by user tier, verification level, country and card type.",
+            "If you plan high-value payments, check not only the monthly limit but also daily limits, per-transaction limits and any cap on the number of transactions."
+          ]
+        },
+        {
+          "k": "split",
+          "title": "Bank transfer versus card-to-card transfer",
+          "cols": [
+            {
+              "t": "Ordinary bank transfer",
+              "steps": [
+                "Bank app",
+                "Select bank",
+                "Enter account number",
+                "Enter amount",
+                "Send"
+              ],
+              "note": "Funds move on the basis of a bank account and account number."
+            },
+            {
+              "t": "Card-to-card transfer",
+              "steps": [
+                "Card app",
+                "Recipient card details (email, last 4 digits)",
+                "Enter amount",
+                "Transfer"
+              ],
+              "note": "Funds move on the basis of a card account. Support and fees differ by card."
+            }
+          ]
+        },
+        {
+          "k": "flow",
+          "title": "How a card-to-card transfer works",
+          "sub": "The sequence below reflects the card-to-card transfer feature provided by Anytap.",
+          "steps": [
+            {
+              "num": "1",
+              "t": "Sender"
+            },
+            {
+              "num": "2",
+              "t": "Enter recipient card details"
+            },
+            {
+              "num": "3",
+              "t": "Enter transfer amount"
+            },
+            {
+              "num": "4",
+              "t": "Execute transfer"
+            },
+            {
+              "num": "5",
+              "t": "Funds received in the recipient's card account"
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Limit comparison",
+          "head": [
+            "Feature",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "rows": [
+            [
+              "Top-up limit",
+              "Not disclosed",
+              "Not disclosed",
+              "Not disclosed",
+              "Unlimited"
+            ],
+            [
+              "Limit per transaction",
+              "Up to USD 100,000",
+              "Check official source",
+              "Not disclosed",
+              "USD 20,000"
+            ],
+            [
+              "Daily payment limit",
+              "Not disclosed",
+              "Not disclosed",
+              "Not disclosed",
+              "Physical card USD 250,000 (up to 100 transactions per day)"
+            ],
+            [
+              "Monthly payment limit",
+              "Not disclosed",
+              "Check official source",
+              "Not disclosed",
+              "Physical card USD 1,000,000"
+            ],
+            [
+              "ATM limit per withdrawal",
+              "Not disclosed",
+              "Not disclosed",
+              "Not disclosed",
+              "USD 1,500"
+            ],
+            [
+              "Daily ATM limit",
+              "Not disclosed",
+              "Not disclosed",
+              "Not disclosed",
+              "USD 1,500 (up to 30 withdrawals per day)"
+            ],
+            [
+              "Monthly ATM limit",
+              "Not disclosed",
+              "Not disclosed",
+              "Not disclosed",
+              "USD 15,000"
+            ],
+            [
+              "Card-to-card transfer limit",
+              "Not provided",
+              "Not provided",
+              "Not provided",
+              "No separate cap disclosed"
+            ]
+          ],
+          "notes": [
+            "Limits may differ by user tier, verification level, country and card type. If you plan high-value payments, check daily limits, per-transaction limits and any cap on the number of transactions as well."
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Cashback-focused card"
+            },
+            {
+              "tone": "teal",
+              "label": "Function-focused card"
+            }
+          ],
+          "legend": "The column background colour marks the card's design type — it is not a judgement of quality or of one card being better than another. RedotPay, OKX Card and Ether.fi Cash share one colour because they are cashback-focused cards built around payment rewards; Anytap Card has its own colour because it is a function-focused card built around limits and money mobility. Grouping cards with different purposes under one colour would invite the misreading that they are being judged on the same standard — the colour split exists to prevent exactly that."
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "PLEASE VERIFY",
+          "p": [
+            "Card-to-card transfer and external withdrawal may be restricted by the provider's policy and the regulatory environment.",
+            "On-chain transfers cannot be reversed, so always confirm the network and the address."
+          ]
+        }
+      ]
+    },
+    "cashback-fact-check": {
+      "title": "Crypto Card Cashback Fact Check | Real Terms and Caps | CryptoCardsInfo",
+      "desc": "Check base and maximum cashback, usage conditions, minimum spend, monthly caps, payout method and excluded transactions for crypto cards.",
+      "h1": "Cashback: comparison and cautions",
+      "lead": "Maximum cashback and actual cashback can differ. What matters is not the advertised ceiling but the conditions that apply to you, the monthly cap, and the real usable value of the asset you are paid in.",
+      "sections": [
+        {
+          "k": "flow",
+          "title": "How to judge cashback",
+          "sub": "Rather than a high rate, check the amount you actually save.",
+          "steps": [
+            {
+              "num": "1",
+              "t": "Who does it apply to?",
+              "d": "Eligibility varies with tier, staking and holding requirements."
+            },
+            {
+              "num": "2",
+              "t": "Which payments qualify?",
+              "d": "Some programmes apply only to certain merchants, categories or currencies."
+            },
+            {
+              "num": "3",
+              "t": "What is the monthly cap?",
+              "d": "A high rate stops mattering once the monthly accrual cap is reached."
+            },
+            {
+              "num": "4",
+              "t": "Are there conditions?",
+              "d": "Check minimum spend, lock-up periods and maintenance requirements."
+            },
+            {
+              "num": "5",
+              "t": "How is it paid?",
+              "d": "Confirm whether payout is in a stablecoin or in the issuer's own token or points."
+            },
+            {
+              "num": "6",
+              "t": "What is it actually worth?",
+              "d": "Judge including price volatility, where it can be spent, and any expiry."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Published cashback conditions",
+          "sub": "Based on each provider's public material; conditions may change.",
+          "head": [
+            "Item",
+            "RedotPay",
+            "OKX Card",
+            "Ether.fi Cash",
+            "Anytap Card"
+          ],
+          "rows": [
+            [
+              "Base cashback",
+              "None",
+              "Up to 2% general (USDG payments only)",
+              "Core 3% on the first USD 2,000",
+              "None"
+            ],
+            [
+              "Tapering structure",
+              "Not applicable",
+              "Accrual stops once the monthly cap is reached",
+              "1% on USD 2,000–3,000 → 0.5% above USD 3,000",
+              "Not applicable"
+            ],
+            [
+              "Higher-tier conditions",
+              "Not applicable",
+              "A higher VIP tier raises the monthly cap",
+              "Luxe first USD 10,000 / Pinnacle first USD 50,000 at 3%",
+              "Not applicable"
+            ],
+            [
+              "Monthly cashback cap",
+              "Not applicable",
+              "USD 5 general – up to USD 1,000 for VIP",
+              "Banded cap per tier",
+              "Not applicable"
+            ],
+            [
+              "Mandatory conditions",
+              "Not applicable",
+              "OKX exchange account · KYC · OKX Pay activation · USDG payment",
+              "ETHFI token staking required to upgrade tier",
+              "Not applicable"
+            ],
+            [
+              "Payout asset",
+              "Not applicable",
+              "USDG (its own stablecoin)",
+              "Asset designated by the protocol",
+              "Not applicable"
+            ],
+            [
+              "Structural risk",
+              "None (no cashback programme)",
+              "Dependent on the exchange account and its own stablecoin",
+              "Collateral liquidation risk when using Borrow Mode",
+              "None (no cashback programme)"
+            ],
+            [
+              "FX / foreign payment fee",
+              "1.2% conversion fee added (2.2% total)",
+              "0% (0.4% stablecoin spread separate)",
+              "1% across all tiers",
+              "1% + USD 0.30 per transaction"
+            ],
+            [
+              "Referral programme",
+              "Up to 40% advertised, but payouts are currently suspended",
+              "No separate programme announced",
+              "No separate programme announced",
+              "Supported up to 40% (tier conditions to be verified)"
+            ],
+            [
+              "Scope for policy change",
+              "May be changed under the terms",
+              "May be changed under the terms",
+              "May be changed under the terms",
+              "Not applicable"
+            ]
+          ],
+          "notes": [
+            "Most card rewards are promotions the provider may change or discontinue under its terms. Check the official terms to see whether the rate at sign-up is contractually guaranteed."
+          ],
+          "tint": [
+            null,
+            "amber",
+            "amber",
+            "amber",
+            "teal"
+          ],
+          "legendItems": [
+            {
+              "tone": "amber",
+              "label": "Cashback-focused card"
+            },
+            {
+              "tone": "teal",
+              "label": "Function-focused card"
+            }
+          ],
+          "legend": "The column background colour marks the card's design type — it is not a judgement of quality or of one card being better than another. RedotPay, OKX Card and Ether.fi Cash share one colour because they are cashback-focused cards built around payment rewards; Anytap Card has its own colour because it is a function-focused card built around limits and money mobility. Grouping cards with different purposes under one colour would invite the misreading that they are being judged on the same standard — the colour split exists to prevent exactly that."
+        },
+        {
+          "k": "list",
+          "title": "Why the headline rate and the amount received differ",
+          "items": [
+            {
+              "t": "Spending requirement",
+              "d": "Cashback is proportional to spend. At 3%, spending USD 400 in a month accrues about USD 12."
+            },
+            {
+              "t": "Monthly accrual cap",
+              "d": "With a cap in place, spending more does not increase what you receive beyond that ceiling."
+            },
+            {
+              "t": "Staking requirement",
+              "d": "Where a higher rate depends on staking the issuer's own token, the price risk and opportunity cost of the locked assets fall on the user."
+            },
+            {
+              "t": "Value of the payout asset",
+              "d": "If cashback is paid in a proprietary token or points, the real value can change even when the rate does not."
+            },
+            {
+              "t": "Scope for change",
+              "d": "Rates, caps and payout methods can be varied or suspended under the terms."
+            },
+            {
+              "t": "Excluded transactions",
+              "d": "Top-ups, transfers, certain categories and cash-like transactions are often excluded from accrual."
+            }
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "warn",
+          "label": "IMPORTANT",
+          "p": [
+            "Prepaid card balances and crypto assets are not covered by deposit insurance under Korea's Depositor Protection Act.",
+            "Check who actually issues the card, how funds are held, and the scope for policy change. Further detail is set out on the disclaimer page."
+          ]
+        }
+      ],
+      "sub": "Cashback is not a vested right — it is a promotion whose terms the provider sets and may change."
+    },
+    "card-selection-guide": {
+      "title": "Crypto Card Selection Guide | How to Check Fees, Limits, Cashback | CryptoCardsInfo",
+      "desc": "How to assess a crypto card in order: required features, total fees, FX spread, top-up/payment/ATM terms, card-to-card transfer and cashback.",
+      "h1": "Crypto card selection guide",
+      "lead": "The best crypto card is not the one with the highest cashback. Decide which features you need, check total fees, exchange rates, limits and transfer capability — and compare cashback last.",
+      "sections": [
+        {
+          "k": "grid",
+          "title": "The order to check",
+          "items": [
+            {
+              "t": "Features you need",
+              "d": "Decide whether you need payments only, or wallet and transfer features too."
+            },
+            {
+              "t": "Total fees",
+              "d": "Issuance, top-up, conversion, payment and ATM costs, all of them."
+            },
+            {
+              "t": "FX rate and spread",
+              "d": "How the applied rate and markup are handled per payment currency."
+            },
+            {
+              "t": "Top-up / payment / ATM terms",
+              "d": "Top-up routes and limits, and payment or ATM restrictions."
+            },
+            {
+              "t": "Card-to-card transfer",
+              "d": "If you need to move funds, check support and fees."
+            },
+            {
+              "t": "Cashback",
+              "d": "Finally, calculate real savings including conditions and caps."
+            }
+          ]
+        },
+        {
+          "k": "table",
+          "title": "Card selection checklist",
+          "head": [
+            "Item",
+            "What to confirm"
+          ],
+          "rows": [
+            [
+              "Card issuer",
+              "Who actually issues the card?"
+            ],
+            [
+              "Fund handling",
+              "How are topped-up funds held?"
+            ],
+            [
+              "Fees",
+              "What are the top-up, payment, FX and ATM costs?"
+            ],
+            [
+              "Exchange rate",
+              "What rate and spread actually apply?"
+            ],
+            [
+              "Limits",
+              "What are the top-up, payment and ATM limits?"
+            ],
+            [
+              "Transfer",
+              "Is card-to-card transfer available?"
+            ],
+            [
+              "Acceptance",
+              "Where can the card be used?"
+            ],
+            [
+              "Cashback",
+              "What are the conditions and caps?"
+            ],
+            [
+              "Policy",
+              "Can fees and benefits be changed?"
+            ]
+          ],
+          "notes": [
+            "Figures for each item can be found on the card, fee, limit and wallet/transfer comparison pages."
+          ]
+        },
+        {
+          "k": "alert",
+          "label": "THE MOST IMPORTANT CHECK",
+          "big": "If the fee schedule is not published, the saving cannot be calculated.",
+          "p": [
+            "The cashback rate is the last item to check. What comes first is whether an itemised fee schedule is published, the basis of the applied exchange rate and the size of the markup, and the procedure for advance notice of rate changes. Without those three in official material, no advertised cashback rate allows you to compute the real saving.",
+            "Whether the card balance can be returned to an external wallet is also directly tied to provider risk. If there is no route back out after funds are deposited, your options are limited when policy changes or a service is discontinued."
+          ]
+        },
+        {
+          "k": "notice",
+          "tone": "info",
+          "label": "THE DECISION IS YOURS",
+          "p": [
+            "CryptoCardsInfo sets out comparison criteria and items to check; it does not rank any card first.",
+            "The final choice, made after checking official material, rests with the user."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Crypto Card FAQ | Beginner's Guide to Crypto Cards | CryptoCardsInfo",
+      "desc": "Plain explanations of crypto debit cards, stablecoins, top-ups, FX spread, fees, cashback, KYC and other basic terms.",
+      "h1": "Crypto card FAQ",
+      "lead": "Basic concepts and terminology for people using a crypto card for the first time. These are general explanations; actual terms must be confirmed in the official material of the service you intend to use.",
+      "sections": [
+        {
+          "k": "faq",
+          "items": [
+            [
+              "What is a crypto debit card?",
+              "A prepaid or debit card that lets you spend crypto assets or stablecoins you hold. Typically you load assets into a card account and then pay at merchants on a network such as Visa."
+            ],
+            [
+              "Am I paying merchants directly in crypto?",
+              "In most cases the crypto is converted into fiat at the moment of payment and the merchant is paid in fiat. The merchant processes it like any card payment while the asset is deducted from your account."
+            ],
+            [
+              "What is a stablecoin?",
+              "A crypto asset designed to track the value of a reference asset such as the US dollar. Price movement is relatively small, which is why it is widely used for payments, though issuer reserve and credit risk remain."
+            ],
+            [
+              "How do USDT and USDC differ?",
+              "Both track the US dollar but differ in issuer, reserve disclosure practice, supported networks and which services accept them. Check which asset and network your card supports before topping up."
+            ],
+            [
+              "What is a top-up?",
+              "Loading the balance you can spend with the card. It is usually done by sending assets from a personal wallet or an exchange, and a top-up fee may apply at this stage."
+            ],
+            [
+              "Does a currency conversion happen when I pay?",
+              "If the payment currency differs from the currency of your card balance, a conversion occurs. The rate applied and any additional fee determine what you actually pay."
+            ],
+            [
+              "What are the exchange rate and spread?",
+              "Spread is the difference between the reference rate and the rate actually applied. Even at a stated 0% fee, a wide spread increases the real cost."
+            ],
+            [
+              "What kinds of card fees exist?",
+              "Issuance fee, annual fee, top-up fee, crypto conversion fee, FX fee and spread, foreign payment fee and ATM fee. Only by separating them can you see the total cost."
+            ],
+            [
+              "How is cashback calculated?",
+              "Usually the rate is applied to qualifying spend, then the monthly cap and excluded transactions are applied. The payout asset and its usage terms also affect real value."
+            ],
+            [
+              "Is a higher cashback rate always better?",
+              "No. Once accrual caps, staking requirements, the value of the payout asset and top-up or FX fees are included, real savings can look very different."
+            ],
+            [
+              "What is fiat?",
+              "Government-issued legal tender, such as the Korean won, the US dollar or the euro."
+            ],
+            [
+              "What is a stablecoin, in short?",
+              "A crypto asset designed to follow the value of a reference asset such as a fiat currency; it is frequently used for payment and settlement."
+            ],
+            [
+              "What is a wallet?",
+              "Software or hardware for holding and sending crypto assets. It may be self-custodial, where you hold the private key, or custodial, where a provider holds it."
+            ],
+            [
+              "What is a blockchain network?",
+              "The network on which transactions are recorded and transmitted. The same asset on a different network follows a different route and carries different fees."
+            ],
+            [
+              "What is a gas or network fee?",
+              "The fee paid to the blockchain network to process a transaction. It arises separately from the card provider's fees."
+            ],
+            [
+              "What are on-ramp and off-ramp?",
+              "On-ramp is the route from fiat into crypto; off-ramp is the route from crypto back into fiat."
+            ],
+            [
+              "What is KYC?",
+              "The process by which a financial service provider verifies a user's identity. It is often required for card issuance and higher limits."
+            ],
+            [
+              "What is an FX fee?",
+              "A foreign currency fee charged when the payment currency differs from the card's settlement currency. Both network and provider rates may apply."
+            ],
+            [
+              "What is an ATM fee?",
+              "The fee a card provider charges for a cash withdrawal at an ATM, often expressed as a rate together with a minimum amount."
+            ],
+            [
+              "What is a card-to-card transfer?",
+              "A feature that moves a card balance directly between users of the same service. Availability, fees and limits differ by service."
+            ]
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "title": "Disclaimer & Limitation of Liability | CryptoCardsInfo",
+      "desc": "The nature of the information provided by CryptoCardsInfo, the scope of user responsibility, and limitations of liability for external services and affiliate arrangements.",
+      "h1": "Disclaimer and limitation of liability",
+      "lead": "This page sets out the nature of the information provided by CryptoCardsInfo and the scope of the user's responsibility.",
+      "stamp": "Last updated: 6 September 2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Article 1 (Purpose)",
+              "p": [
+                "This notice is intended to make clear the nature of the information provided by CryptoCardsInfo and the scope of the user's responsibility. Viewing this site or using the information published on it is treated as acknowledgement of this notice."
+              ]
+            },
+            {
+              "t": "Article 2 (Nature of the information)",
+              "p": [
+                "The information provided by CryptoCardsInfo is general information compiled from public sources, official material and other references.",
+                "Information may reflect material as at the time of writing or updating; a provider's policies, fees, limits, benefits and regional restrictions may change thereafter."
+              ]
+            },
+            {
+              "t": "Article 3 (Accuracy)",
+              "p": [
+                "CryptoCardsInfo makes reasonable efforts to keep information accurate and current, but cannot always prevent or guarantee against change, error, omission or delay in information supplied by third-party providers.",
+                "Before making an important decision, please confirm the provider's latest official material and terms."
+              ]
+            },
+            {
+              "t": "Article 4 (No recommendation or solicitation)",
+              "p": [
+                "The fact that a card appears on this site, or that a condition is shown as more favourable in a comparison table, must not be construed as a recommendation or solicitation to invest in, apply for or use any financial product or service.",
+                "The information on this site does not constitute investment, financial, legal, tax or accounting advice. CryptoCardsInfo provides objective information and comparison criteria; the final judgement is made by the user."
+              ]
+            },
+            {
+              "t": "Article 5 (User judgement and responsibility)",
+              "p": [
+                "Users should treat the information on this site as reference material only.",
+                "Final decisions regarding card applications, KYC, top-ups, payments, withdrawals, transfers, crypto conversion and cashback use are made by the user.",
+                "The user must independently assess the costs, losses, exchange rate movements, policy changes and service restrictions that may arise."
+              ]
+            },
+            {
+              "t": "Article 6 (Errors and changes)",
+              "p": [
+                "Providers' policies and conditions may change without prior notice or in accordance with their policies.",
+                "Fees, limits, cashback, eligibility and other information shown on this site may therefore differ from current actual conditions. Before proceeding with an important transaction or application, always check the service's official website, app, terms and latest announcements."
+              ]
+            },
+            {
+              "t": "Article 7 (External services)",
+              "p": [
+                "CryptoCardsInfo may provide links to external card companies, exchanges, wallets and payment services.",
+                "In such cases the operation, personal data handling, fees, terms, transactions, KYC, account restrictions, asset custody, refunds, cashback and policy changes of the external site are subject to that provider's responsibility and conditions. CryptoCardsInfo does not control the operation or policies of external services."
+              ]
+            },
+            {
+              "t": "Article 8 (Affiliate arrangements and advertising)",
+              "p": [
+                "Where affiliate links or advertising are used, they are clearly distinguished from ordinary content and identified so that users can recognise them easily.",
+                "The existence of advertising or an affiliate relationship does not change the objective comparison criteria or the factual content of the information. Affiliate arrangements and editorial information are kept separate."
+              ]
+            },
+            {
+              "t": "Article 9 (Limits of asset protection)",
+              "p": [
+                "Prepaid card balances and crypto assets are not covered by deposit insurance under Korea's Depositor Protection Act.",
+                "Virtual asset service providers registered in Korea are subject to obligations under the Act on the Protection of Virtual Asset Users (in force from 19 July 2024), including segregated deposit of user funds, cold wallet storage of a prescribed proportion of user assets, and insurance or reserves. These obligations do not apply in the same way to providers that issue or operate cards outside Korea."
+              ]
+            },
+            {
+              "t": "Article 10 (Limitation of liability)",
+              "p": [
+                "To the extent permitted by applicable law, the operator's liability is limited in respect of decisions made by users solely on the basis of information on this site and the consequences of those decisions.",
+                "This is not to be construed as excluding liability that may not be limited or excluded under applicable law."
+              ]
+            },
+            {
+              "t": "Article 11 (Governing law and jurisdiction)",
+              "p": [
+                "This notice is governed by the laws of the Republic of Korea, and any dispute shall be heard at first instance by the court having jurisdiction under the Civil Procedure Act.",
+                "If any provision of this notice is held invalid or unenforceable, the remaining provisions remain in effect."
+              ]
+            },
+            {
+              "t": "Article 12 (Trademarks and third-party references)",
+              "p": [
+                "Visa is a trademark of Visa Inc., Apple Pay of Apple Inc., Google Pay of Google LLC and Samsung Pay of Samsung Electronics Co., Ltd.; provider names, card names and logos belong to their respective owners.",
+                "References on this site are used solely to identify the subjects of comparison and do not imply sponsorship, endorsement or affiliation."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use | CryptoCardsInfo",
+      "desc": "Terms governing the use of the CryptoCardsInfo website.",
+      "h1": "Terms of Use",
+      "lead": "These terms set out the conditions for using the CryptoCardsInfo website and the rights and obligations of users and the operator.",
+      "stamp": "Last updated: 6 September 2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Article 1 (Scope)",
+              "p": [
+                "These terms apply to use of the website and information services provided by CryptoCardsInfo."
+              ]
+            },
+            {
+              "t": "Article 2 (The service)",
+              "p": [
+                "This site compiles and provides information on crypto card costs, limits, features and cashback conditions. It does not issue, sell or broker cards, and provides no payment or custody service."
+              ]
+            },
+            {
+              "t": "Article 3 (No accounts)",
+              "p": [
+                "This site exists to provide information and offers no sign-up, login or payment function. Anyone may read it without an account."
+              ]
+            },
+            {
+              "t": "Article 4 (User obligations)",
+              "p": [
+                "Users must not reproduce, distribute or commercially exploit the content without permission, and must not place excessive load on the site by automated means."
+              ]
+            },
+            {
+              "t": "Article 5 (Intellectual property)",
+              "p": [
+                "Copyright in the text, tables and diagrams created by this site belongs to the operator. Third-party trademarks and card images belong to their respective owners."
+              ]
+            },
+            {
+              "t": "Article 6 (Changes and suspension)",
+              "p": [
+                "The operator may change the content, comparison items and page structure, and may suspend part or all of the service for technical or operational reasons."
+              ]
+            },
+            {
+              "t": "Article 7 (Limitation of liability)",
+              "p": [
+                "Limitation of liability for use of information on this site follows the disclaimer page. Liability is limited to the extent permitted by applicable law and liability that may not be excluded by law is not excluded."
+              ]
+            },
+            {
+              "t": "Article 8 (Amendment)",
+              "p": [
+                "These terms may be amended in line with changes in applicable law or the composition of the service; the last-updated date on this page will change accordingly."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy | CryptoCardsInfo",
+      "desc": "How CryptoCardsInfo handles personal data.",
+      "h1": "Privacy Policy",
+      "lead": "CryptoCardsInfo operates as an information service and does not require sign-up or the entry of personal data to use the site.",
+      "stamp": "Last updated: 6 September 2026",
+      "sections": [
+        {
+          "k": "articles",
+          "items": [
+            {
+              "t": "Article 1 (Personal data collected)",
+              "p": [
+                "This site offers no sign-up, login or payment function and does not directly collect identifying information such as names, contact details or account numbers."
+              ]
+            },
+            {
+              "t": "Article 2 (Automatically generated information)",
+              "p": [
+                "For operation and security, technical information such as access logs, browser type and access time may be generated and recorded automatically. Such information is used only for statistical analysis and fault response."
+              ]
+            },
+            {
+              "t": "Article 3 (Cookies and similar technologies)",
+              "p": [
+                "Browser storage may be used for convenience features such as language preference. Users may refuse storage through browser settings, in which case some convenience features may be limited."
+              ]
+            },
+            {
+              "t": "Article 4 (Disclosure and processing on our behalf)",
+              "p": [
+                "This site does not sell or provide users' personal data to third parties. Processing may, however, be entrusted to service providers to the extent necessary for operation, such as web hosting and analytics."
+              ]
+            },
+            {
+              "t": "Article 5 (External links)",
+              "p": [
+                "Where you move to an external service, that site's privacy practices apply. This site is not responsible for personal data handling on external sites."
+              ]
+            },
+            {
+              "t": "Article 6 (Retention and destruction)",
+              "p": [
+                "Automatically generated information is retained only for the period necessary for operational and security purposes and is then destroyed."
+              ]
+            },
+            {
+              "t": "Article 7 (User rights)",
+              "p": [
+                "Users may request access to, correction of, deletion of or suspension of processing of their information in accordance with applicable law."
+              ]
+            },
+            {
+              "t": "Article 8 (Amendment)",
+              "p": [
+                "This policy may be amended in line with changes in law or the composition of the service; the last-updated date on this page will change accordingly."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "principles": {
+      "title": "Editorial Principles | CryptoCardsInfo",
+      "desc": "The editorial principles and verification standards applied across CryptoCardsInfo.",
+      "h1": "Editorial principles",
+      "lead": "CryptoCardsInfo is not a site that sells crypto cards; it is a specialist information publication that helps users judge real costs and features for themselves. The following principles apply consistently across the site.",
+      "sections": [
+        {
+          "k": "list",
+          "title": "Principles",
+          "items": [
+            {
+              "t": "1. Objective information",
+              "d": "No card or company is unconditionally recommended or criticised. Strengths and limitations are given equal weight."
+            },
+            {
+              "t": "2. The judgement is the user's",
+              "d": "We provide comparison criteria and items to check; the final choice and decision to use a service rest with the user."
+            },
+            {
+              "t": "3. Official sources first",
+              "d": "Official websites, terms, fee schedules, help centres, announcements and policy documents are used as primary sources."
+            },
+            {
+              "t": "4. No unverified figures",
+              "d": "We do not estimate. Unverified items are marked 'unable to verify', 'not disclosed officially', 'not currently verifiable' or 'check official source'."
+            },
+            {
+              "t": "5. Advertising separated from fact",
+              "d": "Phrases such as '0% fees' or 'up to X% cashback' are shown separately from the conditions that actually apply."
+            },
+            {
+              "t": "6. Update discipline",
+              "d": "Only genuinely changed information is updated; dates are never refreshed merely to make content look new."
+            }
+          ]
+        },
+        {
+          "k": "text",
+          "title": "How verification is marked",
+          "p": [
+            "Where a value cannot be confirmed in official material, we neither leave it blank nor estimate it: we mark it 'check official source' or 'not disclosed officially'. The marking does not mean the feature or condition is absent — it means the user must confirm it in official material.",
+            "Verification dates record only the day the material was actually checked and are never refreshed automatically."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="robots" content="index,follow" />
+<meta name="description" content="크립토카드의 수수료, 결제 한도, ATM, 지갑·이체 기능과 캐시백 조건을 객관적으로 비교하는 CryptoCardsInfo입니다." />
+<link rel="canonical" href="https://cryptocardsinfo.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="CryptoCardsInfo" />
+<meta property="og:title" content="크립토카드 비교 | 수수료·한도·캐시백 | CryptoCardsInfo" />
+<meta property="og:description" content="크립토카드의 수수료·한도·캐시백을 객관적으로 비교합니다." />
+<meta property="og:url" content="https://cryptocardsinfo.com/" />
+<meta property="og:image" content="https://cryptocardsinfo.com/og/home.png" />
+<link rel="alternate" hreflang="ko" href="https://cryptocardsinfo.com/" />
+<link rel="alternate" hreflang="en" href="https://cryptocardsinfo.com/en/" />
+<link rel="alternate" hreflang="zh" href="https://cryptocardsinfo.com/zh/" />
+<link rel="alternate" hreflang="ja" href="https://cryptocardsinfo.com/ja/" />
+<link rel="alternate" hreflang="vi" href="https://cryptocardsinfo.com/vi/" />
+<link rel="alternate" hreflang="th" href="https://cryptocardsinfo.com/th/" />
+<link rel="alternate" hreflang="id" href="https://cryptocardsinfo.com/id/" />
+<link rel="alternate" hreflang="x-default" href="https://cryptocardsinfo.com/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CryptoCardsInfo","url":"https://cryptocardsinfo.com","inLanguage":["ko","en","zh","ja","vi","th","id"],"description":"크립토카드의 비용·한도·기능·캐시백을 객관적으로 비교하는 정보 플랫폼"}</script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #ffffff; }
+  a { color: #1F5BD8; text-decoration: none; }
+  a:hover { color: #10214A; text-decoration: underline; }
+  table { border-collapse: collapse; }
+</style>
+</helmet>
+<div style="font-family:'Noto Sans KR','Noto Sans JP','Noto Sans SC','Noto Sans Thai',sans-serif;color:#101828;background:#ffffff;min-height:100vh">
+
+  <header style="background:#ffffff;border-bottom:1px solid #E2E7F0;position:sticky;top:0;z-index:30">
+    <div style="max-width:1180px;margin:0 auto;padding:12px 24px;min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <a onClick="{{ goHome }}" href="#home" style="display:flex;align-items:center;flex:0 0 auto"><img src="logo-cci.svg" alt="CryptoCardsInfo" style="height:34px;width:auto;display:block" /></a>
+      <div style="display:flex;flex-wrap:wrap;gap:1px;flex:0 1 auto;justify-content:flex-end;border:1px solid #E2E7F0">
+        <sc-for list="{{ langs }}" as="l" hint-placeholder-count="4">
+          <a onClick="{{ l.go }}" href="#lang" style="{{ l.st }}">{{ l.label }}</a>
+        </sc-for>
+      </div>
+    </div>
+    <nav style="border-top:1px solid #EDF1F7">
+      <div style="max-width:1180px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:2px">
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="8">
+          <a onClick="{{ n.go }}" href="#page" style="{{ n.st }}" style-hover="color:#8A5200;background:#F6F8FC">{{ n.label }}</a>
+        </sc-for>
+      </div>
+    </nav>
+  </header>
+
+  <main style="max-width:1180px;margin:0 auto;padding:0 24px">
+
+    <sc-if value="{{ hasCrumb }}">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px;color:#5A6478;padding:20px 0 0">
+        <a onClick="{{ goHome }}" href="#home" style="color:#5A6478">{{ t.home }}</a>
+        <span style="color:#B4BECD">›</span>
+        <span style="color:#101828;font-weight:700">{{ page.h1 }}</span>
+      </div>
+    </sc-if>
+
+    <section style="padding:44px 0 40px;border-bottom:1px solid #E2E7F0">
+      <h1 style="font-size:38px;font-weight:900;line-height:1.3;letter-spacing:-1px;margin:0 0 18px;color:#10214A;max-width:22ch;text-wrap:pretty">{{ page.h1 }}</h1>
+      <sc-if value="{{ page.sub }}">
+        <p style="font-size:19px;font-weight:700;line-height:1.7;color:#8A5200;margin:0 0 18px;max-width:54ch;text-wrap:pretty">{{ page.sub }}</p>
+      </sc-if>
+      <sc-if value="{{ page.subRed }}">
+        <p style="font-size:19px;font-weight:700;line-height:1.7;color:#8A5200;margin:0 0 18px;max-width:54ch;text-wrap:pretty">{{ page.subPre }}<strong style="color:#C22C2C;font-weight:900">{{ page.subRed }}</strong>{{ page.subPost }}</p>
+      </sc-if>
+      <p style="font-size:17px;line-height:1.85;color:#3A465C;margin:0;max-width:70ch;text-wrap:pretty">{{ page.lead }}</p>
+      <sc-if value="{{ page.leadRed }}">
+        <p style="font-size:16.5px;font-weight:700;line-height:1.85;color:#C22C2C;margin:18px 0 0;max-width:70ch;text-wrap:pretty;border-left:3px solid #C22C2C;padding-left:16px">{{ page.leadRed }}</p>
+      </sc-if>
+      <sc-if value="{{ page.stamp }}">
+        <p style="font-size:12px;color:#5A6478;margin:22px 0 0;line-height:1.7">{{ page.stamp }}</p>
+      </sc-if>
+    </section>
+
+    <sc-for list="{{ sections }}" as="s" hint-placeholder-count="4">
+      <section style="padding:56px 0 0">
+        <sc-if value="{{ s.title }}">
+          <div style="border-bottom:2px solid #10214A;padding-bottom:12px;margin-bottom:26px">
+            <h2 style="font-size:24px;font-weight:700;letter-spacing:-0.5px;margin:0;color:#10214A">{{ s.title }}</h2>
+            <sc-if value="{{ s.sub }}">
+              <p style="font-size:14px;line-height:1.75;color:#5A6478;margin:8px 0 0;max-width:80ch">{{ s.sub }}</p>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isText }}">
+          <div style="display:flex;flex-direction:column;gap:16px;max-width:74ch">
+            <sc-for list="{{ s.p }}" as="para" hint-placeholder-count="2">
+              <p style="font-size:16px;line-height:1.9;color:#3A465C;margin:0;text-wrap:pretty">{{ para }}</p>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isNotice }}">
+          <div style="{{ s.box }}">
+            <div style="font-size:12px;font-weight:700;letter-spacing:1.4px;margin-bottom:12px;{{ s.tag }}">{{ s.label }}</div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <sc-for list="{{ s.p }}" as="para" hint-placeholder-count="2">
+                <p style="font-size:14.5px;line-height:1.9;color:#26324A;margin:0;max-width:78ch">{{ para }}</p>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isAlert }}">
+          <div style="border:2px solid #C22C2C;background:#FCF6F5;padding:36px 34px">
+            <div style="font-size:12px;font-weight:700;letter-spacing:1.6px;color:#C22C2C;margin-bottom:16px">{{ s.label }}</div>
+            <div style="font-size:26px;font-weight:900;line-height:1.55;letter-spacing:-0.8px;color:#10214A;margin-bottom:22px;max-width:34ch;text-wrap:pretty">{{ s.big }}</div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <sc-for list="{{ s.p }}" as="para">
+                <p style="font-size:16px;line-height:1.9;color:#26324A;margin:0;max-width:78ch;text-wrap:pretty">{{ para }}</p>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isCards }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+            <sc-for list="{{ s.items }}" as="c">
+              <div style="{{ c.frame }}">
+                <div style="padding:20px 20px 0">
+                  <sc-if value="{{ c.isRedot }}"><img src="cards/redotpay.jpg" alt="RedotPay card" style="width:100%;height:auto;display:block;border-radius:8px" /></sc-if>
+                  <sc-if value="{{ c.isOkx }}"><img src="cards/okx.png" alt="OKX Card" style="width:100%;height:auto;display:block;border-radius:8px" /></sc-if>
+                  <sc-if value="{{ c.isEtherfi }}"><img src="cards/etherfi.png" alt="Ether.fi Cash card" style="width:100%;height:auto;display:block;border-radius:8px" /></sc-if>
+                  <sc-if value="{{ c.isAnytap }}"><img src="cards/anytap.png" alt="Anytap Card" style="width:100%;height:auto;display:block;border-radius:8px" /></sc-if>
+                </div>
+                <div style="padding:18px 20px 0">
+                  <div style="font-size:19px;font-weight:700;margin-bottom:10px;color:#10214A">{{ c.name }}</div>
+                  <div style="{{ c.tagSt }}">{{ c.tag }}</div>
+                </div>
+                <div style="padding:16px 20px 0;display:flex;flex-direction:column;gap:8px">
+                  <sc-for list="{{ c.rows }}" as="r" hint-placeholder-count="4">
+                    <div style="background:#F6F8FC;border:1px solid #EDF1F7;padding:11px 13px">
+                      <div style="font-size:11px;font-weight:700;color:#5A6478;margin-bottom:4px">{{ r.k }}</div>
+                      <div style="font-size:13px;font-weight:500;line-height:1.6;color:#101828">{{ r.v }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+                <div style="{{ c.sumSt }}">{{ c.sum }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isTable }}">
+          <div>
+            <div style="overflow-x:auto">
+              <table style="{{ s.tableSt }}">
+                <thead>
+                  <tr>
+                    <sc-for list="{{ s.head }}" as="h" hint-placeholder-count="5">
+                      <th style="{{ h.st }}">{{ h.t }}</th>
+                    </sc-for>
+                  </tr>
+                </thead>
+                <tbody>
+                  <sc-for list="{{ s.rows }}" as="r" hint-placeholder-count="6">
+                    <tr>
+                      <sc-for list="{{ r.c }}" as="c" hint-placeholder-count="5">
+                        <td style="{{ c.st }}">{{ c.t }}</td>
+                      </sc-for>
+                    </tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+            <sc-if value="{{ s.legend }}">
+              <div style="margin:18px 0 0;border:1px solid #E2E7F0;background:#F8FAFD;padding:18px 20px">
+                <div style="display:flex;flex-wrap:wrap;gap:20px;margin-bottom:12px">
+                  <sc-for list="{{ s.legendItems }}" as="li" hint-placeholder-count="2">
+                    <div style="display:flex;align-items:center;gap:9px">
+                      <span style="{{ li.sw }}"></span>
+                      <span style="font-size:13px;font-weight:700;color:#10214A">{{ li.label }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+                <p style="font-size:12.5px;line-height:1.9;color:#3D4A5C;margin:0;max-width:92ch">{{ s.legend }}</p>
+              </div>
+            </sc-if>
+            <sc-for list="{{ s.notes }}" as="note" hint-placeholder-count="1">
+              <p style="font-size:12.5px;line-height:1.8;color:#5A6478;margin:16px 0 0;max-width:90ch">{{ note }}</p>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isFlow }}">
+          <div style="border:1px solid #E2E7F0;background:#F6F8FC;padding:32px 26px;overflow-x:auto">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;min-width:280px">
+              <sc-for list="{{ s.steps }}" as="st" hint-placeholder-count="5">
+                <div style="display:flex;flex-direction:column;align-items:center;width:100%;max-width:520px">
+                  <sc-if value="{{ st.bar }}"><div style="width:1px;height:20px;background:#B4BECD"></div></sc-if>
+                  <div style="{{ st.box }}">
+                    <div style="font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;{{ st.numSt }}">{{ st.num }}</div>
+                    <div style="font-size:16px;font-weight:700;line-height:1.5">{{ st.t }}</div>
+                    <sc-if value="{{ st.d }}">
+                      <div style="font-size:12.5px;line-height:1.7;margin-top:8px;{{ st.dSt }}">{{ st.d }}</div>
+                    </sc-if>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isGrid }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px">
+            <sc-for list="{{ s.items }}" as="i" hint-placeholder-count="6">
+              <div style="border:1px solid #E2E7F0;background:#F8FAFD;padding:24px">
+                <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
+                  <span style="display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;background:#10214A;color:#ffffff;font-size:12.5px;font-weight:700;flex:0 0 auto">{{ i.n }}</span>
+                  <span style="font-size:16px;font-weight:700;color:#10214A;line-height:1.4">{{ i.t }}</span>
+                </div>
+                <p style="font-size:13.5px;line-height:1.8;color:#5A6478;margin:0">{{ i.d }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isCompare2 }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+            <sc-for list="{{ s.cols }}" as="c" hint-placeholder-count="2">
+              <div style="{{ c.frame }}">
+                <div style="{{ c.head }}">{{ c.label }}</div>
+                <div style="padding:26px 24px">
+                  <div style="font-size:18px;font-weight:700;line-height:1.6;color:#10214A;margin-bottom:18px;text-wrap:pretty">{{ c.t }}</div>
+                  <div style="display:flex;flex-direction:column;gap:11px">
+                    <sc-for list="{{ c.items }}" as="i" hint-placeholder-count="3">
+                      <div style="font-size:14px;line-height:1.8;color:#3A465C">{{ i }}</div>
+                    </sc-for>
+                  </div>
+                  <sc-if value="{{ c.note }}">
+                    <p style="{{ c.noteSt }}">{{ c.note }}</p>
+                  </sc-if>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isBranch }}">
+          <div style="border:1px solid #E2E7F0;background:#F6F8FC;padding:34px 26px">
+            <div style="display:flex;flex-direction:column;align-items:center">
+              <div style="background:#10214A;color:#ffffff;font-size:15px;font-weight:700;line-height:1.5;padding:15px 28px;text-align:center;max-width:540px">{{ s.root }}</div>
+              <div style="width:1px;height:22px;background:#B4BECD"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
+              <sc-for list="{{ s.branches }}" as="b" hint-placeholder-count="3">
+                <div style="display:flex;flex-direction:column;align-items:center">
+                  <div style="width:1px;height:18px;background:#B4BECD"></div>
+                  <div style="{{ b.qSt }}">{{ b.q }}</div>
+                  <div style="width:1px;height:18px;background:#B4BECD"></div>
+                  <div style="border:1px solid #E2E7F0;background:#ffffff;padding:20px 16px;width:100%;text-align:center">
+                    <div style="font-size:15.5px;font-weight:700;color:#10214A;line-height:1.5">{{ b.card }}</div>
+                    <div style="font-size:12.5px;line-height:1.75;color:#5A6478;margin-top:9px">{{ b.d }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+            <sc-if value="{{ s.foot }}">
+              <p style="font-size:13px;line-height:1.85;color:#3A465C;margin:26px 0 0;padding-top:22px;border-top:1px solid #E2E7F0;max-width:88ch">{{ s.foot }}</p>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isSplit }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+            <sc-for list="{{ s.cols }}" as="col" hint-placeholder-count="2">
+              <div style="{{ col.frame }}">
+                <div style="{{ col.head }}">{{ col.t }}</div>
+                <div style="padding:22px;display:flex;flex-direction:column;align-items:center;gap:0">
+                  <sc-for list="{{ col.steps }}" as="st" hint-placeholder-count="5">
+                    <div style="display:flex;flex-direction:column;align-items:center;width:100%">
+                      <sc-if value="{{ st.bar }}"><div style="width:1px;height:16px;background:#B4BECD"></div></sc-if>
+                      <div style="border:1px solid #E2E7F0;background:#ffffff;padding:11px 14px;font-size:13.5px;font-weight:500;text-align:center;width:100%;color:#101828">{{ st.t }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+                <sc-if value="{{ col.note }}">
+                  <div style="padding:0 22px 22px;font-size:12.5px;line-height:1.8;color:#5A6478">{{ col.note }}</div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isList }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
+            <sc-for list="{{ s.items }}" as="i" hint-placeholder-count="4">
+              <div style="border:1px solid #E2E7F0;border-top:3px solid #0E6E62;padding:22px">
+                <div style="font-size:16px;font-weight:700;line-height:1.5;margin-bottom:10px;color:#10214A">{{ i.t }}</div>
+                <p style="font-size:13.5px;line-height:1.8;color:#5A6478;margin:0">{{ i.d }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isLinks }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+            <sc-for list="{{ s.items }}" as="i" hint-placeholder-count="6">
+              <a onClick="{{ i.go }}" href="#page" style="display:block;border:1px solid #E2E7F0;padding:24px;color:#101828;text-decoration:none" style-hover="border-color:#10214A;background:#F6F8FC">
+                <div style="font-size:11px;font-weight:700;letter-spacing:1.2px;color:#1F5BD8;margin-bottom:10px">{{ i.kicker }}</div>
+                <div style="font-size:17px;font-weight:700;line-height:1.5;margin-bottom:10px;color:#10214A">{{ i.t }}</div>
+                <p style="font-size:13.5px;line-height:1.8;color:#5A6478;margin:0">{{ i.d }}</p>
+              </a>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isFaq }}">
+          <div style="display:flex;flex-direction:column;max-width:900px">
+            <sc-for list="{{ s.items }}" as="f" hint-placeholder-count="6">
+              <div style="padding:24px 0;border-top:1px solid #E2E7F0">
+                <div style="display:flex;gap:14px;align-items:baseline;margin-bottom:10px">
+                  <span style="font-size:13px;font-weight:700;color:#1F5BD8;flex:0 0 auto">{{ f.n }}</span>
+                  <span style="font-size:17.5px;font-weight:700;line-height:1.6;color:#10214A">{{ f.q }}</span>
+                </div>
+                <p style="font-size:15px;line-height:1.9;color:#3A465C;margin:0 0 0 27px">{{ f.a }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ s.isArticles }}">
+          <div style="display:flex;flex-direction:column;gap:34px;max-width:860px">
+            <sc-for list="{{ s.items }}" as="a" hint-placeholder-count="4">
+              <div>
+                <div style="font-size:19px;font-weight:700;margin-bottom:12px;color:#10214A">{{ a.t }}</div>
+                <div style="display:flex;flex-direction:column;gap:12px">
+                  <sc-for list="{{ a.p }}" as="para" hint-placeholder-count="2">
+                    <p style="font-size:15px;line-height:1.95;color:#3A465C;margin:0">{{ para }}</p>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </section>
+    </sc-for>
+
+    <div style="height:88px"></div>
+  </main>
+
+  <footer style="background:#0A1631;color:#ffffff">
+    <div style="max-width:1180px;margin:0 auto;padding:52px 24px 40px">
+      <div style="display:grid;grid-template-columns:minmax(260px,1.4fr) repeat(auto-fit,minmax(150px,1fr));gap:36px;align-items:start">
+        <div>
+          <img src="logo-cci-light.svg" alt="CryptoCardsInfo" style="height:29px;width:auto;display:block;margin-bottom:16px" />
+          <p style="font-size:13px;line-height:1.85;color:#A8B6D1;margin:0;max-width:34ch">{{ t.footBrand }}</p>
+        </div>
+        <sc-for list="{{ footGroups }}" as="g" hint-placeholder-count="3">
+          <div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:1.4px;color:#7FA6F0;margin-bottom:14px">{{ g.t }}</div>
+            <div style="display:flex;flex-direction:column;gap:11px">
+              <sc-for list="{{ g.items }}" as="i" hint-placeholder-count="4">
+                <a onClick="{{ i.go }}" href="#page" style="color:#E6ECF7;font-size:13px">{{ i.label }}</a>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="border-top:1px solid #1C2C51;margin-top:40px;padding-top:26px">
+        <div style="font-size:11px;font-weight:700;letter-spacing:1.4px;color:#7FA6F0;margin-bottom:12px">{{ t.footNoticeLabel }}</div>
+        <p style="font-size:12.5px;line-height:1.95;color:#B6C4DC;margin:0;max-width:96ch">{{ t.footNotice }}</p>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;border-top:1px solid #1C2C51;margin-top:26px;padding-top:22px">
+        <div style="font-size:11.5px;color:#8296B8">{{ t.copyright }}</div>
+        <div style="font-size:11.5px;color:#8296B8">cryptocardsinfo.com</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startPage&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;home&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;card-comparison&quot;,&quot;fee-comparison&quot;,&quot;limit-comparison&quot;,&quot;cashback-fact-check&quot;,&quot;card-selection-guide&quot;,&quot;faq&quot;,&quot;disclaimer&quot;,&quot;terms&quot;,&quot;privacy&quot;,&quot;principles&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;페이지&quot;}}">
+const NAV_KEYS = ["home","card-comparison","fee-comparison","limit-comparison","cashback-fact-check","card-selection-guide","faq"];
+const PAGES = NAV_KEYS.concat(["disclaimer","terms","privacy","principles"]);
+const URLS = {"home":"/","card-comparison":"/card-comparison","fee-comparison":"/fee-comparison","limit-comparison":"/card-features-limits","cashback-fact-check":"/cashback-guide","card-selection-guide":"/card-selection-guide","faq":"/faq","disclaimer":"/disclaimer","terms":"/terms","privacy":"/privacy","principles":"/about"};
+const AMBER = "#8A5200", TEAL = "#0E6E62";
+
+const KO = {
+  ui: {
+    home: "홈",
+    nav: ["홈","카드비교","수수료 항목","카드기능 및 한도비교","캐시백 비교 및 주의점","카드선택가이드","FAQ"],
+    footBrand: "크립토카드의 비용·한도·기능·캐시백 지급 조건을 같은 기준으로 정리하는 정보 제공 사이트입니다.",
+    footNoticeLabel: "정보 제공 고지",
+    footNotice: "CryptoCardsInfo에서 제공하는 카드·수수료·한도·캐시백 및 기타 관련 정보는 공개된 자료와 공식 자료 등을 바탕으로 정리한 일반적인 정보이며, 특정 카드·서비스의 이용 또는 가입을 권유하거나 보장하기 위한 것이 아닙니다. 본 사이트의 정보는 투자·금융·법률·세무·회계 또는 기타 전문적인 자문을 제공하는 것이 아닙니다. 서비스 조건, 수수료, 한도, 혜택 및 정책은 변경될 수 있으므로 이용자는 실제 이용 또는 신청 전에 해당 서비스 제공자의 최신 공식 자료와 약관을 직접 확인해야 합니다. 최종적인 이용 여부 및 그에 따른 판단과 책임은 이용자에게 있으며, 본 사이트의 정보만을 근거로 한 의사결정의 결과에 대해서는 관련 법령이 허용하는 범위에서 운영자의 책임을 제한합니다.",
+    copyright: "© 2026 CryptoCardsInfo",
+    groups: [
+      { t: "비교", items: ["card-comparison","fee-comparison","limit-comparison"] },
+      { t: "정보", items: ["cashback-fact-check","card-selection-guide","faq"] },
+      { t: "정책", items: ["terms","privacy","disclaimer","principles"] }
+    ],
+    labels: { "terms":"이용약관", "privacy":"개인정보처리방침", "disclaimer":"면책 및 책임 제한", "principles":"정보 제공 원칙" },
+    unverified: "공식 확인 필요"
+  },
+  pages: {
+    "home": {
+      title: "크립토카드 비교 | 수수료·한도·캐시백 지급 조건 | CryptoCardsInfo",
+      desc: "크립토카드의 수수료, 환율, 결제 한도, 카드 기능과 캐시백 지급 조건을 같은 기준으로 정리하는 CryptoCardsInfo입니다.",
+      h1: "크립토카드, 캐시백만 보고 선택하시겠습니까?",
+      subPre: "캐시백 카드를 원하십니까, ", subRed: "기능성 카드", subPost: "를 원하십니까? 두 마리 토끼를 동시에 잡기는 어렵습니다.",
+      lead: "아직 받지 못한 캐시백, 언제 조건이 바뀔지 모르는 리워드 프로그램에 카드 선택을 맡기고 계신 건 아닙니까? 광고 속 숫자 하나만으로는 내가 실제로 지불하는 비용을 알 수 없습니다. Crypto Cards Info는 특정 카드를 판매하거나 추천하는 사이트가 아니라, 수수료·환율·한도·이체 기능과 캐시백 지급 조건을 같은 기준으로 정리하여, 이용자가 스스로 판단할 수 있도록 돕는 정보 제공 사이트입니다.",
+      sections: [
+        { k: "text", title: "이 사이트를 제공하는 이유", p: [
+          "크립토카드는 광고를 볼 때마다 모두 그럴싸해 보입니다. '최대 4.5% 캐시백', '수수료 0%', '업계 최저'와 같은 표현이 서로 다른 기준으로 제시되기 때문에, 정작 고객 입장에서는 무엇을 비교해야 하는지조차 정리되지 않은 상태로 카드를 고르게 됩니다.",
+          "Crypto Cards Info는 여기에서 출발했습니다. 저희는 어떤 카드가 가장 좋다고 말하지 않습니다. 대신 '내가 원하는 카드가 캐시백형인지 기능형인지', '나는 어떤 목적으로 크립토카드가 필요한지'를 스스로 정리할 수 있도록, 같은 항목·같은 기준으로 조건을 나열합니다.",
+          "선택의 기준은 요율의 크기가 아니라 이용 목적입니다. 목적이 정리되면 비교 대상은 자연히 좁아지고, 그때 비로소 현명한 선택이 가능해집니다. 그 판단을 돕는 것이 이 사이트의 유일한 목적입니다."
+        ]},
+        { k: "compare2", title: "카드 선택의 핵심은 두 갈래입니다", sub: "크립토카드는 설계 목적에 따라 '캐시백 전용 카드'와 '기능성 전문 카드'로 나뉩니다. RedotPay · OKX Card · Ether.fi Cash는 결제 리워드를 중심에 둔 캐시백 전용 카드이고, Anytap Card는 한도와 자금 이동 기능을 중심에 둔 기능성 전문 카드입니다. 두 유형은 목적이 다르므로 동시에 최적일 수 없습니다.", cols: [
+          { tone: "amber", label: "캐시백 전용 카드 · RedotPay · OKX · Ether.fi", t: "결제할 때마다 돌려받는 구조를 우선하는 카드", items: [
+            "요율이 등급·스테이킹·특정 결제수단 조건에 연동됩니다.",
+            "월 적립 상한이 있어 사용액을 늘려도 실수령액은 상한에서 멈춥니다.",
+            "지급 자산이 발행사 자체 토큰·스테이블코인인 경우가 많습니다.",
+            "결제 이외의 조건(거래소 계정 유지, 담보 예치)이 부수적으로 요구될 수 있습니다."
+          ], note: "각별한 주의가 필요한 지점입니다. 캐시백과 추천인 커미션은 대부분 약관상 사업자가 요율과 지급 방식을 임의로 변경·중단할 수 있는 프로모션이며, 실제로 사전 예고 없이 요율이 인하되거나 지급이 중단된 사례가 있습니다. 캐시백을 전제로 자금 계획을 세우는 것은 권장되지 않습니다." },
+          { tone: "teal", label: "기능성 전문 카드 · Anytap", t: "실사용 목적에 맞는 한도와 자금 이동성을 우선하는 카드", items: [
+            "월 결제 한도와 건당·일일 한도가 명시적으로 공개되는지가 핵심입니다.",
+            "카드 간 이체, 개인 지갑 발급, 외부지갑 출금 등 자금 이동 기능을 확인합니다.",
+            "캐시백이 없는 대신 요율 구조가 단순해 총비용을 사전에 산정하기 쉽습니다.",
+            "혜택 변경 리스크보다 수수료 수준 자체가 판단 기준이 됩니다."
+          ], note: "기능성 카드는 리워드가 없으므로 충전·결제·환전 수수료가 그대로 비용으로 남습니다. 요율이 공식 자료에 항목별로 공개되어 있는지, 총비용을 스스로 계산할 수 있는지를 먼저 확인하시기 바랍니다." }
+        ]},
+        { k: "notice", tone: "info", label: "글로벌 트렌드", p: [
+          "최근 글로벌 크립토카드 시장에서는 캐시백 경쟁에 지친 이용자들이 기능성 전문 카드로 이동하는 흐름이 나타나고 있습니다. 요율 인하, 적립 상한 신설, 스테이킹 요건 강화, 추천인 커미션 중단 등이 반복되면서, 리워드를 기준으로 카드를 고른 이용자들이 결과적으로 조건 변경의 위험을 떠안게 된다는 인식이 확산된 결과입니다.",
+          "이에 따라 '얼마를 돌려받는가'보다 '한도가 충분한가, 자금을 원하는 대로 이동할 수 있는가, 총비용을 사전에 계산할 수 있는가'를 기준으로 카드를 선택하는 이용자 비중이 늘고 있습니다. Crypto Cards Info가 두 유형을 명확히 구분해 제시하는 이유도 여기에 있습니다."
+        ]},
+        { k: "links", title: "무엇을 비교할 수 있나요", items: [
+          { p: "card-comparison", kicker: "카드비교", t: "RedotPay · OKX · Ether.fi · Anytap", d: "발급비, 연회비, 충전 방법, 해외결제, ATM, 카드 간 이체, 한도와 캐시백 조건을 같은 기준으로 정리했습니다." },
+          { p: "fee-comparison", kicker: "수수료 항목", t: "0% 수수료, 정말 비용이 0원이라는 뜻일까요?", d: "발급비, 충전비, 크립토 전환비, 환전·환율 Spread, 해외결제비, ATM 비용까지 단계별로 확인합니다." },
+          { p: "limit-comparison", kicker: "카드기능 및 한도비교", t: "충전 · 결제 · ATM · 이체 한도와 자금 이동 기능", d: "사용 금액이 클수록 발목을 잡는 건 캐시백률이 아니라 한도입니다. 충전한 자금을 어떻게 보관하고 이동할 수 있는지 함께 비교합니다." },
+          { p: "cashback-fact-check", kicker: "캐시백 비교 및 주의점", t: "'최대 캐시백'이라는 문구, 그 이면의 조건까지 확인해보셨습니까?", d: "최소 사용금액, 월 한도, 등급·스테이킹 조건, 지급 방식, 제외 거래를 확인합니다. 내가 돌려받은 캐시백이 사실은 내가 먼저 지불했던 비용일 수 있습니다." },
+          { p: "card-selection-guide", kicker: "카드선택가이드", t: "기능 → 수수료 → 환율 → 한도 → 캐시백", d: "좋은 카드는 캐시백이 가장 높은 카드가 아닙니다. 무엇을 먼저 확인해야 하는지 순서대로 안내합니다." },
+          { p: "faq", kicker: "FAQ", t: "크립토카드 기본 개념과 용어", d: "스테이블코인, 충전, 환율 Spread, KYC, ATM 수수료 등 20개 항목을 쉽게 설명합니다." }
+        ]},
+        { k: "text", title: "실제 총비용으로 비교하세요", p: [
+          "광고에 노출되는 숫자는 대부분 전체 비용 중 한 가지 항목만을 보여줍니다. 이용자가 실제로 부담하는 금액은 발급비, 충전 수수료, 크립토 전환 수수료, 환전 수수료와 환율 Spread, 해외결제 수수료, ATM 비용을 모두 합산한 뒤, 실제로 지급받은 캐시백을 차감해야 확인할 수 있습니다.",
+          "이 때문에 Crypto Cards Info는 명목상 가장 낮은 수수료를 찾는 방식 대신, 실제 사용 과정에서 최종적으로 빠져나가는 총비용을 기준으로 비교합니다. 내가 돌려받았다고 생각한 캐시백이, 실제로는 내가 먼저 지불했던 비용의 일부였을 수 있습니다."
+        ]},
+        { k: "notice", tone: "info", label: "정보 제공 원칙", p: [
+          "모든 정보는 이용자의 올바른 판단을 돕기 위해 제공됩니다. 크립토카드 선택은 캐시백·리워드를 우선할 것인지, 본인의 실사용 목적에 맞는 기능을 우선할 것인지에 따라 달라지는 문제이며, 정답은 이용자마다 다릅니다.",
+          "가장 중요한 원칙은 모든 수수료가 카드 발급사의 공식 홈페이지에 투명하게 공개되어야 한다는 것입니다.",
+          "모든 정보는 객관적으로 제공하며, 특정 카드나 업체를 무조건 추천하거나 비판하지 않습니다. 공식 홈페이지·공식 약관·공식 수수료표·공식 공지를 우선 출처로 사용하며, 확인되지 않은 항목은 추측 없이 '공식 확인 필요' 또는 '공식 자료 미공개'로 표시합니다.",
+          "'0% 수수료', '최대 캐시백'과 같은 광고 문구는 실제 적용 조건과 분리하여 표시합니다. 최종적인 카드 선택과 이용 여부는 이용자가 스스로 판단합니다."
+        ]}
+      ]
+    },
+    "card-comparison": {
+      title: "크립토카드 비교 | RedotPay·OKX·Ether.fi·Anytap | CryptoCardsInfo",
+      desc: "RedotPay, OKX, Ether.fi, Anytap 등 주요 크립토카드의 비용, 결제 기능, ATM, 카드 간 이체, 한도와 캐시백 조건을 비교합니다.",
+      h1: "크립토카드 비교",
+      lead: "Crypto Cards Info에서는 주요 크립토카드의 비용, 결제 기능, ATM 이용, 카드 간 이체, 한도와 캐시백 조건을 비교합니다. 비교 대상은 결제 리워드를 중심에 둔 캐시백 전용 카드(RedotPay · OKX Card · Ether.fi Cash)와 한도·자금 이동 기능을 중심에 둔 기능성 전문 카드(Anytap Card)로 구분됩니다. 각 항목은 공개된 공식 자료를 기준으로 정리합니다.",
+      stamp: "최종 확인: 2026년 9월 6일 · 본 정보는 각 서비스의 공개 자료를 기준으로 확인하였으며, 서비스 제공자의 정책 변경에 따라 달라질 수 있습니다. 실제 이용 전 최신 공식 자료를 확인하시기 바랍니다.",
+      sections: [
+        { k: "cards", title: "주요 크립토카드", items: [
+          { key: "redotpay", name: "RedotPay", tag: "캐시백 전용 카드 · 글로벌 결제", rows: [
+            ["가상카드 발급비","10달러 (즉시 발급)"],
+            ["실물카드 발급비","100달러 (한국 내 신규 발급은 현재 중단)"],
+            ["결제 수수료","동일통화 1% / 외화 결제 2.2% (1% + 1.2% 환전 수수료)"],
+            ["캐시백","없음"]
+          ], sum: "자체 리워드·캐시백 프로그램이 없어, 수수료 부담을 상쇄할 혜택이 없는 구조입니다." },
+          { key: "okx", name: "OKX Card", tag: "캐시백 전용 카드 · 거래소 발급", rows: [
+            ["캐시백","일반 최대 2% (USDG 결제 시에만 적용) · 월 상한 5달러 / VIP 등급 최대 1,000달러"],
+            ["발급비","없음"],
+            ["ATM 수수료","2% (최소 1달러)"],
+            ["스테이블코인 환전 스프레드","0.4%"]
+          ], sum: "캐시백은 OKX 거래소 계정과 OKX Pay 활성화, USDG 결제가 모두 충족되어야만 적용됩니다." },
+          { key: "etherfi", name: "Ether.fi Cash", tag: "캐시백 전용 카드 · 프로토콜 기반", rows: [
+            ["캐시백","Core 첫 2,000달러 3% → 2~3천 달러 1% → 3천 달러 초과 0.5%"],
+            ["상위 등급","Luxe 첫 10,000달러 / Pinnacle 첫 50,000달러까지 3%"],
+            ["FX 수수료","전 등급 공통 1%"],
+            ["등급 업그레이드","ETHFI 토큰 스테이킹 필요"]
+          ], sum: "Direct Mode(예치)와 Borrow Mode(담보대출) 두 가지 결제 구조가 있으며, Borrow Mode는 담보 청산 리스크가 있습니다." },
+          { key: "anytap", name: "Anytap Card", tag: "기능성 전문 카드 · 한도 · 자금 이동성", rows: [
+            ["캐시백","없음"],
+            ["가상카드 / 실물카드 발급비","20 USDT / 100 USDT (최소 입금 50 USDT)"],
+            ["충전 수수료","2%"],
+            ["결제 / 해외결제 수수료","동일통화 1% / 1% + 0.30달러 (건당, 해외결제)"]
+          ], sum: "캐시백 대신 한도와 이체·지갑 기능이 강화된 구조입니다." }
+        ]},
+        { k: "table", title: "기본 비교표", sub: "공식 자료에서 확인되지 않은 항목은 '공식 확인 필요' 또는 '비공개'로 표시합니다. 이는 해당 기능의 부재를 의미하지 않습니다.",
+          head: ["항목","RedotPay","OKX Card","Ether.fi Cash","Anytap Card"],
+          rows: [
+            ["가상카드 발급비","10달러","없음 (무료)","비공개","20 USDT"],
+            ["실물카드 발급비","100달러 (한국 신규 발급 중단)","가상카드 중심 운영, 실물카드는 지역별로 다름","무료 (상위 등급 메탈)","100 USDT (최소 입금 50 USDT)"],
+            ["충전 방법","암호화폐 충전","거래소 계정 잔액 (원화 직접 입금 불가)","프로토콜 예치(Direct) 또는 담보 대출(Borrow)","개인 지갑 또는 거래소에서 입금"],
+            ["해외결제","Visa 가맹점","Visa 가맹점","Visa 가맹점","Visa 가맹점"],
+            ["카드 간 이체","제공하지 않음","제공하지 않음","제공하지 않음","지원"],
+            ["회원 지갑 → 외부지갑 이체","지원 (온체인 전송, 은행계좌 직접 출금은 불가)","지원 (OKX 거래소 계정을 통한 온체인 출금 · 카드 전용 기능은 아님)","제공하지 않음 (자체 개인키 내보내기 기능 미출시, 향후 지원 예정으로 공지됨)","지원 (가스비는 고객 부담)"],
+            ["충전 수수료","없음 (온체인 가스비만 발생)","비공개","비공개","2%"],
+            ["결제 수수료","동일통화 1%","0%","0% (FX 별도)","동일통화 1%"],
+            ["해외결제·FX 수수료","1.2% 환전 수수료 별도 (총 2.2%)","0% (스테이블코인 스프레드 0.4% 별도)","전 등급 공통 1%","1% + 0.30달러 / 건"],
+            ["ATM 수수료","2%","2% (최소 1달러)","2%","2% (최소 1달러)"],
+            ["결제 한도","거래당 최대 100,000달러","공식 확인 필요","비공개","실물카드 월 1,000,000달러"],
+            ["ATM 인출 한도","비공개","비공개","비공개","월 15,000달러 (건당·일 1,500달러)"],
+            ["캐시백","없음","최대 2% (USDG 결제 한정), 월 상한 5달러(일반)~1,000달러(VIP)","Core 3%→1%→0.5% 구간제 (등급별 상이)","없음"],
+            ["캐시백 조건","해당 없음","OKX 계정·KYC·OKX Pay 활성화 필수, USDG 결제 시에만 적용","등급 업그레이드에 ETHFI 스테이킹 필요, Borrow Mode는 담보 청산 리스크 존재","해당 없음"],
+            ["추천인 프로그램","최대 40% 커미션 안내되어 있으나, 현재는 지급 중단","별도 안내 없음","별도 안내 없음","최대 40%까지 지원 (등급별 조건 적용이므로 추가 확인 필요)"],
+            ["기타 주요 특징","Apple Pay 연동","Apple Pay·Google Pay 연동 · OKX Pay 스테이블코인 결제","Apple Pay·Google Pay 연동 · 비수탁 지갑(Safe) 구조","카드 간 이체 · 개인 지갑 발급 · 외부지갑 출금 · Apple Pay·Google Pay·Samsung Pay 지원"]
+          ],
+          tint: [null, "amber", "amber", "amber", "teal"],
+          legendItems: [{ tone: "amber", label: "캐시백 전용 카드" }, { tone: "teal", label: "기능성 전문 카드" }],
+          legend: "표의 열 배경색은 카드의 설계 유형을 구분하기 위한 표시이며, 카드의 우열이나 품질 평가를 의미하지 않습니다. RedotPay · OKX Card · Ether.fi Cash는 결제 리워드를 중심에 둔 캐시백 전용 카드이므로 동일한 색으로 묶었고, Anytap Card는 한도와 자금 이동 기능을 중심에 둔 기능성 전문 카드이므로 별도의 색으로 구분했습니다. 유형이 다른 카드를 같은 색으로 나열하면 서로 다른 기준을 같은 기준으로 비교하는 오해가 생길 수 있어, 이를 방지하기 위한 표기입니다.",
+          notes: ["Visa는 Visa Inc.의 상표이며, 각 카드명·로고는 해당 권리자의 자산입니다. 표기는 비교 대상의 식별 목적으로만 사용됩니다."]
+        },
+        { k: "notice", tone: "warn", label: "한국 이용자 참고", p: [
+          "1. 크립토 직불카드는 캐시백·리워드를 우선하는 카드와, 한도·이체·지갑 기능 등 실사용 기능성을 우선하는 카드로 나누어 접근하는 것이 필요합니다. 캐시백·리워드형 카드는 조건이 예고 없이 변경되거나 프로그램이 중단될 수 있고, 기능성 카드는 캐시백이 없는 대신 한도와 자금 이동성이 강화되어 있습니다. 두 유형의 장단점을 함께 고려해 본인의 이용 목적에 맞게 선택하시기 바랍니다.",
+          "2. RedotPay는 한국 내 실물카드 신규 발급을 중단한 상태이며, 추천인 커미션 지급도 함께 중단되어 있습니다. 추천인 프로그램을 보고 가입을 고려 중이라면 이 점을 참고하시기 바랍니다.",
+          "3. OKX Card는 OKX 거래소 계정 보유와 OKX Pay 활성화가 발급 조건에 포함되며, 캐시백은 OKX 자체 스테이블코인(USDG)으로 결제할 때만 적용됩니다. 캐시백을 받으려면 OKX 거래소를 지속적으로 이용해야 하는 구조이며, 원화 직접 입금도 지원되지 않습니다.",
+          "4. Ether.fi Cash는 자체 토큰(ETHFI)을 발행하는 프로토콜에서 운영하는 카드로, 등급 업그레이드에 ETHFI 스테이킹이 필요하고 결제 방식도 예치형(Direct Mode)과 담보대출형(Borrow Mode)으로 나뉘어 있습니다. Borrow Mode는 담보 자산 가격 하락 시 청산될 수 있어, 일반 결제 카드에는 없는 옵션과 리스크가 포함되어 있습니다.",
+          "5. 카드 발급, 배송, 추천인 프로그램 정책은 각 사업자의 사정에 따라 수시로 변경될 수 있으므로, 신청 전 공식 홈페이지의 최신 공지를 확인하시기 바랍니다.",
+          "6. 참고로 최근 글로벌 시장에서는 반복되는 요율 인하와 적립 상한 신설, 추천인 커미션 중단 등을 경험한 이용자들이 캐시백 전용 카드에서 기능성 전문 카드로 이동하는 흐름이 관찰되고 있습니다. 리워드 요율보다 한도와 자금 이동 기능, 그리고 요율 공개 수준을 기준으로 판단하는 방식이 확산되고 있다는 점을 참고하시기 바랍니다."
+        ]}
+      ]
+    },
+    "fee-comparison": {
+      title: "크립토카드 수수료 항목 | 충전·환전·해외결제·ATM | CryptoCardsInfo",
+      desc: "크립토카드의 발급비, 충전비, 크립토 전환비, 환전·환율 Spread, 해외결제 및 ATM 비용이 어느 단계에서 발생하는지 정리합니다.",
+      h1: "수수료 항목",
+      lead: "0% 수수료라고 해서 실제 비용이 0원인 것은 아닙니다. 충전, 크립토 전환, 환전과 환율 Spread, 해외결제, ATM까지 자금이 이동하는 각 단계에서 비용이 발생할 수 있습니다.",
+      sections: [
+        { k: "flow", title: "크립토카드의 실제 비용은 어떻게 발생하는가?", sub: "0%라는 숫자보다 최종적으로 얼마가 빠져나가는지를 확인하세요.", steps: [
+          { num: "1단계", t: "충전", d: "카드 잔액을 채우는 단계에서 충전 수수료가 발생할 수 있습니다." },
+          { num: "2단계", t: "크립토 전환", d: "보유 자산을 결제 가능한 자산으로 전환하는 과정의 비용입니다." },
+          { num: "3단계", t: "환전 / 환율 적용", d: "적용 환율과 Spread(Markup)에 따라 실제 부담액이 달라집니다." },
+          { num: "4단계", t: "카드 결제", d: "가맹점 결제 시점의 통화와 환율 처리 방식을 확인해야 합니다." },
+          { num: "5단계", t: "해외결제 비용", d: "해외 가맹점 결제 시 카드 네트워크 기준의 수수료가 적용될 수 있습니다." },
+          { num: "6단계", t: "ATM / 출금", d: "현금 인출에는 별도의 요율과 최소 금액이 적용될 수 있습니다." },
+          { num: "결과", t: "실제 총비용", d: "발급비 + 충전비 + 크립토 전환비 + 환전비 + 환율 Spread + 해외결제비 + ATM 비용 − 실제 캐시백" }
+        ]},
+        { k: "text", p: [
+          "비교의 목적은 가장 낮은 명목 수수료를 찾는 것이 아니라, 실제 사용 과정에서 최종적으로 부담하는 비용을 확인하는 것입니다. 동일한 금액을 사용해도 충전 방식과 결제 통화에 따라 총비용은 달라질 수 있습니다."
+        ]},
+        { k: "alert", label: "고객 주의사항", big: "수수료를 공식 홈페이지에 투명하게 공개하지 않는 사업자는 신뢰의 대상이 될 수 없습니다.", p: [
+          "수수료 체계의 공개는 사업자의 재량이 아니라, 이용자가 계약 조건을 사전에 인식할 수 있도록 하는 기본적인 정보 제공 의무의 영역입니다. 발급비, 충전 수수료, 전환 수수료, 환율 Spread, 해외결제 수수료, ATM 수수료가 공식 홈페이지 또는 공식 약관에서 항목별로 확인되지 않는다면, 이용자는 자신이 부담할 총비용을 계약 전에 산정할 수 없습니다.",
+          "특히 요율을 명시하지 않고 '무료', '0% 수수료', '업계 최저'와 같은 표현만 제시하는 경우, 실제 비용이 환율 Spread나 전환 단계에 내재되어 표시되지 않을 가능성을 배제할 수 없습니다. 광고 문구와 공식 수수료표가 일치하지 않는 사업자는 비교 대상에서 후순위로 두는 것이 합리적입니다."
+        ]},
+        { k: "grid", title: "다음 세 가지를 확인할 수 없는 사업자는 수치를 추정하지 않고 '공식 확인 필요'로 표시합니다", items: [
+          { t: "항목별 요율이 명시된 공식 수수료표", d: "발급비·충전비·전환비·환율 Spread·해외결제비·ATM 비용이 항목별로 게시되어 있는지 확인합니다." },
+          { t: "요율 변경 시의 사전 고지 절차", d: "요율을 변경할 때 사전에 고지하는 절차와 기한이 약관에 규정되어 있는지 확인합니다." },
+          { t: "적용 환율의 기준", d: "카드 네트워크 기준 환율을 사용하는지, 그리고 Markup 폭이 얼마인지 명시되어 있는지 확인합니다." }
+        ]},
+        { k: "grid", title: "카드를 선택하기 전 확인 사항", items: [
+          { t: "공식 수수료표의 게시 여부", d: "공식 홈페이지 또는 약관에 수수료표가 항목별로 게시되어 있는지 확인합니다." },
+          { t: "요율 변경 이력과 고지 방식", d: "과거 요율 변경 이력과 그 고지 방식이 확인 가능한지 점검합니다." },
+          { t: "총비용의 자체 산정 가능성", d: "고객센터 문의 없이도 이용자가 스스로 총비용을 계산할 수 있는지 확인합니다." }
+        ]},
+        { k: "notice", tone: "warn", label: "검증 절차 권고", p: [
+          "위 항목 중 하나라도 확인되지 않는다면, 자금을 예치하기 전에 소액으로 시험 결제하여 실제 청구액을 검증하는 절차를 권장합니다."
+        ]}
+      ]
+    },
+    "limit-comparison": {
+      title: "크립토카드 카드기능 및 한도비교 | 결제·ATM·카드 간 이체 | CryptoCardsInfo",
+      desc: "크립토카드의 충전·결제·ATM·카드 간 이체 한도와 지갑 발급, 외부지갑 출금 등 자금 이동 기능을 함께 비교합니다.",
+      h1: "카드기능 및 한도비교",
+      lead: "사용 금액이 클수록 발목을 잡는 것은 캐시백률이 아니라 한도입니다. 또한 결제만이 아니라 충전한 자금을 어떻게 보관하고 이동할 수 있는지도 실사용에서 중요한 조건입니다. 이 페이지에서는 카드 기능과 한도를 함께 정리했습니다.",
+      sections: [
+        { k: "compare2", title: "이 페이지의 비교 대상은 두 유형으로 나뉩니다", sub: "카드 기능과 한도를 비교하기 전에, 각 카드가 어떤 목적으로 설계되었는지를 먼저 구분해야 합니다. 설계 목적이 다른 카드를 같은 기준으로 나열하면 비교 자체가 왜곡되기 때문입니다.", cols: [
+          { tone: "amber", label: "캐시백 전용 카드", t: "RedotPay · OKX Card · Ether.fi Cash", items: [
+            "결제 리워드(캐시백)를 중심 가치로 설계된 카드입니다.",
+            "한도·이체 기능은 공개 범위가 좁거나 카드 전용 기능으로 제공되지 않는 경우가 많습니다.",
+            "자금 이동보다 '결제 시 얼마를 돌려받는가'가 설계의 초점입니다."
+          ], note: "따라서 이 유형의 카드에서 한도·이체 항목이 '비공개' 또는 '제공하지 않음'으로 표시되는 것은 결함이 아니라 설계 목적의 차이입니다." },
+          { tone: "teal", label: "기능성 전문 카드", t: "Anytap Card", items: [
+            "결제 한도와 자금 이동 기능을 중심 가치로 설계된 카드입니다.",
+            "카드 간 이체, 개인 지갑 발급, 외부지갑 출금이 카드 기능으로 제공됩니다.",
+            "캐시백은 제공하지 않으며, 대신 요율 구조가 단순해 총비용 산정이 용이합니다."
+          ], note: "이 유형은 리워드가 없으므로 충전·결제·환전 수수료가 그대로 비용으로 남습니다. 한도가 필요하지 않은 소액 이용자에게는 유리하지 않을 수 있습니다." }
+        ]},
+        { k: "notice", tone: "info", label: "글로벌 트렌드", p: [
+          "전 세계 크립토카드 시장에서는 캐시백 조건의 반복적인 변경에 지친 이용자들이 기능성 전문 카드를 선택하는 비중이 늘고 있습니다. 실제로 카드 이용에서 문제가 되는 지점은 요율이 아니라 '월 한도가 결제액을 감당하는가', '남은 잔액을 외부 지갑으로 회수할 수 있는가'인 경우가 많기 때문입니다.",
+          "이 페이지의 두 비교표를 볼 때는 요율이 아니라 이 두 질문을 기준으로 확인하시기를 권합니다."
+        ]},
+        { k: "table", title: "카드 기능 비교", sub: "공개된 공식 자료에서 해당 기능을 확인할 수 없는 경우 '제공하지 않음' 또는 '비공개'로 표시합니다.",
+          head: ["기능 항목","RedotPay","OKX Card","Ether.fi Cash","Anytap Card"],
+          rows: [
+            ["카드 간 이체","제공하지 않음","제공하지 않음","제공하지 않음","지원 (수수료 0.5%)"],
+            ["개인 지갑(입출금 주소) 발급","제공하지 않음","제공하지 않음","제공하지 않음","무료 발급"],
+            ["개인 지갑에서 직접 충전","제공하지 않음 (거래소·앱 경로를 통한 충전)","제공하지 않음 (거래소 계정 잔액 사용)","제공하지 않음 (프로토콜 예치·담보 구조)","지원"],
+            ["회원 지갑 → 외부지갑 이체","지원 (온체인 전송, 은행계좌 직접 출금은 불가)","지원 (OKX 거래소 계정을 통한 온체인 출금 · 카드 전용 기능은 아님)","제공하지 않음 (자체 개인키 내보내기 기능 미출시, 향후 지원 예정으로 공지됨)","지원 (수수료 무료, 가스비는 고객 부담)"],
+            ["1인당 발급 매수","비공개","비공개","비공개","기본 3장 (대량 발급 별도 협의)"],
+            ["간편결제 연동","Apple Pay","Apple Pay · Google Pay","Apple Pay · Google Pay","Apple Pay · Google Pay · Samsung Pay"]
+          ],
+          tint: [null, "amber", "amber", "amber", "teal"],
+          legendItems: [{ tone: "amber", label: "캐시백 전용 카드" }, { tone: "teal", label: "기능성 전문 카드" }],
+          legend: "열 배경색을 다르게 표시한 이유는 카드의 설계 유형이 다르기 때문입니다. RedotPay · OKX Card · Ether.fi Cash는 결제 리워드를 중심에 둔 캐시백 전용 카드이고, Anytap Card는 한도와 자금 이동 기능을 중심에 둔 기능성 전문 카드입니다. 색 구분은 유형 표시일 뿐이며, 특정 카드를 우대하거나 폄하하기 위한 표시가 아닙니다. 오히려 설계 목적이 다른 카드를 동일한 색으로 나열해 같은 기준으로 비교하도록 유도하는 것이 이용자에게 더 큰 오해를 줄 수 있다고 판단하여 유형을 구분했습니다.",
+          notes: ["'제공하지 않음'은 공개된 공식 자료에서 해당 기능을 확인할 수 없었다는 의미이며, 사업자가 비공개로 운영하는 기능까지 부정하는 것은 아닙니다."]
+        },
+        { k: "table", title: "한도 비교", sub: "공식 자료가 없는 항목은 임의로 작성하지 않고 '비공개' 또는 '공식 확인 필요'로 표시합니다.",
+          head: ["한도 항목","RedotPay","OKX Card","Ether.fi Cash","Anytap Card"],
+          rows: [
+            ["충전 한도","비공개","비공개","비공개","무제한"],
+            ["1회 결제 한도","거래당 최대 100,000달러","공식 확인 필요","비공개","20,000달러"],
+            ["1일 결제 한도","비공개","비공개","비공개","실물카드 250,000달러 (일 최대 100건)"],
+            ["월 결제 한도","비공개","공식 확인 필요","비공개","실물카드 1,000,000달러"],
+            ["ATM 1회 인출 한도","비공개","비공개","비공개","1,500달러"],
+            ["일일 ATM 인출 한도","비공개","비공개","비공개","1,500달러 (일 최대 30건)"],
+            ["월간 ATM 인출 한도","비공개","비공개","비공개","15,000달러"],
+            ["카드 간 이체 한도","제공하지 않음","제공하지 않음","제공하지 않음","별도 상한 고지 없음"]
+          ],
+          tint: [null, "amber", "amber", "amber", "teal"],
+          legendItems: [{ tone: "amber", label: "캐시백 전용 카드" }, { tone: "teal", label: "기능성 전문 카드" }],
+          legend: "한도표의 열 배경색도 같은 기준으로 구분했습니다. 캐시백 전용 카드는 한도를 핵심 경쟁 요소로 두지 않기 때문에 공개 범위가 좁은 경우가 많고, 기능성 전문 카드는 한도를 핵심 사양으로 공개합니다. 색 구분은 이러한 설계 차이를 드러내기 위한 표시이며, 카드의 우열을 평가하거나 특정 사업자를 차별하기 위한 것이 아닙니다.",
+          notes: ["한도는 이용자 등급, 신원인증 단계, 국가, 카드 종류에 따라 다르게 적용될 수 있습니다. 고액 결제를 계획하는 경우 월 한도만이 아니라 1일 한도와 건당 한도, 거래 건수 제한까지 함께 확인해야 합니다."]
+        },
+        { k: "split", title: "일반 은행 송금과 카드 간 이체", cols: [
+          { t: "일반 은행 송금", steps: ["은행 앱","은행 선택","계좌번호 입력","금액 입력","송금"], note: "은행 계좌와 계좌번호를 기준으로 자금을 이동합니다." },
+          { t: "카드 간 이체", steps: ["카드 앱","상대방 카드 정보 (이메일, 카드번호 마지막 4자리)","금액 입력","이체"], note: "카드 계정을 기준으로 자금을 이동합니다. 지원 여부와 수수료는 카드마다 다릅니다." }
+        ]},
+        { k: "notice", tone: "info", label: "확인 필요", p: [
+          "카드 간 이체와 외부지갑 출금은 사업자의 정책과 규제 환경에 따라 제한될 수 있습니다.",
+          "온체인 이전은 되돌릴 수 없으므로 네트워크와 주소를 반드시 확인해야 합니다."
+        ]}
+      ]
+    },
+    "cashback-fact-check": {
+      title: "크립토카드 캐시백 비교 및 주의점 | 실제 조건과 한도 | CryptoCardsInfo",
+      desc: "크립토카드의 기본·최대 캐시백과 적용 조건, 월 한도, 지급 자산, 등급·스테이킹 요건과 정책 변경 위험을 정리합니다.",
+      h1: "캐시백 비교 및 주의점",
+      sub: "캐시백은 확정된 권리가 아니라, 사업자가 조건을 정하고 변경할 수 있는 프로모션입니다.",
+      lead: "최대 캐시백과 실제 캐시백은 다를 수 있습니다. 광고에 표시된 최대 요율이 아니라, 나에게 적용되는 조건과 월 한도, 지급 자산의 실제 사용 가치를 확인해야 합니다.",
+      sections: [
+        { k: "flow", title: "캐시백 판단 순서", sub: "높은 캐시백보다 실제 절약되는 금액을 확인하세요.", steps: [
+          { num: "1", t: "누구에게 적용되는가?", d: "등급·스테이킹·보유 조건에 따라 적용 대상이 달라집니다." },
+          { num: "2", t: "어떤 결제에 적용되는가?", d: "특정 가맹점·업종·통화 또는 특정 결제수단만 적용되는 경우가 있습니다." },
+          { num: "3", t: "월 한도는 얼마인가?", d: "요율이 높아도 월 적립 상한이 있으면 실수령액은 상한에서 멈춥니다." },
+          { num: "4", t: "조건이 있는가?", d: "최소 사용금액, 예치 기간, 유지 조건을 확인합니다." },
+          { num: "5", t: "어떤 형태로 지급되는가?", d: "스테이블코인인지, 발행사 자체 토큰·포인트인지 확인합니다." },
+          { num: "6", t: "실제로 사용할 수 있는 가치는 얼마인가?", d: "지급 자산의 가격 변동과 사용처, 유효기간까지 포함해 판단합니다." }
+        ]},
+        { k: "table", title: "캐시백 공개 조건 비교", sub: "각사 공개 자료 기준이며, 조건은 사업자의 정책에 따라 변경될 수 있습니다.",
+          head: ["확인 항목","RedotPay","OKX Card","Ether.fi Cash","Anytap Card"],
+          rows: [
+            ["기본 캐시백","없음","일반 최대 2% (USDG 결제 시에만 적용)","Core 첫 2,000달러 3%","없음"],
+            ["구간 체감 구조","해당 없음","월 상한 도달 시 적립 중단","2~3천 달러 1% → 3천 달러 초과 0.5%","해당 없음"],
+            ["상위 등급 조건","해당 없음","VIP 등급 상향 시 월 상한 확대","Luxe 첫 10,000달러 / Pinnacle 첫 50,000달러까지 3%","해당 없음"],
+            ["월 캐시백 한도","해당 없음","일반 5달러 ~ VIP 최대 1,000달러","등급별 구간 상한 적용","해당 없음"],
+            ["필수 적용 조건","해당 없음","OKX 거래소 계정 보유 · KYC · OKX Pay 활성화 · USDG 결제","등급 업그레이드에 ETHFI 토큰 스테이킹 필요","해당 없음"],
+            ["지급 자산","해당 없음","USDG (자체 스테이블코인)","프로토콜 지정 자산","해당 없음"],
+            ["결제 구조상 리스크","없음 (캐시백 프로그램 자체가 없음)","거래소 계정 및 자체 스테이블코인 사용에 종속","Borrow Mode 이용 시 담보 자산 청산 리스크","없음 (캐시백 프로그램 자체가 없음)"],
+            ["FX·해외결제 수수료","1.2% 환전 수수료 별도 (총 2.2%)","0% (스테이블코인 스프레드 0.4% 별도)","전 등급 공통 1%","1% + 0.30달러 / 건"],
+            ["추천인 프로그램","최대 40% 커미션 안내되어 있으나 현재 지급 중단","별도 안내 없음","별도 안내 없음","최대 40%까지 지원 (등급별 조건 확인 필요)"],
+            ["정책 변경 가능성","약관에 따라 변경 가능","약관에 따라 변경 가능","약관에 따라 변경 가능","해당 없음"]
+          ],
+          tint: [null, "amber", "amber", "amber", "teal"],
+          legendItems: [{ tone: "amber", label: "캐시백 전용 카드" }, { tone: "teal", label: "기능성 전문 카드" }],
+          legend: "열 배경색은 카드의 설계 유형 구분입니다. 캐시백 전용 카드(RedotPay · OKX Card · Ether.fi Cash)와 기능성 전문 카드(Anytap Card)는 목적이 다르므로, Anytap 열의 '해당 없음' 표기는 혜택의 부재가 아니라 캐시백 프로그램을 운영하지 않는 설계라는 의미입니다. 색 구분은 우열 평가가 아닙니다.",
+          notes: ["대부분의 카드 리워드는 약관상 사업자가 요율과 지급 방식을 변경·중단할 수 있는 프로모션입니다. 가입 시점의 요율이 계약상 보장되는지 공식 약관에서 확인하시기 바랍니다."]
+        },
+        { k: "articles", title: "캐시백이 오히려 손해가 될 수 있는 다섯 가지 근거", items: [
+          { t: "근거 1 — 캐시백의 재원은 이용자가 이미 지불한 비용입니다", p: [
+            "카드 사업자의 수익원은 발급비, 충전 수수료, 크립토 전환 수수료, 환율 Spread, 해외결제 수수료, ATM 수수료로 구성됩니다. 캐시백은 이 수익 구조 위에서 일부를 되돌려주는 마케팅 비용이며, 별도의 외부 재원에서 지급되는 것이 아닙니다.",
+            "예를 들어 충전 시 2%, 해외결제 시 1%대의 비용이 발생하는 구조에서 결제액의 2%를 돌려받는다면, 이용자는 이미 지불한 비용의 일부를 환급받는 것에 가깝습니다. 요율만 비교하면 이득처럼 보이지만, 총비용 기준으로 계산하면 순효과가 크지 않거나 음(−)이 될 수 있습니다."
+          ]},
+          { t: "근거 2 — 실제로 지급받지 못할 수 있습니다", p: [
+            "캐시백은 대부분 약관상 사업자가 요율과 지급 방식을 임의로 변경·중단할 수 있는 프로모션으로 규정됩니다. 적립과 지급 사이에 시차가 있는 구조에서는, 적립 시점의 조건이 지급 시점까지 유지된다는 보장이 없습니다.",
+            "실제로 요율 인하, 월 적립 상한의 사후 신설, 스테이킹 리워드 폐지, 특정 지역 서비스 종료, 추천인 커미션 지급 중단이 사전 예고 없이 이루어진 사례가 공개 보도된 바 있습니다. 본 사이트가 비교하는 카드 중에도 추천인 커미션 지급이 현재 중단된 사례가 있습니다."
+          ]},
+          { t: "근거 3 — 특정 거래소·특정 코인에 종속됩니다", p: [
+            "높은 요율은 대개 조건과 결합되어 있습니다. 거래소 발급 카드는 해당 거래소 계정 유지와 자체 스테이블코인 결제를 요구하고, 프로토콜 기반 카드는 자체 토큰 스테이킹으로 등급을 유지하도록 설계됩니다.",
+            "이 경우 이용자는 결제 수단 선택의 자유를 잃고, 특정 사업자의 계정 정책과 특정 토큰의 가격·유동성에 노출됩니다. 계정이 제한되거나 해당 자산의 지원이 종료되면, 축적한 리워드의 사용 자체가 어려워질 수 있습니다."
+          ]},
+          { t: "근거 4 — 지급 자산의 실질 가치가 요율과 다릅니다", p: [
+            "캐시백이 자체 토큰이나 포인트로 지급되는 구조에서는 표시 요율이 유지되어도 실수령 가치는 달라집니다. 지급 자산의 가격이 하락하거나 거래 유동성이 낮아지면, 명목상 3%가 실질적으로는 그보다 낮은 환급률이 됩니다.",
+            "또한 유효기간, 사용처 제한, 최소 출금 단위가 설정된 경우에는 적립액 전부를 사용하지 못할 가능성도 함께 고려해야 합니다."
+          ]},
+          { t: "근거 5 — 조건 유지 비용과 기회비용이 요율 표에 표시되지 않습니다", p: [
+            "등급 유지를 위한 예치(스테이킹)는 자금을 일정 기간 고정시킵니다. 그 기간의 가격 변동 위험과 다른 용도로 사용하지 못하는 기회비용은 이용자가 부담하지만, 요율 표에는 나타나지 않습니다.",
+            "담보 기반 결제 구조에서는 담보 자산 가격 하락 시 청산 위험까지 추가됩니다. 이러한 항목을 포함해 계산하면, 리워드 수취액보다 조건 유지 비용이 큰 구간이 존재할 수 있습니다."
+          ]},
+          { t: "정리 — 검증 방법", p: [
+            "캐시백의 실익은 '요율 × 결제액'이 아니라 '(요율 × 적립 대상 결제액 × 지급 자산의 환금성) − (충전비 + 전환비 + 환율 Spread + 해외결제비 + ATM 비용 + 조건 유지 비용)'으로 계산해야 합니다.",
+            "이 계산이 불가능한 카드, 즉 항목별 요율이 공개되지 않은 카드는 실익을 검증할 수 없으므로 비교 대상에서 후순위로 두는 것이 합리적입니다. 이 점이 최근 글로벌 이용자들이 캐시백 전용 카드에서 기능성 전문 카드로 이동하는 주된 이유로 지적됩니다."
+          ]}
+        ]},
+        { k: "list", title: "표시된 요율과 실수령액이 달라지는 이유", items: [
+          { t: "사용액 요건", d: "캐시백은 결제액에 비례합니다. 3% 카드로 월 50만 원을 결제하면 적립액은 1만 5천 원 수준입니다." },
+          { t: "월 적립 상한", d: "요율이 높아도 월 적립 상한이 있으면 사용액을 늘려도 실수령액은 상한에서 멈춥니다." },
+          { t: "구간 체감 구조", d: "초기 구간에만 높은 요율이 적용되고 초과분은 낮은 요율로 떨어지는 구조가 일반적입니다." },
+          { t: "예치 · 스테이킹 요건", d: "상위 요율이 자체 토큰 예치로 유지되는 경우, 예치 기간의 가격 변동과 기회비용은 이용자가 부담합니다." },
+          { t: "지급 자산의 가치", d: "지급 자산이 자체 토큰·포인트라면 요율이 유지되어도 실질 가치는 달라질 수 있습니다." },
+          { t: "제외 거래", d: "충전, 송금, 특정 업종, 환전성 거래 등은 적립 대상에서 제외되는 경우가 있습니다." }
+        ]},
+        { k: "alert", label: "중요 안내", big: "비교로 확인할 수 있는 범위에는 한계가 있으며, 캐시백의 재원은 결국 이용자가 부담한 비용에서 나옵니다.", p: [
+          "첫째, 이용자가 아무리 성실하게 비교하더라도 확인이 구조적으로 불가능한 영역이 존재합니다. 환율 Spread의 실제 폭, 내부 정산 환율의 산정 기준, 요율 변경의 내부 의사결정 시점, 프로모션 예산의 소진 여부 등은 공개 자료로 검증할 수 없습니다. 따라서 비교표의 수치는 '공개된 조건'일 뿐이며, 실제 청구액과 일치한다는 보증으로 이해해서는 안 됩니다.",
+          "둘째, 카드 선택의 기준은 '가장 높은 요율'이 아니라 '본인의 실사용 목적'이어야 합니다. 소액 결제 위주인지, 고액 결제와 자금 이동이 필요한지, 특정 생태계 자산을 주로 보유하는지에 따라 적합한 카드는 달라집니다. 사용 목적과 무관한 요율 경쟁은 실질적인 절약으로 이어지지 않습니다.",
+          "셋째, 캐시백의 경제적 실질을 이해할 필요가 있습니다. 카드 사업자는 발급비, 충전 수수료, 환율 Spread, 해외결제 수수료, ATM 수수료, 그리고 발행 토큰의 유통과 예치(스테이킹) 유인 등 복수의 수익원을 보유합니다. 카드 결제 부문에서 마진을 남기지 않더라도, 자체 토큰의 수요 창출이나 예치 자산의 확보를 통해 수익을 실현할 수 있는 구조입니다. 즉 이용자에게 지급되는 캐시백의 재원은 상당 부분 이용자가 이미 부담한 비용과, 이용자가 예치한 자산이 만들어내는 가치에서 조달됩니다. 캐시백은 사업자가 이용자에게 제공하는 순수한 이전이 아니라, 이용자 자금을 유치·고정하기 위한 마케팅 비용으로 이해하는 것이 정확합니다.",
+          "넷째, 그 결과 캐시백은 사업자의 수익 구조가 변하거나 프로모션 예산이 종료되면 축소·중단될 수 있는 항목입니다. 실제로 요율 인하, 적립 상한 신설, 스테이킹 리워드 폐지, 서비스 지역 종료, 추천인 커미션 지급 중단 등이 사전 예고 없이 이루어진 사례가 공개 보도된 바 있습니다.",
+          "따라서 이용자는 약관의 리워드 변경·중단 조항, 지급 자산의 종류와 환금성, 예치 요건의 해지 조건을 반드시 확인한 뒤 판단하시기 바랍니다. 선불형 카드의 잔액과 가상자산은 「예금자보호법」에 따른 예금보험의 대상이 아니며, 사업자 리스크는 이용자가 부담합니다. 자세한 내용은 면책 및 책임 제한 페이지에서 확인할 수 있습니다."
+        ]}
+      ]
+    },
+    "card-selection-guide": {
+      title: "크립토카드 선택 가이드 | 캐시백과 기능성의 판단 기준 | CryptoCardsInfo",
+      desc: "캐시백을 우선할 것인지 카드 기능을 우선할 것인지에 대한 판단 기준과, 수수료·환율·한도·이체 기능을 확인하는 순서를 안내합니다.",
+      h1: "카드선택가이드",
+      sub: "불확실한 캐시백을 택할 것인가, 확정된 기능을 택할 것인가.",
+      lead: "크립토카드 선택에서 가장 먼저 정리해야 할 것은 요율이 아니라 판단의 기준입니다. 성질이 다른 두 요소를 같은 저울에 올려두면 합리적인 선택이 어렵습니다.",
+      leadRed: "캐시백은 지급 시점과 지급 자산, 유지 조건이 사업자의 정책에 종속된 조건부 혜택이며, 기능과 한도는 계약 조건으로 공개·확정되는 항목입니다.",
+      sections: [
+        { k: "articles", title: "캐시백과 기능성, 무엇을 기준으로 삼아야 하는가", items: [
+          { t: "1. 캐시백은 '기대값', 기능은 '확정값'입니다", p: [
+            "캐시백은 요율·월 한도·등급 조건·지급 자산·제외 거래라는 다섯 개의 변수를 모두 통과한 뒤에야 금액이 확정됩니다. 각 변수는 사업자가 약관에 따라 변경할 수 있으므로, 이용자가 계약 시점에 알 수 있는 것은 확정 금액이 아니라 기대값입니다.",
+            "반면 결제 한도, 카드 간 이체 지원 여부, 개인 지갑 발급, 외부지갑 출금 가능성은 계약 조건으로 공개되며, 이용 시점에 그대로 작동합니다. 동일한 불확실성 아래에서 비교한다면, 확정값이 기대값보다 우선하는 것이 합리적입니다."
+          ]},
+          { t: "2. 크립토카드를 사용하는 목적을 다시 확인해야 합니다", p: [
+            "크립토카드의 본래 효용은 거래소나 개인 지갑에 있는 자산을 은행 계좌를 거치지 않고 결제 수단으로 전환하는 데 있습니다. 이 효용은 한도, 자금 이동 경로, 결제 수용성이라는 기능 요소로 결정됩니다.",
+            "캐시백은 이 효용에 부가되는 요소이지, 효용 자체를 대체하지 않습니다. 월 한도가 부족해 결제가 거절되거나, 남은 잔액을 외부 지갑으로 회수할 수 없다면 요율이 몇 퍼센트인지는 의미를 잃습니다."
+          ]},
+          { t: "3. 리워드에는 상응하는 비용과 종속 조건이 따릅니다", p: [
+            "높은 요율을 유지하기 위해 자체 토큰을 예치해야 하거나, 특정 스테이블코인으로만 결제해야 하거나, 거래소 계정을 지속적으로 유지해야 하는 구조라면, 그 요건 자체가 비용이자 리스크입니다. 예치 자산의 가격 변동, 담보 청산 가능성, 계정 제한 리스크는 요율 표에 표시되지 않습니다.",
+            "그러므로 요율을 비교할 때는 요율만이 아니라 '그 요율을 유지하기 위해 무엇을 묶어 두어야 하는가'를 함께 계산해야 합니다."
+          ]},
+          { t: "4. 결론 — 소액 리워드형과 실사용 기능형으로 나누어 판단합니다", p: [
+            "월 결제액이 작고 리워드 극대화가 목적이라면 캐시백형 카드가 합리적일 수 있습니다. 이 경우에도 월 적립 상한과 지급 자산의 환금성을 반드시 확인해야 합니다.",
+            "반대로 결제 규모가 크거나 개인 지갑에서 직접 자금을 운용해야 한다면, 요율보다 한도와 이체 기능을 기준으로 선택하는 것이 실질적인 비용 절감으로 이어집니다."
+          ]}
+        ]},
+        { k: "branch", title: "선택 기준 다이어그램", sub: "무엇을 우선하는지에 따라 비교 대상이 달라집니다.", root: "카드 선택의 출발점 — 나는 무엇을 우선하는가?",
+          branches: [
+            { q: "한도 · 자금 이동성을 우선한다", card: "Anytap Card", d: "실물카드 월 1,000,000달러 한도, 카드 간 이체, 개인 지갑 발급, 외부지갑 출금을 제공합니다. 캐시백은 없고 충전 시 2%가 발생합니다." },
+            { q: "캐시백 · 리워드를 우선한다", card: "OKX Card · Ether.fi Cash", d: "요율은 높게 제시되지만 등급·스테이킹·결제수단 조건과 월 적립 상한이 함께 적용되며, 조건은 변경될 수 있습니다." },
+            { q: "결제 편의만 필요하다", card: "RedotPay", d: "캐시백 프로그램이 없으므로 결제·환전 수수료가 그대로 비용으로 남습니다. 요율 공개 수준을 먼저 확인해야 합니다." }
+          ],
+          foot: "위 분류는 각 카드의 설계 목적에 따른 구분이며 우열의 평가가 아닙니다. 최근 글로벌 시장에서는 캐시백 조건 변경을 반복적으로 경험한 이용자들이 기능성 전문 카드를 택하는 비중이 늘고 있습니다. 어떤 경로를 택하더라도 요율이 항목별로 공개되어 있는지, 총비용을 스스로 산정할 수 있는지를 확인한 뒤 판단하시기 바랍니다."
+        },
+        { k: "grid", title: "확인할 내용", sub: "아래 여섯 항목을 순서대로 확인하면 비교 대상을 좁힐 수 있습니다. 한 줄에 세 항목씩, 1~3번은 비용 구조를, 4~6번은 실사용 조건을 확인하는 순서입니다.", items: [
+          { t: "필요한 기능", d: "결제 전용인지, 지갑·이체 기능까지 필요한지 먼저 정합니다." },
+          { t: "전체 수수료", d: "발급비, 충전비, 전환비, 결제비, ATM 비용을 항목별로 모두 확인합니다." },
+          { t: "환율 / Spread", d: "적용 환율과 Markup이 결제 통화별로 어떻게 처리되는지 확인합니다." },
+          { t: "충전 / 결제 / ATM 조건", d: "충전 방법과 한도, 결제·ATM 건수 제한을 확인합니다." },
+          { t: "카드 간 이체", d: "자금 이동이 필요한 경우 지원 여부와 수수료를 확인합니다." },
+          { t: "캐시백", d: "마지막으로 적용 조건과 월 한도를 포함한 실제 절약액을 계산합니다." }
+        ]},
+        { k: "table", title: "카드 선택 체크리스트",
+          head: ["확인 항목","소비자가 확인할 내용"],
+          rows: [
+            ["카드 발급 주체","실제 카드 발급사는 어디인가?"],
+            ["자금 관리","충전한 자금은 어떻게 관리되는가?"],
+            ["수수료","충전·결제·환전·ATM 비용은 얼마인가?"],
+            ["환율","실제 적용 환율과 Spread는 얼마인가?"],
+            ["한도","충전·결제·ATM 한도는 얼마인가?"],
+            ["이체","카드 간 이체가 가능한가?"],
+            ["사용처","어디에서 사용할 수 있는가?"],
+            ["캐시백","조건과 월 한도는 무엇인가?"],
+            ["정책","수수료와 혜택이 변경될 수 있는가?"]
+          ],
+          notes: ["항목별 수치는 카드비교, 수수료 항목, 카드기능 및 한도비교 페이지에서 확인할 수 있습니다."]
+        },
+        { k: "alert", label: "가장 중요한 확인 사항", big: "요율이 항목별로 공개되지 않은 카드는 절약액을 산정할 수 없으므로, 비교의 대상이 될 수 없습니다.", p: [
+          "캐시백 요율의 높낮이는 총비용을 결정하는 여러 변수 중 하나에 불과합니다. 발급비, 충전 수수료, 전환 수수료, 환율 Spread, 해외결제 수수료, ATM 수수료가 공식 자료에 항목별로 공개되어 있지 않다면, 이용자는 요율을 대입할 기준값 자체를 갖지 못합니다. 이 상태에서 산출한 '절약액'은 검증 불가능한 추정치일 뿐입니다.",
+          "따라서 카드 선택의 1차 기준은 요율의 크기가 아니라 요율 체계의 공개 수준입니다. 공식 홈페이지 또는 약관에 항목별 수수료표가 게시되어 있고, 요율 변경 시의 사전 고지 절차가 규정되어 있으며, 적용 환율의 기준과 Markup 폭이 명시되어 있는 카드를 우선 비교 대상으로 삼는 것이 합리적입니다.",
+          "이 세 가지가 확인되지 않는다면, 자금을 예치하기 전에 소액으로 시험 결제하여 실제 청구액을 검증하는 절차를 권장합니다."
+        ]}
+      ]
+    },
+    "faq": {
+      title: "크립토카드 FAQ | 암호화폐 카드 초보자 가이드 | CryptoCardsInfo",
+      desc: "암호화폐 직불카드, 스테이블코인, 충전, 환율 Spread, 수수료, 캐시백, KYC 등 크립토카드 기본 용어와 개념을 설명합니다.",
+      h1: "크립토카드 FAQ",
+      lead: "크립토카드를 처음 이용하는 분들이 자주 묻는 기본 개념과 용어를 정리했습니다. 각 항목은 일반적인 설명이며, 실제 조건은 이용하려는 서비스의 공식 자료에서 확인해야 합니다.",
+      sections: [
+        { k: "faq", items: [
+          ["암호화폐 직불카드란 무엇인가요?","보유한 암호화폐나 스테이블코인을 카드 결제에 사용할 수 있도록 연결해 주는 선불·직불형 카드입니다. 일반적으로 카드 계정에 자산을 충전한 뒤 Visa 등 카드 네트워크의 가맹점에서 결제합니다."],
+          ["암호화폐로 직접 결제하는 건가요?","대부분은 결제 시점에 암호화폐가 법정통화로 전환되어 가맹점에 지급됩니다. 가맹점은 일반 카드 결제와 동일하게 처리하며, 이용자 계정에서는 자산이 차감됩니다."],
+          ["스테이블코인이란 무엇인가요?","미국 달러 등 특정 자산의 가치에 연동되도록 설계된 암호화폐입니다. 가격 변동이 상대적으로 작아 결제·충전 수단으로 많이 사용되지만, 발행사의 준비금과 신용에 따른 위험은 존재합니다."],
+          ["USDT와 USDC의 차이는 무엇인가요?","둘 다 미국 달러에 연동된 스테이블코인이지만 발행사와 준비금 공시 방식, 지원 네트워크, 취급 서비스가 다릅니다. 카드에 충전할 때 어떤 자산과 네트워크를 지원하는지 확인해야 합니다."],
+          ["충전(Top-up)이란 무엇인가요?","카드로 결제할 수 있는 잔액을 채우는 과정입니다. 개인 지갑이나 거래소에서 자산을 보내는 방식이 일반적이며, 이 단계에서 충전 수수료가 발생할 수 있습니다."],
+          ["결제할 때 환전이 이루어지나요?","결제 통화와 카드 잔액의 통화가 다르면 환전이 발생합니다. 이때 적용되는 환율과 추가 수수료가 실제 부담액을 결정합니다."],
+          ["환율과 Spread란 무엇인가요?","Spread는 기준 환율과 실제 적용 환율의 차이입니다. 명시된 수수료가 0%라도 Spread가 넓으면 실제 비용은 늘어납니다."],
+          ["카드 수수료에는 어떤 것이 있나요?","발급비, 연회비, 충전 수수료, 크립토 전환 수수료, 환전 수수료와 Spread, 해외결제 수수료, ATM 수수료 등이 있습니다. 항목별로 나누어 확인해야 총비용을 알 수 있습니다."],
+          ["캐시백은 어떻게 계산되나요?","보통 적립 대상 결제금액에 요율을 곱해 계산하고, 월 적립 한도와 제외 거래를 적용합니다. 지급 자산의 종류와 사용 조건도 실제 가치에 영향을 줍니다."],
+          ["캐시백이 높을수록 좋은 카드인가요?","아닙니다. 요율이 높아도 적립 한도, 스테이킹 조건, 지급 자산의 가치, 충전·환전 수수료를 함께 계산하면 실제 절약액이 달라질 수 있습니다."],
+          ["Fiat란 무엇인가요?","각국 정부가 발행하는 법정통화를 말합니다. 원화, 미국 달러, 유로 등이 해당합니다."],
+          ["Stablecoin이란 무엇인가요?","법정통화 등 기준 자산의 가치를 따라가도록 설계된 암호화폐입니다. 결제·정산 수단으로 자주 사용됩니다."],
+          ["Wallet이란 무엇인가요?","암호화폐를 보관하고 송수신하는 지갑입니다. 이용자가 개인 키를 직접 관리하는 자기수탁 지갑과 사업자가 보관하는 지갑으로 나뉩니다."],
+          ["Blockchain Network란 무엇인가요?","거래가 기록되고 전송되는 블록체인 네트워크입니다. 같은 자산이라도 네트워크가 다르면 전송 경로와 수수료가 달라집니다."],
+          ["Gas Fee / Network Fee란 무엇인가요?","블록체인에서 거래를 처리하기 위해 네트워크에 지불하는 수수료입니다. 카드 사업자의 수수료와 별개로 발생합니다."],
+          ["On-ramp / Off-ramp란 무엇인가요?","On-ramp는 법정통화를 암호화폐로 전환하는 경로, Off-ramp는 암호화폐를 법정통화로 전환하는 경로를 뜻합니다."],
+          ["KYC란 무엇인가요?","금융 서비스 제공자가 이용자의 신원을 확인하는 절차입니다. 카드 발급과 한도 상향에 필요한 경우가 많습니다."],
+          ["FX Fee란 무엇인가요?","결제 통화와 카드 정산 통화가 다를 때 부과되는 외화 결제 수수료입니다. 카드 네트워크 기준 요율과 사업자 요율이 함께 적용될 수 있습니다."],
+          ["ATM Fee란 무엇인가요?","ATM에서 현금을 인출할 때 카드 사업자가 부과하는 수수료입니다. 요율과 최소 금액이 함께 적용되는 경우가 많습니다."],
+          ["Card-to-Card Transfer란 무엇인가요?","같은 서비스를 사용하는 이용자 사이에 카드 잔액을 직접 이동하는 기능입니다. 지원 여부와 수수료, 한도는 서비스마다 다릅니다."]
+        ]}
+      ]
+    },
+    "disclaimer": {
+      title: "면책 및 책임 제한 | CryptoCardsInfo",
+      desc: "Crypto Cards Info가 제공하는 정보의 성격, 이용자의 판단과 책임 범위, 외부 서비스 및 제휴에 관한 책임 제한을 안내합니다.",
+      h1: "면책 및 책임 제한",
+      lead: "본 페이지는 Crypto Cards Info가 제공하는 정보의 성격과 이용자의 책임 범위를 명확히 알리기 위한 것입니다.",
+      stamp: "최종 갱신: 2026년 9월 6일 · 본 고지는 사전 통지 없이 개정될 수 있으며, 개정 시 본 페이지의 갱신일이 변경됩니다.",
+      sections: [
+        { k: "articles", items: [
+          { t: "제1조 (목적 및 적용 범위)", p: [
+            "본 고지는 Crypto Cards Info(이하 '본 사이트')가 게시하는 모든 페이지·표·도표·수치·설명에 적용됩니다.",
+            "본 사이트는 카드 발급사·거래소·지갑 사업자·프로토콜의 공식 웹사이트가 아니며, 이들과 대리·위임·판매대행 관계에 있지 않습니다. 본 사이트를 열람하거나 게시 정보를 이용하는 행위는 본 고지의 내용을 확인한 것으로 봅니다."
+          ]},
+          { t: "제2조 (정보의 성격)", p: [
+            "본 사이트가 제공하는 정보는 공개 자료, 공식 자료 및 기타 참고자료를 바탕으로 정리한 일반적인 정보입니다.",
+            "정보는 작성 또는 갱신 시점의 자료를 기준으로 하며, 이후 서비스 제공자의 정책·수수료·한도·혜택·지역 제한 등이 변경될 수 있습니다."
+          ]},
+          { t: "제3조 (정확성에 관한 고지)", p: [
+            "본 사이트는 정보의 정확성과 최신성을 유지하기 위해 합리적인 노력을 기울이지만, 외부 사업자가 제공하는 정보의 변경·오류·누락 또는 지연까지 항상 방지하거나 보장할 수는 없습니다.",
+            "본 사이트는 게시 정보의 완전성·정확성·최신성·특정 목적 적합성에 대하여 명시적이든 묵시적이든 어떠한 보증도 하지 않습니다. 중요한 결정을 내리기 전에 반드시 해당 서비스 제공자의 최신 공식 자료와 약관을 확인하시기 바랍니다."
+          ]},
+          { t: "제4조 (추천 및 권유의 부인)", p: [
+            "사이트에 특정 카드가 소개되거나 비교표에서 특정 조건이 더 유리하게 표시되더라도, 이를 금융상품 또는 서비스에 대한 투자·가입·이용 권유로 해석해서는 안 됩니다.",
+            "본 사이트의 정보는 「자본시장과 금융투자업에 관한 법률」에 따른 투자자문·투자권유·투자중개에 해당하지 않으며, 금융상품의 판매·중개·알선, 법률 자문, 세무 자문 또는 회계 자문에도 해당하지 않습니다.",
+            "비교표의 색상 구분, 배열 순서, 게시 위치는 카드의 설계 유형을 구분하거나 편집상 가독성을 확보하기 위한 것이며, 사업자에 대한 순위 평가나 우열의 표시가 아닙니다."
+          ]},
+          { t: "제5조 (이용자의 판단과 책임)", p: [
+            "이용자는 사이트에서 제공되는 정보를 참고자료로만 활용해야 합니다.",
+            "카드 신청, 신원인증(KYC), 충전, 결제, 출금, 송금, 가상자산 전환, 캐시백 이용 등과 관련한 최종 결정은 이용자가 직접 판단합니다.",
+            "그 과정에서 발생할 수 있는 비용, 손실, 환율 변동, 정책 변경, 서비스 제한, 계정 제한, 자산의 동결·멸실 등의 위험은 이용자가 스스로 확인하고 부담합니다."
+          ]},
+          { t: "제6조 (정보 오류 및 변경에 관한 고지)", p: [
+            "서비스 제공자의 정책과 조건은 사전 예고 없이 또는 그 정책에 따라 변경될 수 있습니다.",
+            "따라서 본 사이트에 표시된 수수료, 한도, 캐시백, 이용 가능 조건 및 기타 정보가 현재 실제 조건과 다를 가능성이 있습니다. 중요한 거래나 신청을 진행하기 전 반드시 해당 서비스의 공식 홈페이지, 앱, 약관 및 최신 공지를 확인하시기 바랍니다."
+          ]},
+          { t: "제7조 (크립토카드 이용에 내재한 위험)", p: [
+            "크립토카드는 은행 예금계좌와 법적 성질이 다릅니다. 가상자산 또는 스테이블코인을 사업자의 계정·지갑으로 이전하고 이를 결제 잔액으로 전환하는 과정에서 보관 위험(사업자 또는 수탁기관의 관리·통제), 전환 위험(가격·환율·스프레드 변동), 사업자 위험(영업 중단, 제휴 종료, 지급불능), 규제 위험(국가별 규제 변경에 따른 발급·사용 제한), 온체인 위험(잘못된 주소·네트워크 선택으로 인한 회복 불가), 자기수탁 위험(개인 키·복구수단 관리 책임)이 발생할 수 있습니다.",
+            "이러한 위험은 카드의 유형과 무관하게 공통적으로 존재하며, 그 위험은 이용자에게 귀속됩니다."
+          ]},
+          { t: "제8조 (외부 서비스에 관한 책임 제한)", p: [
+            "본 사이트는 외부 카드사, 거래소, 지갑, 결제 서비스 등의 사이트로 이동하는 링크를 제공할 수 있습니다.",
+            "이 경우 해당 외부 사이트의 서비스 운영, 개인정보 처리, 수수료, 약관, 거래, 신원인증, 계정 제한, 자산 보관, 환불, 캐시백 및 정책 변경 등은 해당 서비스 제공자의 책임과 조건에 따릅니다. 본 사이트는 외부 서비스의 운영이나 정책을 통제하지 않습니다."
+          ]},
+          { t: "제9조 (제휴 및 광고가 존재하는 경우의 원칙)", p: [
+            "제휴 링크나 광고를 사용하는 경우 이를 일반 콘텐츠와 명확하게 구분하고, 이용자가 쉽게 알아볼 수 있도록 표시합니다.",
+            "광고 또는 제휴 여부가 카드의 객관적인 비교 기준이나 정보의 사실관계를 변경하지 않습니다. 제휴 여부와 편집상 정보 제공은 분리하여 운영하며, 공정거래위원회 「추천·보증 등에 관한 표시·광고 심사지침」에 따라 경제적 이해관계가 있는 경우 이를 고지합니다."
+          ]},
+          { t: "제10조 (자산 보호 범위의 한계)", p: [
+            "선불형 카드의 잔액과 가상자산은 「예금자보호법」에 따른 예금보험의 대상이 아닙니다. 사업자의 지급불능 시 잔액은 일반 채권으로 취급되어 회수 여부와 시기가 관련 법적 절차에 좌우될 수 있습니다.",
+            "국내 신고 가상자산사업자는 「가상자산 이용자 보호 등에 관한 법률」(2024년 7월 19일 시행) 및 같은 법 시행령에 따라 이용자 예치금의 별도 예치, 이용자 가상자산의 일정 비율 이상 콜드월렛 보관, 보험 가입 또는 준비금 적립 등의 의무를 부담합니다. 다만 이러한 의무는 해외에서 카드를 발급·운영하는 사업자에게 동일하게 적용되지 않습니다."
+          ]},
+          { t: "제11조 (책임의 제한)", p: [
+            "이용자가 게시 정보를 신뢰하여 카드를 발급·충전·결제하거나 자산을 이전·예치함으로써 발생한 손실, 기회비용, 리워드 미지급·중단, 서비스 종료, 자산의 동결·멸실 등 직접·간접·부수적·결과적 손해에 대하여, 본 사이트 및 운영자는 관련 법령이 허용하는 최대 범위에서 어떠한 법적 책임도 부담하지 않습니다.",
+            "다만 본 조항은 관련 법령상 제한 또는 배제가 허용되지 않는 책임까지 배제하는 것으로 해석되지 않습니다."
+          ]},
+          { t: "제12조 (상표 및 제3자 표기)", p: [
+            "Visa는 Visa Inc., Apple Pay는 Apple Inc., Google Pay는 Google LLC, Samsung Pay는 Samsung Electronics Co., Ltd.의 상표이며, 각 사업자명·카드명·로고는 해당 권리자의 자산입니다.",
+            "본 사이트에서의 표기는 비교 대상의 식별 목적으로만 사용되며, 해당 권리자의 후원·승인·제휴를 의미하지 않습니다."
+          ]},
+          { t: "제13조 (준거법 및 관할)", p: [
+            "본 고지의 해석과 적용에는 대한민국 법령이 적용되며, 본 사이트 이용과 관련하여 분쟁이 발생할 경우 「민사소송법」에 따른 관할 법원을 제1심 관할로 합니다.",
+            "본 고지의 일부 조항이 무효 또는 집행 불가로 판단되는 경우에도 나머지 조항의 효력은 유지됩니다."
+          ]}
+        ]}
+      ]
+    },
+    "terms": {
+      title: "이용약관 | CryptoCardsInfo",
+      desc: "Crypto Cards Info 웹사이트의 이용 조건과 절차, 이용자와 운영자의 권리·의무를 정한 약관입니다.",
+      h1: "이용약관",
+      lead: "본 약관은 Crypto Cards Info 웹사이트의 이용 조건과 절차, 이용자와 운영자의 권리·의무 및 책임 사항을 규정합니다.",
+      stamp: "최종 갱신: 2026년 9월 6일 · 시행일: 2026년 9월 6일",
+      sections: [
+        { k: "articles", items: [
+          { t: "제1조 (목적)", p: [
+            "본 약관은 Crypto Cards Info(이하 '본 사이트')가 제공하는 정보 서비스의 이용과 관련하여 본 사이트와 이용자 간의 권리·의무 및 책임 사항, 기타 필요한 사항을 규정함을 목적으로 합니다."
+          ]},
+          { t: "제2조 (용어의 정의)", p: [
+            "'서비스'란 본 사이트가 온라인으로 제공하는 크립토카드 관련 비교·정리 정보 및 이에 부수하는 일체의 정보 제공 활동을 말합니다.",
+            "'이용자'란 본 약관에 따라 본 사이트에 접속하여 서비스를 이용하는 자를 말합니다.",
+            "'콘텐츠'란 본 사이트가 작성·게시한 문자, 표, 도표, 이미지 및 그 편집물을 말합니다."
+          ]},
+          { t: "제3조 (약관의 효력 및 변경)", p: [
+            "본 약관은 본 사이트에 게시함으로써 효력이 발생합니다.",
+            "본 사이트는 관련 법령의 개정, 서비스 구성의 변경 등 합리적인 사유가 있는 경우 본 약관을 변경할 수 있으며, 변경 시 변경 내용과 갱신일을 본 페이지에 게시합니다.",
+            "이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단할 수 있습니다. 변경된 약관의 게시 후 계속 서비스를 이용하는 경우 변경에 동의한 것으로 봅니다."
+          ]},
+          { t: "제4조 (서비스의 내용)", p: [
+            "본 사이트는 크립토카드의 비용·한도·기능·캐시백 조건 등에 관한 정보를 공개 자료를 기준으로 정리하여 제공합니다.",
+            "본 사이트는 카드의 발급·판매·중개·알선을 하지 않으며, 결제 서비스, 자산 보관 서비스, 환전 서비스 또는 금융상품의 판매를 제공하지 않습니다."
+          ]},
+          { t: "제5조 (회원가입 및 계정)", p: [
+            "본 사이트는 정보 제공을 목적으로 하며 회원가입, 로그인, 결제, 개인정보 입력을 요구하는 기능을 제공하지 않습니다.",
+            "따라서 별도의 계정 없이 누구나 콘텐츠를 열람할 수 있으며, 계정 관리에 관한 이용자의 의무는 발생하지 않습니다."
+          ]},
+          { t: "제6조 (이용자의 의무 및 금지행위)", p: [
+            "이용자는 본 사이트의 콘텐츠를 운영자의 사전 서면 동의 없이 복제·배포·전송·출판·2차 저작·상업적으로 이용해서는 안 됩니다.",
+            "이용자는 자동화된 수단(크롤러, 스크래퍼, 매크로 등)을 이용하여 서비스에 과도한 부하를 발생시키거나, 서비스의 정상적인 운영을 방해하는 행위를 하여서는 안 됩니다.",
+            "이용자는 본 사이트의 정보를 왜곡하여 제3자에게 전달하거나, 허위 사실을 유포하는 방식으로 이용해서는 안 됩니다."
+          ]},
+          { t: "제7조 (지식재산권)", p: [
+            "본 사이트가 작성한 콘텐츠에 대한 저작권 및 기타 지식재산권은 운영자에게 귀속됩니다.",
+            "제3자의 상표, 상호, 카드 이미지 및 로고에 대한 권리는 해당 권리자에게 귀속되며, 본 사이트에서의 사용은 비교 대상의 식별 목적에 한합니다."
+          ]},
+          { t: "제8조 (서비스의 변경 및 중단)", p: [
+            "운영자는 서비스의 구성, 비교 항목, 페이지 구조, 게시 콘텐츠를 사전 통지 없이 변경할 수 있습니다.",
+            "운영자는 설비의 보수·점검, 통신 장애, 천재지변, 기타 불가피한 사유가 있는 경우 서비스의 일부 또는 전부를 중단할 수 있으며, 이로 인하여 이용자에게 발생한 손해에 대하여 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다."
+          ]},
+          { t: "제9조 (링크 및 제3자 서비스)", p: [
+            "본 사이트는 제3자가 운영하는 웹사이트로의 링크를 포함할 수 있습니다.",
+            "제3자 서비스의 내용, 조건, 개인정보 처리 및 거래에 관하여는 해당 서비스의 약관과 정책이 적용되며, 본 사이트는 이에 대하여 보증하거나 책임을 부담하지 않습니다."
+          ]},
+          { t: "제10조 (면책 및 책임의 제한)", p: [
+            "본 사이트가 제공하는 정보는 참고 목적의 일반 정보이며, 투자·금융·법률·세무·회계 자문에 해당하지 않습니다.",
+            "정보 이용에 관한 면책 및 책임의 제한은 '면책 및 책임 제한' 페이지의 내용에 따르며, 관련 법령이 허용하는 범위에서 운영자의 책임을 제한합니다. 다만 법령상 배제가 허용되지 않는 책임을 배제하지 않습니다."
+          ]},
+          { t: "제11조 (분쟁의 해결 및 관할)", p: [
+            "본 약관의 해석과 적용에는 대한민국 법령이 적용됩니다.",
+            "서비스 이용과 관련하여 분쟁이 발생한 경우 당사자는 성실한 협의를 통한 해결을 우선하며, 협의가 이루어지지 않는 경우 「민사소송법」에 따른 관할 법원을 제1심 관할로 합니다."
+          ]}
+        ]}
+      ]
+    },
+    "privacy": {
+      title: "개인정보처리방침 | CryptoCardsInfo",
+      desc: "Crypto Cards Info의 개인정보 처리 기준, 수집 항목, 이용 목적, 보유 기간과 이용자의 권리를 안내합니다.",
+      h1: "개인정보처리방침",
+      lead: "Crypto Cards Info는 정보 제공을 목적으로 운영되며, 서비스 이용을 위해 회원가입이나 개인정보 입력을 요구하지 않습니다. 본 방침은 「개인정보 보호법」 등 관련 법령에 따라 본 사이트의 개인정보 처리 기준을 안내합니다.",
+      stamp: "최종 갱신: 2026년 9월 6일 · 시행일: 2026년 9월 6일",
+      sections: [
+        { k: "articles", items: [
+          { t: "제1조 (처리하는 개인정보의 항목)", p: [
+            "본 사이트는 회원가입, 로그인, 결제 기능을 제공하지 않으며, 이름·연락처·주소·계좌정보 등 개인을 직접 식별할 수 있는 정보를 수집하지 않습니다.",
+            "다만 문의를 위해 이용자가 자발적으로 전자우편 등을 통해 정보를 제공하는 경우, 해당 정보는 문의 처리 목적에 한하여 이용되며 처리 완료 후 지체 없이 파기됩니다."
+          ]},
+          { t: "제2조 (자동으로 생성·수집되는 정보)", p: [
+            "웹사이트의 운영과 보안, 통계 분석을 위해 접속 로그, 접속 일시, 브라우저 및 운영체제 정보, 참조 페이지, 접속 기기 유형 등의 기술적 정보가 자동으로 생성·기록될 수 있습니다.",
+            "이러한 정보는 개인을 식별하지 않는 형태로 처리되며, 서비스 개선, 오류 대응 및 부정 이용 방지 목적으로만 사용됩니다."
+          ]},
+          { t: "제3조 (개인정보의 처리 목적)", p: [
+            "본 사이트는 수집·생성되는 정보를 서비스 제공 및 운영, 웹사이트 안정성 확보, 접속 통계 분석, 이용자 문의 응대의 목적으로만 처리합니다.",
+            "본 사이트는 수집된 정보를 마케팅 목적의 개인 식별, 프로파일링 또는 자동화된 의사결정에 이용하지 않습니다."
+          ]},
+          { t: "제4조 (쿠키 및 유사 기술)", p: [
+            "본 사이트는 언어 설정 등 이용 편의 기능을 위하여 브라우저 저장소(로컬 스토리지 등)를 사용할 수 있습니다.",
+            "이용자는 브라우저 설정을 통해 쿠키 및 저장소의 저장을 거부하거나 삭제할 수 있으며, 이 경우 일부 편의 기능의 이용이 제한될 수 있습니다."
+          ]},
+          { t: "제5조 (개인정보의 제3자 제공)", p: [
+            "본 사이트는 이용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다.",
+            "다만 법령에 근거한 요청이 있는 경우 또는 수사기관이 적법한 절차에 따라 요청하는 경우에는 관련 법령이 정한 범위에서 제공할 수 있습니다."
+          ]},
+          { t: "제6조 (개인정보 처리의 위탁)", p: [
+            "본 사이트는 웹 호스팅, 콘텐츠 전송, 접속 통계 분석 등 서비스 운영에 필요한 범위에서 처리 업무를 외부에 위탁할 수 있습니다.",
+            "위탁 시에는 관련 법령에 따라 개인정보의 안전한 관리에 관한 사항을 계약에 반영하고, 수탁자의 처리 현황을 관리·감독합니다."
+          ]},
+          { t: "제7조 (개인정보의 국외 이전)", p: [
+            "글로벌 호스팅 및 콘텐츠 전송망을 이용하는 경우 기술적 정보가 국외 서버에 저장·처리될 수 있습니다.",
+            "이 경우 본 사이트는 관련 법령이 정하는 보호조치를 준수합니다."
+          ]},
+          { t: "제8조 (개인정보의 보유 및 파기)", p: [
+            "자동 생성 정보는 운영 및 보안 목적에 필요한 기간 동안만 보관한 후 지체 없이 파기합니다.",
+            "전자적 파일 형태의 정보는 복구가 불가능한 기술적 방법으로 삭제하며, 출력물은 파쇄 또는 소각의 방법으로 파기합니다."
+          ]},
+          { t: "제9조 (외부 링크)", p: [
+            "본 사이트에서 외부 서비스로 이동하는 경우 해당 사이트의 개인정보 처리 기준이 적용됩니다.",
+            "외부 사이트에서의 개인정보 처리에 대해서는 본 사이트가 책임지지 않으므로, 이동한 사이트의 개인정보처리방침을 별도로 확인하시기 바랍니다."
+          ]},
+          { t: "제10조 (이용자 및 법정대리인의 권리)", p: [
+            "이용자는 관련 법령에 따라 자신의 정보에 관한 열람, 정정·삭제, 처리정지를 요구할 수 있습니다.",
+            "권리 행사는 서면, 전자우편 등을 통하여 할 수 있으며, 본 사이트는 관련 법령이 정한 기간 내에 조치합니다."
+          ]},
+          { t: "제11조 (아동의 개인정보)", p: [
+            "본 사이트는 만 14세 미만 아동을 대상으로 서비스를 제공하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다."
+          ]},
+          { t: "제12조 (개인정보의 안전성 확보 조치)", p: [
+            "본 사이트는 전송 구간 암호화(HTTPS), 접근 권한 관리, 접속기록의 보관 및 위조 방지 등 관련 법령이 요구하는 기술적·관리적 보호조치를 적용합니다."
+          ]},
+          { t: "제13조 (방침의 변경)", p: [
+            "본 방침은 법령·정책 또는 서비스 구성의 변경에 따라 개정될 수 있으며, 개정 시 변경 내용과 갱신일을 본 페이지에 게시합니다."
+          ]}
+        ]}
+      ]
+    },
+    "principles": {
+      title: "정보 제공 원칙 | CryptoCardsInfo",
+      desc: "Crypto Cards Info의 편집 원칙, 출처 기준, 검증 표기 방식과 정정 절차를 안내합니다.",
+      h1: "정보 제공 원칙",
+      lead: "Crypto Cards Info는 크립토카드를 판매하는 사이트가 아니라, 이용자가 실제 비용과 기능을 스스로 판단할 수 있도록 정보를 제공하는 전문 정보 매체입니다. 다음 원칙을 사이트 전체에 일관되게 적용합니다.",
+      stamp: "최종 갱신: 2026년 9월 6일",
+      sections: [
+        { k: "list", title: "편집 원칙", items: [
+          { t: "① 객관적 정보 제공", d: "특정 카드나 업체를 무조건 추천하거나 비판하지 않습니다. 강점과 한계를 같은 비중으로 표시합니다." },
+          { t: "② 판단은 이용자의 몫", d: "비교 기준과 확인 항목을 제시하되, 최종적인 선택과 이용 여부는 이용자가 판단합니다." },
+          { t: "③ 공식 자료 우선", d: "공식 홈페이지, 공식 약관, 공식 수수료표, 공식 도움말, 공식 공지, 공식 정책 문서를 우선 출처로 사용합니다." },
+          { t: "④ 확인되지 않은 정보 금지", d: "추측으로 숫자를 작성하지 않고 '공식 확인 필요', '공식 자료 미공개', '비공개', '제공하지 않음'으로 표시합니다." },
+          { t: "⑤ 광고와 사실의 구분", d: "'0% 수수료', '최대 캐시백' 등의 광고 문구는 실제 적용 조건과 분리하여 표시합니다." },
+          { t: "⑥ 업데이트 기준", d: "실제로 변경된 정보만 갱신하며, 새 콘텐츠처럼 보이게 하기 위해 날짜만 바꾸지 않습니다." },
+          { t: "⑦ 유형 구분의 원칙", d: "카드는 설계 목적에 따라 캐시백 전용 카드와 기능성 전문 카드로 구분하여 표기합니다. 색상 구분은 유형 표시이며 우열 평가가 아닙니다." },
+          { t: "⑧ 이해관계의 고지", d: "제휴 또는 광고로 경제적 이해관계가 발생하는 경우 이를 해당 게시물에 명확히 고지하고, 편집 기준과 분리하여 운영합니다." },
+          { t: "⑨ 정정 절차", d: "게시 정보에 오류가 확인되면 지체 없이 수정하고, 중요한 수정은 해당 페이지의 갱신일에 반영합니다." }
+        ]},
+        { k: "text", title: "확인 표기 기준", p: [
+          "공식 자료에서 값을 확인하지 못한 항목은 비워 두거나 추정하지 않고 '공식 확인 필요', '공식 자료 미공개' 또는 '비공개'로 표기합니다. 이 표기는 해당 기능이나 조건이 없다는 뜻이 아니며, 이용자가 공식 자료에서 직접 확인해야 하는 항목임을 의미합니다.",
+          "특정 기능이 카드 서비스로 제공되지 않는다고 판단되는 경우에는 '제공하지 않음'으로 표기하며, 이는 공개된 공식 자료에서 확인할 수 없었다는 의미를 함께 포함합니다.",
+          "확인일은 실제로 자료를 확인한 날짜만 기재하며, 자동으로 갱신하지 않습니다."
+        ]},
+        { k: "notice", tone: "info", label: "정정 요청 안내", p: [
+          "게시된 수치나 조건이 공식 자료와 다르다고 판단되는 경우, 해당 근거(공식 페이지 주소, 약관 조항, 공지 일자)를 함께 알려주시면 확인 후 수정하고 갱신일에 반영합니다.",
+          "사업자 측의 정정 요청도 동일한 기준으로 처리하며, 요청 사실만으로 비교 기준이나 유형 구분을 변경하지 않습니다."
+        ]}
+      ]
+    }
+  }
+};
+
+class Component extends DCLogic {
+  state = { page: null, lang: "ko", data: { ko: KO }, loading: false };
+
+  get lang() { return this.state.lang; }
+  get page() { return this.state.page || this.props.startPage || "home"; }
+  get pack() { return this.state.data[this.lang] || KO; }
+
+  componentDidMount() { this.syncSeo(); }
+  componentDidUpdate() { this.syncSeo(); }
+
+  syncSeo() {
+    if (typeof document === "undefined") return;
+    const p = this.pack.pages[this.page] || KO.pages.home;
+    const url = "https://cryptocardsinfo.com" + (URLS[this.page] || "/");
+    document.title = p.title || "CryptoCardsInfo";
+    document.documentElement.setAttribute("lang", this.lang);
+    const set = (sel, attr, val) => { const el = document.head.querySelector(sel); if (el) el.setAttribute(attr, val); };
+    set('meta[name="description"]', "content", p.desc || "");
+    set('link[rel="canonical"]', "href", url);
+    set('meta[property="og:title"]', "content", p.title || "");
+    set('meta[property="og:description"]', "content", p.desc || "");
+    set('meta[property="og:url"]', "content", url);
+    let faqLd = document.getElementById("om-faq");
+    if (!faqLd) { faqLd = document.createElement("script"); faqLd.type = "application/ld+json"; faqLd.id = "om-faq"; document.head.appendChild(faqLd); }
+    const faqSec = (p.sections || []).find((s) => s.k === "faq");
+    faqLd.textContent = faqSec
+      ? JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: (faqSec.items || []).map((it) => ({ "@type": "Question", name: it[0], acceptedAnswer: { "@type": "Answer", text: it[1] } })) })
+      : "";
+    let ld = document.getElementById("om-breadcrumb");
+    if (!ld) { ld = document.createElement("script"); ld.type = "application/ld+json"; ld.id = "om-breadcrumb"; document.head.appendChild(ld); }
+    const crumbs = [{ "@type": "ListItem", position: 1, name: this.pack.ui.home, item: "https://cryptocardsinfo.com/" }];
+    if (this.page !== "home") crumbs.push({ "@type": "ListItem", position: 2, name: p.h1, item: url });
+    ld.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs });
+  }
+
+  go(page) { return (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ page: page }); if (typeof window !== "undefined") window.scrollTo({ top: 0 }); }; }
+
+  setLang(code) {
+    return async (e) => {
+      if (e && e.preventDefault) e.preventDefault();
+      if (this.state.data[code]) { this.setState({ lang: code }); return; }
+      this.setState({ loading: true });
+      try {
+        const res = await fetch("content-" + code + ".json");
+        const json = await res.json();
+        this.setState((s) => ({ data: Object.assign({}, s.data, { [code]: json }), lang: code, loading: false }));
+      } catch (err) { this.setState({ loading: false }); }
+    };
+  }
+
+  navSt(active) {
+    return "position:relative;padding:15px 14px;font-size:14px;text-decoration:none;color:" + (active ? "#10214A" : "#3A465C") + ";font-weight:" + (active ? "700" : "500") + ";border-bottom:3px solid " + (active ? "#1F5BD8" : "transparent");
+  }
+
+  buildSections(p) {
+    const ui = this.pack.ui;
+    return (p.sections || []).map((s) => {
+      const o = { title: s.title || "", sub: s.sub || "" };
+      if (s.k === "text") { o.isText = true; o.p = s.p || []; }
+      if (s.k === "notice") {
+        o.isNotice = true; o.p = s.p || []; o.label = s.label || "";
+        const warn = s.tone === "warn";
+        o.box = "border:1px solid " + (warn ? "#EAD6AE" : "#D3DEF2") + ";background:" + (warn ? "#FFF8EE" : "#F4F7FD") + ";border-left:4px solid " + (warn ? AMBER : "#1F5BD8") + ";padding:28px 30px";
+        o.tag = "color:" + (warn ? AMBER : "#1F5BD8");
+      }
+      if (s.k === "alert") { o.isAlert = true; o.label = s.label || ""; o.big = s.big || ""; o.p = s.p || []; }
+      if (s.k === "cards") {
+        o.isCards = true;
+        o.items = (s.items || []).map((c) => ({
+          isRedot: c.key === "redotpay", isOkx: c.key === "okx", isEtherfi: c.key === "etherfi", isAnytap: c.key === "anytap",
+          name: c.name, tag: c.tag,
+          frame: "border:1px solid #E2E7F0;background:#ffffff;display:flex;flex-direction:column",
+          tagSt: "display:inline-block;font-size:11px;font-weight:700;padding:5px 10px;border:1px solid #E2E7F0;color:#5A6478",
+          rows: (c.rows || []).map((r) => ({ k: r[0], v: r[1] })),
+          sum: c.sum, sumSt: "margin-top:auto;padding:16px 20px;font-size:12.5px;line-height:1.7;background:#F2F5FA;color:#3A465C"
+        }));
+      }
+      if (s.k === "table") {
+        o.isTable = true; o.notes = s.notes || [];
+        o.tableSt = "width:100%;font-size:13.5px;min-width:" + ((s.head || []).length > 2 ? "880px" : "520px");
+        const tint = s.tint || [];
+        const HEAD = { amber: AMBER, teal: TEAL };
+        const CELL = { amber: ["#FFFBF4", "#FFF6E9"], teal: ["#F4FAF8", "#EBF5F2"] };
+        o.head = (s.head || []).map((h, ci) => ({ t: h, st: "text-align:left;padding:14px 16px;font-size:12.5px;font-weight:700;color:#ffffff;background:" + (HEAD[tint[ci]] || "#10214A") }));
+        o.rows = (s.rows || []).map((r, ri) => ({
+          c: r.map((cell, ci) => {
+            const first = ci === 0, zebra = ri % 2 === 1, tone = tint[ci];
+            let bg = first ? "#F2F5FA" : (zebra ? "#FAFBFD" : "#ffffff");
+            if (!first && tone) bg = CELL[tone][zebra ? 1 : 0];
+            return { t: cell, st: "padding:13px 16px;border-bottom:1px solid #EDF1F7;background:" + bg + ";line-height:1.65;" + (first ? "font-weight:700;color:#101828" : "color:#3A465C") };
+          })
+        }));
+        o.legend = s.legend || "";
+        o.legendItems = (s.legendItems || []).map((li) => ({
+          label: li.label,
+          sw: "display:inline-block;width:16px;height:16px;flex:0 0 auto;border:1px solid " + (HEAD[li.tone] || "#B4BECD") + ";background:" + ((CELL[li.tone] || ["#ffffff"])[0])
+        }));
+      }
+      if (s.k === "flow") {
+        o.isFlow = true;
+        o.steps = (s.steps || []).map((st, i) => ({
+          bar: i > 0, num: st.num || String(i + 1), t: st.t, d: st.d || "",
+          box: "width:100%;text-align:center;padding:18px 20px;border:1px solid #E2E7F0;background:#ffffff;color:#101828",
+          numSt: "color:#5A6478", dSt: "color:#5A6478"
+        }));
+      }
+      if (s.k === "split") {
+        o.isSplit = true;
+        o.cols = (s.cols || []).map((c) => ({
+          t: c.t, note: c.note || "",
+          frame: "border:1px solid #E2E7F0;background:#F6F8FC;display:flex;flex-direction:column",
+          head: "padding:14px 22px;font-size:14px;font-weight:700;background:#E9EEF7;color:#10214A",
+          steps: (c.steps || []).map((t, i) => ({ t: t, bar: i > 0 }))
+        }));
+      }
+      if (s.k === "grid") { o.isGrid = true; o.items = (s.items || []).map((i, n) => ({ n: String(n + 1), t: i.t, d: i.d })); }
+      if (s.k === "compare2") {
+        o.isCompare2 = true;
+        o.cols = (s.cols || []).map((c) => {
+          const col = c.tone === "teal" ? TEAL : AMBER;
+          const soft = c.tone === "teal" ? "#EEF7F5" : "#FFF8EE";
+          return {
+            label: c.label, t: c.t, items: c.items || [], note: c.note || "",
+            frame: "border:1px solid #E2E7F0;background:#ffffff;display:flex;flex-direction:column",
+            head: "padding:14px 24px;font-size:13px;font-weight:700;letter-spacing:0.6px;background:" + col + ";color:#ffffff",
+            noteSt: "font-size:13px;line-height:1.85;color:#26324A;margin:20px 0 0;padding:14px 16px;background:" + soft + ";border-left:3px solid " + col
+          };
+        });
+      }
+      if (s.k === "branch") {
+        o.isBranch = true; o.root = s.root; o.foot = s.foot || "";
+        o.branches = (s.branches || []).map((b) => ({
+          q: b.q, card: b.card, d: b.d,
+          qSt: "border:1px solid #D2DAE6;background:#ffffff;padding:11px 14px;font-size:13px;font-weight:700;color:#10214A;text-align:center;width:100%"
+        }));
+      }
+      if (s.k === "list") { o.isList = true; o.items = s.items || []; }
+      if (s.k === "links") { o.isLinks = true; o.items = (s.items || []).map((i) => ({ kicker: i.kicker, t: i.t, d: i.d, go: this.go(i.p) })); }
+      if (s.k === "faq") { o.isFaq = true; o.items = (s.items || []).map((f, i) => ({ n: String(i + 1).padStart(2, "0"), q: f[0], a: f[1] })); }
+      if (s.k === "articles") { o.isArticles = true; o.items = s.items || []; }
+      return o;
+    });
+  }
+
+  renderVals() {
+    const pack = this.pack, ui = pack.ui;
+    const page = pack.pages[this.page] || pack.pages.home;
+    const navKeys = NAV_KEYS;
+    const langs = [["ko", "한국어"], ["en", "EN"], ["zh", "中文"], ["ja", "日本語"], ["vi", "Tiếng Việt"], ["th", "ไทย"], ["id", "Bahasa"]];
+    return {
+      t: { home: ui.home, footBrand: ui.footBrand, footNoticeLabel: ui.footNoticeLabel, footNotice: ui.footNotice, copyright: ui.copyright },
+      page: page,
+      hasCrumb: this.page !== "home",
+      sections: this.buildSections(page),
+      nav: navKeys.map((k, i) => ({ label: ui.nav[i], go: this.go(k), st: this.navSt(this.page === k) })),
+      langs: langs.map(([code, label]) => ({
+        label: label, go: this.setLang(code),
+        st: "padding:6px 10px;font-size:9.6px;font-weight:700;letter-spacing:0.2px;text-decoration:none;" + (this.lang === code ? "background:#10214A;color:#ffffff" : "background:#ffffff;color:#5A6478")
+      })),
+      footGroups: (ui.groups || []).map((g) => ({
+        t: g.t,
+        items: g.items.map((k) => {
+          const idx = NAV_KEYS.indexOf(k);
+          const label = idx > -1 ? ui.nav[idx] : (ui.labels[k] || k);
+          return { label: label, go: this.go(k) };
+        })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

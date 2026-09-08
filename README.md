@@ -1,39 +1,20 @@
-# CryptoCard
+# cryptocard
 
-암호화폐를 충전하고 전 세계 가맹점에서 결제하는 **CryptoCard** 웹 서비스입니다.
+GitHub에 올린 ZIP(`크립토카드 뉴스 사이트 제작.zip`)을 풀어서 그대로 배포합니다. HTML·JSON·이미지 내용은 수정하지 않았습니다.
 
-## 실행
+- `/` — CryptoCardsInfo (`CryptoCardInfo.dc.html`과 동일한 `index.html`)
+- `/크립토카드 뉴스.dc.html` — 뉴스 사이트
+- `/Crypto Cards Info.html` — 업로드된 번들 HTML
+
+## 로컬
 
 ```bash
-npm install
-npm run dev
+npx --yes serve -l 3000
 ```
 
-브라우저에서 [http://localhost:3000](http://localhost:3000) 을 엽니다.
-
-## 페이지
-
-| 경로 | 설명 |
-| --- | --- |
-| `/` | 랜딩 — 카드 소개, 특징, 이용 방법 |
-| `/apply` | 카드 신청 폼 (유효성 검사 + 접수 완료 화면) |
-| `/about` | 서비스 소개 |
-| `/faq` | 자주 묻는 질문 |
-
-## 스택
-
-Next.js · React · TypeScript · Tailwind CSS
-
-## 웹 배포 (Vercel)
-
-`main`에 푸시하면 Vercel이 자동 배포하도록 GitHub와 연결하면 됩니다.
-
-### 최초 1회
+## Vercel
 
 1. https://vercel.com 로그인
 2. **Add New Project** → GitHub `soyee-1469/cryptocard` Import
-3. Framework: **Next.js** (자동 감지)
+3. Framework: **Other** (정적 파일)
 4. Deploy
-
-이후부터는 `main` 푸시만 하면 자동 반영됩니다.  
-연결 확인: Vercel 프로젝트 → **Settings → Git**
