@@ -23,3 +23,17 @@ npm run dev
 ## 스택
 
 Next.js · React · TypeScript · Tailwind CSS
+
+## 웹 배포 (Vercel)
+
+`main`에 푸시하면 Vercel이 자동 배포하도록 GitHub와 연결하면 됩니다.
+
+### 최초 1회
+
+1. https://vercel.com 로그인
+2. **Add New Project** → GitHub `soyee-1469/cryptocard` Import
+3. Framework: **Next.js** (자동 감지)
+4. Deploy
+
+이후부터는 `main` 푸시만 하면 자동 반영됩니다.  
+연결 확인: Vercel 프로젝트 → **Settings → Git**
