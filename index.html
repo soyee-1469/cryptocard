@@ -31,10 +31,72 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CryptoCardsInfo","url":"https://cryptocardsinfo.com","inLanguage":["ko","en","zh","ja","vi","th","id"],"description":"크립토카드의 비용·한도·기능·캐시백을 객관적으로 비교하는 정보 플랫폼"}</script>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; background: #ffffff; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #ffffff; overflow-x: hidden; }
   a { color: #1F5BD8; text-decoration: none; }
   a:hover { color: #10214A; text-decoration: underline; }
   table { border-collapse: collapse; }
+  img { max-width: 100%; }
+
+  /* ---- Mobile optimization ---- */
+  @media (max-width: 860px) {
+    header > div, nav > div, main, footer > div {
+      padding-left: 18px !important;
+      padding-right: 18px !important;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .cci-grid { grid-template-columns: 1fr !important; }
+
+    header > div, nav > div, main, footer > div {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+    header > div { min-height: 56px !important; padding-top: 10px !important; padding-bottom: 10px !important; }
+    header img { height: 26px !important; }
+
+    nav > div { flex-wrap: nowrap !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    nav > div::-webkit-scrollbar { display: none; }
+    nav a { white-space: nowrap !important; padding: 13px 11px !important; font-size: 13px !important; }
+
+    main > section:first-of-type { padding: 30px 0 26px !important; }
+    main h1 { font-size: 25px !important; letter-spacing: -0.5px !important; margin-bottom: 14px !important; }
+    main h2 { font-size: 19px !important; }
+    main > section { padding-top: 36px !important; }
+    .cci-sub { font-size: 16px !important; }
+    .cci-lead { font-size: 15px !important; }
+    .cci-leadred { font-size: 14.5px !important; padding-left: 12px !important; }
+
+    .cci-notice { padding: 20px 16px !important; }
+    .cci-alert { padding: 22px 16px !important; }
+    .cci-alert > div:nth-child(2) { font-size: 20px !important; }
+    .cci-branch-outer { padding: 22px 14px !important; }
+    .cci-flow-outer { padding: 22px 14px !important; }
+
+    .cci-table th, .cci-table td { padding: 10px 10px !important; font-size: 12.5px !important; }
+    .cci-table th:first-child, .cci-table td:first-child {
+      position: sticky; left: 0; z-index: 2;
+      min-width: 92px; max-width: 118px;
+      box-shadow: 1px 0 0 #E2E7F0;
+    }
+    .cci-tablezone::after {
+      content: ""; position: absolute; top: 0; right: 0; width: 28px; height: 100%;
+      background: linear-gradient(to left, rgba(255,255,255,0.96), rgba(255,255,255,0));
+      pointer-events: none;
+    }
+
+    .cci-langpills { display: none !important; }
+    .cci-langsel { display: block !important; flex: 0 0 auto; width: 104px; }
+    header > div { gap: 10px !important; flex-wrap: nowrap !important; }
+
+    footer > div > div:last-child { flex-direction: column !important; align-items: flex-start !important; gap: 6px !important; }
+  }
+
+  @media (max-width: 420px) {
+    main h1 { font-size: 22px !important; }
+    .cci-langsel { max-width: 116px; }
+  }
 </style>
 </helmet>
 <div style="font-family:'Noto Sans KR','Noto Sans JP','Noto Sans SC','Noto Sans Thai',sans-serif;color:#101828;background:#ffffff;min-height:100vh">
@@ -42,11 +104,16 @@
   <header style="background:#ffffff;border-bottom:1px solid #E2E7F0;position:sticky;top:0;z-index:30">
     <div style="max-width:1180px;margin:0 auto;padding:12px 24px;min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
       <a onClick="{{ goHome }}" href="#home" style="display:flex;align-items:center;flex:0 0 auto"><img src="logo-cci.svg" alt="CryptoCardsInfo" style="height:34px;width:auto;display:block" /></a>
-      <div style="display:flex;flex-wrap:wrap;gap:1px;flex:0 1 auto;justify-content:flex-end;border:1px solid #E2E7F0">
+      <div class="cci-langpills" style="display:flex;flex-wrap:wrap;gap:1px;flex:0 1 auto;justify-content:flex-end;border:1px solid #E2E7F0">
         <sc-for list="{{ langs }}" as="l" hint-placeholder-count="4">
           <a onClick="{{ l.go }}" href="#lang" style="{{ l.st }}">{{ l.label }}</a>
         </sc-for>
       </div>
+      <select class="cci-langsel" aria-label="Language" value="{{ langCode }}" onChange="{{ onLangChange }}" style="display:none;font-family:inherit;font-size:13px;font-weight:700;color:#10214A;background:#ffffff;border:1px solid #E2E7F0;border-radius:0;padding:9px 10px;min-height:40px">
+        <sc-for list="{{ langs }}" as="l" hint-placeholder-count="4">
+          <option value="{{ l.code }}">{{ l.label }}</option>
+        </sc-for>
+      </select>
     </div>
     <nav style="border-top:1px solid #EDF1F7">
       <div style="max-width:1180px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:2px">
@@ -70,14 +137,14 @@
     <section style="padding:44px 0 40px;border-bottom:1px solid #E2E7F0">
       <h1 style="font-size:38px;font-weight:900;line-height:1.3;letter-spacing:-1px;margin:0 0 18px;color:#10214A;max-width:22ch;text-wrap:pretty">{{ page.h1 }}</h1>
       <sc-if value="{{ page.sub }}">
-        <p style="font-size:19px;font-weight:700;line-height:1.7;color:#8A5200;margin:0 0 18px;max-width:54ch;text-wrap:pretty">{{ page.sub }}</p>
+        <p class="cci-sub" style="font-size:19px;font-weight:700;line-height:1.7;color:#8A5200;margin:0 0 18px;max-width:54ch;text-wrap:pretty">{{ page.sub }}</p>
       </sc-if>
       <sc-if value="{{ page.subRed }}">
-        <p style="font-size:19px;font-weight:700;line-height:1.7;color:#8A5200;margin:0 0 18px;max-width:54ch;text-wrap:pretty">{{ page.subPre }}<strong style="color:#C22C2C;font-weight:900">{{ page.subRed }}</strong>{{ page.subPost }}</p>
+        <p class="cci-sub" style="font-size:19px;font-weight:700;line-height:1.7;color:#8A5200;margin:0 0 18px;max-width:54ch;text-wrap:pretty">{{ page.subPre }}<strong style="color:#C22C2C;font-weight:900">{{ page.subRed }}</strong>{{ page.subPost }}</p>
       </sc-if>
-      <p style="font-size:17px;line-height:1.85;color:#3A465C;margin:0;max-width:70ch;text-wrap:pretty">{{ page.lead }}</p>
+      <p class="cci-lead" style="font-size:17px;line-height:1.85;color:#3A465C;margin:0;max-width:70ch;text-wrap:pretty">{{ page.lead }}</p>
       <sc-if value="{{ page.leadRed }}">
-        <p style="font-size:16.5px;font-weight:700;line-height:1.85;color:#C22C2C;margin:18px 0 0;max-width:70ch;text-wrap:pretty;border-left:3px solid #C22C2C;padding-left:16px">{{ page.leadRed }}</p>
+        <p class="cci-leadred" style="font-size:16.5px;font-weight:700;line-height:1.85;color:#C22C2C;margin:18px 0 0;max-width:70ch;text-wrap:pretty;border-left:3px solid #C22C2C;padding-left:16px">{{ page.leadRed }}</p>
       </sc-if>
       <sc-if value="{{ page.stamp }}">
         <p style="font-size:12px;color:#5A6478;margin:22px 0 0;line-height:1.7">{{ page.stamp }}</p>
@@ -104,7 +171,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isNotice }}">
-          <div style="{{ s.box }}">
+          <div class="cci-notice" style="{{ s.box }}">
             <div style="font-size:12px;font-weight:700;letter-spacing:1.4px;margin-bottom:12px;{{ s.tag }}">{{ s.label }}</div>
             <div style="display:flex;flex-direction:column;gap:12px">
               <sc-for list="{{ s.p }}" as="para" hint-placeholder-count="2">
@@ -115,7 +182,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isAlert }}">
-          <div style="border:2px solid #C22C2C;background:#FCF6F5;padding:36px 34px">
+          <div class="cci-alert" style="border:2px solid #C22C2C;background:#FCF6F5;padding:36px 34px">
             <div style="font-size:12px;font-weight:700;letter-spacing:1.6px;color:#C22C2C;margin-bottom:16px">{{ s.label }}</div>
             <div style="font-size:26px;font-weight:900;line-height:1.55;letter-spacing:-0.8px;color:#10214A;margin-bottom:22px;max-width:34ch;text-wrap:pretty">{{ s.big }}</div>
             <div style="display:flex;flex-direction:column;gap:14px">
@@ -127,7 +194,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isCards }}">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+          <div class="cci-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
             <sc-for list="{{ s.items }}" as="c">
               <div style="{{ c.frame }}">
                 <div style="padding:20px 20px 0">
@@ -156,8 +223,9 @@
 
         <sc-if value="{{ s.isTable }}">
           <div>
-            <div style="overflow-x:auto">
-              <table style="{{ s.tableSt }}">
+            <div class="cci-tablezone" style="position:relative">
+            <div class="cci-tablewrap" style="overflow-x:auto">
+              <table class="cci-table" style="{{ s.tableSt }}">
                 <thead>
                   <tr>
                     <sc-for list="{{ s.head }}" as="h" hint-placeholder-count="5">
@@ -175,6 +243,7 @@
                   </sc-for>
                 </tbody>
               </table>
+            </div>
             </div>
             <sc-if value="{{ s.legend }}">
               <div style="margin:18px 0 0;border:1px solid #E2E7F0;background:#F8FAFD;padding:18px 20px">
@@ -196,7 +265,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isFlow }}">
-          <div style="border:1px solid #E2E7F0;background:#F6F8FC;padding:32px 26px;overflow-x:auto">
+          <div class="cci-flow-outer" style="border:1px solid #E2E7F0;background:#F6F8FC;padding:32px 26px;overflow-x:auto">
             <div style="display:flex;flex-direction:column;align-items:center;gap:0;min-width:280px">
               <sc-for list="{{ s.steps }}" as="st" hint-placeholder-count="5">
                 <div style="display:flex;flex-direction:column;align-items:center;width:100%;max-width:520px">
@@ -215,7 +284,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isGrid }}">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px">
+          <div class="cci-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px">
             <sc-for list="{{ s.items }}" as="i" hint-placeholder-count="6">
               <div style="border:1px solid #E2E7F0;background:#F8FAFD;padding:24px">
                 <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
@@ -229,7 +298,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isCompare2 }}">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+          <div class="cci-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
             <sc-for list="{{ s.cols }}" as="c" hint-placeholder-count="2">
               <div style="{{ c.frame }}">
                 <div style="{{ c.head }}">{{ c.label }}</div>
@@ -250,12 +319,12 @@
         </sc-if>
 
         <sc-if value="{{ s.isBranch }}">
-          <div style="border:1px solid #E2E7F0;background:#F6F8FC;padding:34px 26px">
+          <div class="cci-branch-outer" style="border:1px solid #E2E7F0;background:#F6F8FC;padding:34px 26px">
             <div style="display:flex;flex-direction:column;align-items:center">
               <div style="background:#10214A;color:#ffffff;font-size:15px;font-weight:700;line-height:1.5;padding:15px 28px;text-align:center;max-width:540px">{{ s.root }}</div>
               <div style="width:1px;height:22px;background:#B4BECD"></div>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
+            <div class="cci-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
               <sc-for list="{{ s.branches }}" as="b" hint-placeholder-count="3">
                 <div style="display:flex;flex-direction:column;align-items:center">
                   <div style="width:1px;height:18px;background:#B4BECD"></div>
@@ -275,7 +344,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isSplit }}">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+          <div class="cci-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
             <sc-for list="{{ s.cols }}" as="col" hint-placeholder-count="2">
               <div style="{{ col.frame }}">
                 <div style="{{ col.head }}">{{ col.t }}</div>
@@ -296,7 +365,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isList }}">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
+          <div class="cci-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
             <sc-for list="{{ s.items }}" as="i" hint-placeholder-count="4">
               <div style="border:1px solid #E2E7F0;border-top:3px solid #0E6E62;padding:22px">
                 <div style="font-size:16px;font-weight:700;line-height:1.5;margin-bottom:10px;color:#10214A">{{ i.t }}</div>
@@ -307,7 +376,7 @@
         </sc-if>
 
         <sc-if value="{{ s.isLinks }}">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+          <div class="cci-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
             <sc-for list="{{ s.items }}" as="i" hint-placeholder-count="6">
               <a onClick="{{ i.go }}" href="#page" style="display:block;border:1px solid #E2E7F0;padding:24px;color:#101828;text-decoration:none" style-hover="border-color:#10214A;background:#F6F8FC">
                 <div style="font-size:11px;font-weight:700;letter-spacing:1.2px;color:#1F5BD8;margin-bottom:10px">{{ i.kicker }}</div>
@@ -354,7 +423,7 @@
 
   <footer style="background:#0A1631;color:#ffffff">
     <div style="max-width:1180px;margin:0 auto;padding:52px 24px 40px">
-      <div style="display:grid;grid-template-columns:minmax(260px,1.4fr) repeat(auto-fit,minmax(150px,1fr));gap:36px;align-items:start">
+      <div class="cci-grid" style="display:grid;grid-template-columns:minmax(260px,1.4fr) repeat(auto-fit,minmax(150px,1fr));gap:36px;align-items:start">
         <div>
           <img src="logo-cci-light.svg" alt="CryptoCardsInfo" style="height:29px;width:auto;display:block;margin-bottom:16px" />
           <p style="font-size:13px;line-height:1.85;color:#A8B6D1;margin:0;max-width:34ch">{{ t.footBrand }}</p>
@@ -1167,9 +1236,11 @@ class Component extends DCLogic {
       hasCrumb: this.page !== "home",
       sections: this.buildSections(page),
       nav: navKeys.map((k, i) => ({ label: ui.nav[i], go: this.go(k), st: this.navSt(this.page === k) })),
+      langCode: this.lang,
+      onLangChange: (e) => { this.setLang(e.target.value)(e); },
       langs: langs.map(([code, label]) => ({
-        label: label, go: this.setLang(code),
-        st: "padding:6px 10px;font-size:9.6px;font-weight:700;letter-spacing:0.2px;text-decoration:none;" + (this.lang === code ? "background:#10214A;color:#ffffff" : "background:#ffffff;color:#5A6478")
+        code: code, label: label, go: this.setLang(code),
+        st: "padding:8px 11px;font-size:12px;line-height:1.2;font-weight:700;letter-spacing:0.2px;text-decoration:none;" + (this.lang === code ? "background:#10214A;color:#ffffff" : "background:#ffffff;color:#5A6478")
       })),
       footGroups: (ui.groups || []).map((g) => ({
         t: g.t,

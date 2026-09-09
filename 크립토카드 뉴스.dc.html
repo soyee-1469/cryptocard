@@ -12,10 +12,45 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
 <style>
-  body { margin: 0; background: #ffffff; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #ffffff; overflow-x: hidden; }
   a { color: #0E3B34; text-decoration: none; }
   a:hover { color: #0A2A25; }
   table { border-collapse: collapse; }
+  img { max-width: 100%; }
+
+  /* ---- Mobile optimization ---- */
+  @media (max-width: 860px) {
+    [style*="max-width: 1120px"], [style*="max-width: 900px"], [style*="max-width: 860px"] {
+      padding-left: 18px !important;
+      padding-right: 18px !important;
+    }
+  }
+
+  @media (max-width: 680px) {
+    [style*="repeat(auto-fit, minmax("] { grid-template-columns: 1fr !important; }
+
+    [style*="max-width: 1120px"], [style*="max-width: 900px"], [style*="max-width: 860px"] {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+    [style*="height: 74px"] { height: auto !important; padding-top: 12px !important; padding-bottom: 12px !important; flex-wrap: wrap !important; gap: 10px !important; }
+    [style*="height: 74px"] img { height: 24px !important; }
+
+    [style*="gap: 2px"] { flex-wrap: nowrap !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    [style*="gap: 2px"]::-webkit-scrollbar { display: none; }
+    [style*="gap: 2px"] > a { white-space: nowrap !important; padding: 13px 11px !important; font-size: 13px !important; }
+
+    h1 { font-size: 27px !important; letter-spacing: -0.6px !important; }
+    h2 { font-size: 21px !important; }
+
+    table th, table td { padding: 10px 10px !important; font-size: 12.5px !important; }
+  }
+
+  @media (max-width: 420px) {
+    h1 { font-size: 24px !important; }
+  }
 </style>
 </helmet>
 <div style="font-family:'Noto Sans KR',sans-serif;color:#14201E;background:#ffffff;min-height:100vh">
