@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -31,10 +31,39 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CryptoCardsInfo","url":"https://cryptocardsinfo.com","inLanguage":["ko","en","zh","ja","vi","th","id"],"description":"크립토카드의 비용·한도·기능·캐시백을 객관적으로 비교하는 정보 플랫폼"}</script>
 <style>
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  html, body, #dc-root, #dc-root > .sc-host {
+    height: auto !important;
+    min-height: 100%;
+  }
   body { margin: 0; background: #ffffff; }
   a { color: #1F5BD8; text-decoration: none; }
   a:hover { color: #10214A; text-decoration: underline; }
   table { border-collapse: collapse; }
+  .cci-foot-grid > * { min-width: 0; }
+  .cci-foot-grid a, .cci-foot-grid p { overflow-wrap: anywhere; word-break: keep-all; }
+
+  @media (max-width: 920px) {
+    .cci-foot-grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+      gap: 28px 24px !important;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .cci-foot-grid {
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+    }
+    footer > div {
+      padding: 40px 16px calc(28px + env(safe-area-inset-bottom, 0px)) !important;
+    }
+    footer > div > div:last-child {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 6px !important;
+    }
+  }
 </style>
 </helmet>
 <div style="font-family:'Noto Sans KR','Noto Sans JP','Noto Sans SC','Noto Sans Thai',sans-serif;color:#101828;background:#ffffff;min-height:100vh">
@@ -354,7 +383,7 @@
 
   <footer style="background:#0A1631;color:#ffffff">
     <div style="max-width:1180px;margin:0 auto;padding:52px 24px 40px">
-      <div style="display:grid;grid-template-columns:minmax(260px,1.4fr) repeat(auto-fit,minmax(150px,1fr));gap:36px;align-items:start">
+      <div class="cci-foot-grid" style="display:grid;grid-template-columns:minmax(min(100%,260px),1.4fr) repeat(auto-fit,minmax(min(100%,150px),1fr));gap:36px;align-items:start">
         <div>
           <img src="logo-cci-light.svg" alt="CryptoCardsInfo" style="height:29px;width:auto;display:block;margin-bottom:16px" />
           <p style="font-size:13px;line-height:1.85;color:#A8B6D1;margin:0;max-width:34ch">{{ t.footBrand }}</p>
