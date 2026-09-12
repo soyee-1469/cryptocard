@@ -5,4 +5,4 @@ Disallow: /admin/
 Disallow: /login/
 Disallow: /api/private/
 
-Sitemap: https://cryptocardsinfo.com/sitemap.xml
+Sitemap: https://www.cryptocardsinfo.com/sitemap.xml

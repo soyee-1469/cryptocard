@@ -1,5 +1,6 @@
 {
   "cleanUrls": false,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)\\.dc\\.html",
@@ -7,5 +8,19 @@
         { "key": "Content-Type", "value": "text/html; charset=utf-8" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/card-comparison", "destination": "/index.html" },
+    { "source": "/fee-comparison", "destination": "/index.html" },
+    { "source": "/card-features-limits", "destination": "/index.html" },
+    { "source": "/cashback-guide", "destination": "/index.html" },
+    { "source": "/card-selection-guide", "destination": "/index.html" },
+    { "source": "/faq", "destination": "/index.html" },
+    { "source": "/disclaimer", "destination": "/index.html" },
+    { "source": "/terms", "destination": "/index.html" },
+    { "source": "/privacy", "destination": "/index.html" },
+    { "source": "/about", "destination": "/index.html" },
+    { "source": "/:lang(en|zh|ja|vi|th|id)", "destination": "/index.html" },
+    { "source": "/:lang(en|zh|ja|vi|th|id)/:page", "destination": "/index.html" }
   ]
 }
