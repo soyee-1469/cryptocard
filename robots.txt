@@ -1,8 +1,7 @@
 User-agent: *
 Allow: /
 
-Disallow: /admin/
-Disallow: /login/
-Disallow: /api/private/
+User-agent: Yeti
+Allow: /
 
 Sitemap: https://www.cryptocardsinfo.com/sitemap.xml
