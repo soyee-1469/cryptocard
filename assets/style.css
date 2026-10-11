@@ -187,3 +187,20 @@ th,td{padding:10px 12px;font-size:13px}
 @media (max-width:380px){.wrap{padding:0 14px}.nav{margin:0 -14px}.hero h1{font-size:23px}.grid3 .it,.list .it,.links a{padding:16px}}
 @media (hover:none){.links a:hover{transform:none}}
 @media print{.hd,.ft,.skip{display:none}.tw{overflow:visible;border:0}.tw table{min-width:0}}
+
+/* language switcher */
+.hd-top{flex-wrap:wrap}
+.langs{display:flex;flex-wrap:wrap;gap:4px;margin-left:auto}
+.langs a{font-size:11.5px;font-weight:700;padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;line-height:1.2;transition:background .15s,color .15s,border-color .15s}
+.langs a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-s);text-decoration:none}
+.langs a[aria-current="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
+.hd-tag{margin-right:12px}
+.kast-hero{margin:28px 0 0;max-width:520px}
+.kast-hero img{border-radius:14px;box-shadow:0 8px 28px rgba(20,33,61,.12)}
+.kast-hero figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+@media (max-width:720px){
+.hd-top{height:auto;padding:10px 0;gap:8px}
+.langs{width:100%;margin-left:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.langs::-webkit-scrollbar{display:none}
+.langs a{white-space:nowrap;padding:5px 9px}
+}
