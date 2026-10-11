@@ -3,6 +3,12 @@
 `site/` 폴더 전체를 웹서버의 루트(`https://www.cryptocardsinfo.com/`)에 그대로 업로드하면 됩니다.
 모든 페이지는 정적 HTML이라 빌드나 서버 렌더링이 필요 없습니다.
 
+## 다국어 구성 (7개 언어)
+- 한국어(기본) `/` · 영어 `/en/` · 일본어 `/ja/` · 중국어 `/zh/` · 베트남어 `/vi/` · 태국어 `/th/` · 인도네시아어 `/id/`
+- 모든 페이지 우측 상단 언어 버튼으로 같은 페이지의 다른 언어판으로 이동합니다.
+- 페이지마다 hreflang 7개 + x-default(한국어)가 있고, sitemap.xml에 119개 URL과 언어 대응 관계가 모두 들어 있습니다.
+- 외국어 법적 페이지는 요약 번역본이며 "한국어판 우선" 문구가 표시됩니다.
+
 ## 폴더 구조
 ```
 index.html                      홈
@@ -41,3 +47,8 @@ sitemap.xml  robots.txt  rss.xml
 - 글은 `site-src/content.js`에서 관리합니다. 수정한 뒤 다시 생성해야 합니다.
 - 수정일(`updated`)은 내용이 실제로 바뀐 경우에만 변경합니다. 사이트맵의 `lastmod`와 Article 스키마의 `dateModified`에 함께 반영됩니다.
 - 외부 의존 리소스는 Pretendard 웹폰트(jsdelivr CDN) 하나뿐입니다. 자체 호스팅하려면 각 HTML의 `<link>`를 바꿉니다.
+
+## 원본 파일 (_build-source/)
+- `content.js`(한국어), `content-en.js` 등 언어별 원고와 생성기 `build.js`가 들어 있습니다. robots.txt로 수집을 막아 두었고, 서버에 올리지 않아도 됩니다.
+- JS 환경에서 `build({ko, en, ja, zh, vi, th, id}, ['ko','en','ja','zh','vi','th','id'])`를 실행하면 경로별 HTML이 반환됩니다.
+- 수수료·한도 같은 수치를 바꿀 때는 7개 언어 파일을 모두 수정해야 합니다.

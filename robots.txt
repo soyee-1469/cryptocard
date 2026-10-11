@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /_build-source/
 
 User-agent: Yeti
 Allow: /
+Disallow: /_build-source/
 
 Sitemap: https://www.cryptocardsinfo.com/sitemap.xml
